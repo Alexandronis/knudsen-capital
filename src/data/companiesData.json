@@ -1,0 +1,335 @@
+[
+  {
+    "id": 0,
+    "companyName": "Lasso",
+    "url": "https://lassogear.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Lasso.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Lasso",
+    "type": "Apparel"
+  },
+  {
+    "id": 1,
+    "companyName": "500 Global",
+    "url": "https://500.co/",
+    "logoImage": "/Portfolio/company_logos/home_card/500globel---110.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in 500 Global",
+    "type": "Accelerator"
+  },
+  {
+    "id": 2,
+    "companyName": "Pilates metrics",
+    "url": "https://pilatesmetrics.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Pilates_Metrics.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Pilates metrics",
+    "type": "Fitness"
+  },
+  {
+    "id": 3,
+    "companyName": "RPM",
+    "url": "https://rpmtraining.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/RPM.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in RPM",
+    "type": "Fitness"
+  },
+  {
+    "id": 4,
+    "companyName": "Designer Wellness",
+    "url": "https://designerprotein.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Designer-wellness-02-8.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Designer Wellness",
+    "type": "Supplements"
+  },
+  {
+    "id": 5,
+    "companyName": "Playper",
+    "url": "https://www.playper.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Playper.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Playper",
+    "type": "Kids / Toys"
+  },
+  {
+    "id": 6,
+    "companyName": "Axcend",
+    "url": "https://www.axcendcorp.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Axcend.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Axcend",
+    "type": "Chemicals"
+  },
+  {
+    "id": 7,
+    "companyName": "Wild friends",
+    "url": "https://wildfriendsfoods.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Wild friends.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Wild friends",
+    "type": "Food & Bev"
+  },
+  {
+    "id": 8,
+    "companyName": "Lovevery",
+    "url": "https://lovevery.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Lovevery.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Lovevery",
+    "type": "Kids / Toys"
+  },
+  {
+    "id": 9,
+    "companyName": "Bambino",
+    "url": "https://www.bambinositters.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Bambino.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Bambino",
+    "type": "Childcare"
+  },
+  {
+    "id": 10,
+    "companyName": "Curbside",
+    "url": "https://curbsidehealth.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Curbside.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Curbside",
+    "type": "Healthcare"
+  },
+  {
+    "id": 11,
+    "companyName": "Smart familry nutrition",
+    "url": "https://smartfamilynutrition.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Smart familry nutrition.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Smart familry nutrition",
+    "type": "Supplements"
+  },
+  {
+    "id": 12,
+    "companyName": "RealtyShares",
+    "url": "https://www.realtyshares.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Realityshares.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in RealtyShares",
+    "type": "Real Estate"
+  },
+  {
+    "id": 13,
+    "companyName": "Fledge",
+    "url": "http://fledge.co/",
+    "logoImage": "/Portfolio/company_logos/home_card/Fledge.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Fledge",
+    "type": "Accelerator"
+  },
+  {
+    "id": 14,
+    "companyName": "XRP",
+    "url": "https://ripple.com/xrp/",
+    "logoImage": "/Portfolio/company_logos/home_card/XRP.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in XRP",
+    "type": "Cryptocurrency"
+  },
+  {
+    "id": 15,
+    "companyName": "Actiview",
+    "url": "http://actiview.co/",
+    "logoImage": "/Portfolio/company_logos/home_card/Actiview.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Actiview",
+    "type": "Tech / App"
+  },
+  {
+    "id": 16,
+    "companyName": "Cerebelly",
+    "url": "https://cerebelly.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Cerebelly.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Cerebelly",
+    "type": "Food & Bev"
+  },
+  {
+    "id": 17,
+    "companyName": "Intacct",
+    "url": "https://www.sageintacct.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Intacct.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Intacct",
+    "type": "Finance / SAAS"
+  },
+  {
+    "id": 18,
+    "companyName": "Monj",
+    "url": "https://monj.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Monj.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Monj",
+    "type": "Fitness"
+  },
+  {
+    "id": 19,
+    "companyName": "LB Equity",
+    "url": "https://lbequity.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/LB Equity.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in LB Equity",
+    "type": "Incubator"
+  },
+  {
+    "id": 20,
+    "companyName": "Carin",
+    "url": "https://www.getcairn.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Carin.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Carin",
+    "type": "Outdoor"
+  },
+  {
+    "id": 21,
+    "companyName": "Conure music",
+    "url": "https://conuremusic.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Conure music.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Conure music",
+    "type": "Podcasting"
+  },
+  {
+    "id": 22,
+    "companyName": "Auddy",
+    "url": "https://auddy.co/",
+    "logoImage": "/Portfolio/company_logos/home_card/Auddy.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Auddy",
+    "type": "Podcasting"
+  },
+  {
+    "id": 23,
+    "companyName": "PEAR Sports",
+    "url": "https://www.pearsports.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/PEAR Sports.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in PEAR Sports",
+    "type": "Fitness"
+  },
+  {
+    "id": 24,
+    "companyName": "Good Money",
+    "url": "https://www.goodmoney.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Good_Money.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in PEAR Sports",
+    "type": "Finance"
+  },
+  {
+    "id": 25,
+    "companyName": "Movr",
+    "url": "https://movewithmovr.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Movr.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Movr",
+    "type": "Fitness"
+  },
+  {
+    "id": 26,
+    "companyName": "Parker Clay",
+    "url": "https://www.parkerclay.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Parkers-clay-110.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Parker Clay",
+    "type": ""
+  },
+  {
+    "id": 27,
+    "companyName": "Great Jones",
+    "url": "https://greatjonesgoods.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/great_jones.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Great Jones",
+    "type": ""
+  },
+  {
+    "id": 28,
+    "companyName": "ModelFront",
+    "url": "https://modelfront.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/model-front---110-new-logo.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in ModelFront",
+    "type": ""
+  },
+  {
+    "id": 29,
+    "companyName": "Brimore",
+    "url": "https://brimore.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/BATIMORE-110.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Brimore",
+    "type": ""
+  },
+  {
+    "id": 30,
+    "companyName": "Aktify",
+    "url": "https://aktify.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/AKTIFY-110.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Aktify",
+    "type": ""
+  },
+  {
+    "id": 31,
+    "companyName": "Califia Farms",
+    "url": "https://www.califiafarms.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/Califia-111.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+    "alt": "KCLLC Investment in Califia Farms",
+    "type": ""
+  },
+  {
+    "id": 32,
+    "companyName": "Hive",
+    "url": "https://hivebrands.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/hive_bands_logo.png",
+    "description": "Hive is building the first online marketplace that makes it easy to buy what you believe in. Hive curate's brands that craft excellent products (delicious foods, household goods that really do the job) while improving the world. Hive practice's carbon neutral shipping that is fast and free. And Hive make's an impact visible to shoppers while ensuring that partners uphold their high standards. Hive's mission is to build a company that not only earns financial profits, but also improves people’s lives and the planet.",
+    "alt": "KCLLC Investment in Hive",
+    "type": ""
+  },
+  {
+    "id": 33,
+    "companyName": "Brightland Olive Oil",
+    "url": "https://brightland.co/",
+    "logoImage": "/Portfolio/company_logos/home_card/brightlands_logo.png",
+    "description": "Brightland was born to elevate the simple, analog moments in the kitchen. Brightland's hero products are consciously crafted extra virgin olive oils and fruit-forward vinegars from California. ⁠",
+    "alt": "KCLLC Investment in Brightland Olive Oil",
+    "type": ""
+  },
+  {
+    "id": 34,
+    "companyName": "De Soi",
+    "url": "https://drinkdesoi.com/",
+    "logoImage": "/Portfolio/company_logos/home_card/de_soi.png",
+    "description": "Non-alcoholic beverage company founded by Katy Perry and Morgan McLachlan.⁠",
+    "alt": "KCLLC Investment in De Soi",
+    "type": ""
+  },
+  {
+    "id": 35,
+    "companyName": "Emerald Bays",
+    "url": "https://emeraldbays.com",
+    "logoImage": "/Portfolio/company_logos/home_card/emeraldBay.png",
+    "description": "Extraordinary Outdoor Experience⁠",
+    "alt": "KCLLC Investment in Emerald Bays",
+    "type": ""
+  },
+  {
+    "id": 36,
+    "companyName": "Evrloop",
+    "url": "https://evrloop.com",
+    "logoImage": "/Portfolio/company_logos/home_card/evrloop_tra.png",
+    "description": "⁠",
+    "alt": "KCLLC Investment in Evrloop",
+    "type": "Kids / Toys"
+  }
+]

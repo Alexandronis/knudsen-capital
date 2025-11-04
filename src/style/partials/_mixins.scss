@@ -1,0 +1,832 @@
+// ======================================
+// =============== Mixins ===============
+// ======================================
+
+//----------- Navigation Bar ------------
+@mixin NavigationLinks {
+  font-size: $txtNav-fontSize;
+  line-height: 1.22;
+  letter-spacing: 0.65px;
+  font-weight: normal;
+  //opacity: 0.4;
+  color: $txtNav-fontColor;
+  text-decoration: none;
+}
+
+//-----------criteria section -----------
+@mixin criteriaHeading {
+  font-size: $txtHeadings-fontSize;
+  font-weight: bold;
+  letter-spacing: 1.73px;
+  color: $criteriaHeading;
+  line-height: 1.1;
+}
+
+@mixin criteriaSubHeading {
+  font-size: $txtSubHeadings-fontSize;
+  line-height: 1.5;
+  letter-spacing: 0.86px;
+  text-align: center;
+  color: $criteriaHeading;
+  font-weight: 500;
+}
+
+@mixin criteriaCard {
+  border-radius: 12px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+@mixin criteriaCardTitle {
+  color: #50b0a1;
+  line-height: 1.5;
+  letter-spacing: 0.86px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+//Home page commond heading title
+
+@mixin HeadingTitle {
+  line-height: 0.75;
+  letter-spacing: 1.73px;
+  text-align: center;
+  color: #0a0c0d;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+//-----------Investment Principles section -----------
+@mixin txt_Principles {
+  line-height: 1.13;
+  letter-spacing: 0.58px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+//-----------Our Team section -----------
+
+//***initial state card styles******
+@mixin Int_teamCard_Name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #191515;
+  //line-height: 2;
+  letter-spacing: 0.65px;
+}
+@mixin Int_teamCard_title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #191515;
+  //line-height: 2.57;
+  letter-spacing: 0.5px;
+}
+
+//***active******
+@mixin teamCard_Name {
+  font-size: 28px;
+  font-weight: 600;
+  color: #191515;
+  line-height: 1.29;
+  letter-spacing: 1.01px;
+}
+
+@mixin teamCard_title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #191515;
+  line-height: 1.5;
+  letter-spacing: 0.86px;
+}
+
+@mixin teamCard_desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+@mixin seemore {
+  //left: 50%;
+  color: #55bbac;
+  line-height: 1.5;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 500;
+  float: right;
+  padding: 9px;
+  margin: auto 20px;
+}
+
+@mixin fadeIn {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+//----------------card hover---------------------
+@mixin cardHover {
+  transition: 0.2s ease-in;
+  //box-shadow: 0 0 16px 4px #142c44;
+  box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.16);
+  transform: scale(1.05);
+}
+@mixin mobilecardHover {
+  transition: 0.2s ease-in;
+  transform: scale(1);
+}
+
+//--------profile Card transition time--------------
+@mixin transitinTime {
+  transition-duration: 0.8s;
+  transition-delay: 0.15s;
+  @include respond-to("small") {
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+  }
+}
+
+//--------page faide in effects------------
+@mixin page_fade_in {
+  animation: page-fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @keyframes page-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//--------page faide out effects------------
+@mixin fade_out {
+  animation: page-fade-out 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @keyframes page-fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+}
+
+//---------------client page animation-------------------
+@mixin content_wrapper-in {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+
+@mixin Main_title_In {
+  -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin cover_image_in {
+  -webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @-webkit-keyframes flip-in-hor-top {
+    0% {
+      -webkit-transform: rotateX(-80deg);
+      transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-hor-top {
+    0% {
+      -webkit-transform: rotateX(-80deg);
+      transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin image_cap_in {
+  -webkit-animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  @include respond-to("medium_lg") {
+    -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  @include respond-to("medium") {
+    -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  @include respond-to("small") {
+    -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+
+  @-webkit-keyframes swing-in-left-bck {
+    0% {
+      -webkit-transform: rotateY(-70deg);
+      transform: rotateY(-70deg);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-left-bck {
+    0% {
+      -webkit-transform: rotateY(-70deg);
+      transform: rotateY(-70deg);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      opacity: 1;
+    }
+  }
+}
+
+@mixin card_discription_in {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin button_in {
+  -webkit-animation: jello-horizontal 0.8s both;
+  animation: jello-horizontal 0.8s both;
+
+  @-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+//--------------portfolio Data card open animation -----------------------
+@mixin portfolio_data_card {
+  -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  @-webkit-keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+}
+
+//-------------data_logo-------------
+@mixin data_logo_in {
+  -webkit-animation: puff-in-left 0.15s ease-in both;
+  animation: puff-in-left 0.15s ease-in both;
+
+  @-webkit-keyframes puff-in-left {
+    0% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-left {
+    0% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+}
+
+//--------- member card text faid in --------------
+@mixin cad_text_faid {
+  -webkit-animation: fade-in 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//--------Tool Tip In -----------
+@mixin toolTip {
+  -webkit-animation: scale-in-left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-left 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @-webkit-keyframes scale-in-left {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-left {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      opacity: 1;
+    }
+  }
+}
+
+//-------dot animation--------
+@mixin dotIN {
+  -webkit-animation: bounce-in-fwd 0.5s both;
+  animation: bounce-in-fwd 0.5s both;
+
+  @-webkit-keyframes bounce-in-fwd {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(0.84);
+      transform: scale(0.84);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-fwd {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(0.84);
+      transform: scale(0.84);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(0.95);
+      transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+@mixin dotping {
+  -webkit-animation: ping 0.8s ease-in-out infinite both;
+  animation: ping 0.8s ease-in-out infinite both;
+
+  @-webkit-keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+      transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  @keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+      transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+}
+
+//-----------Logo Card hover tool-tip animation-------------------
+@mixin tool-tip {
+  -webkit-animation: slide-in-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+//-----------tool-tip span line animation---------------------
+@mixin tool-horizontal {
+  -webkit-animation: scale-in-ver-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-ver-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @-webkit-keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+}
+
+//-----------glow drop effect--------------------
+@mixin glowEffect {
+  background-image: linear-gradient(-45deg, transparent 44%, #ffffff 50% , transparent 57%);
+  opacity: 0.3;
+  background-size: 100vh;
+  animation: glowAnimation 0.8s ease-out;
+
+  //animation: glowAnimation 10s infinite;
+
+  @keyframes glowAnimation {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+    // 100% {
+    //   background-position: 0% 50%;
+    // }
+  }
+}
+//----------------------------------Mobile responsive settings code snippet----------------------------------
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+//-------------Rremove highlight in mobile and ipad created by sachith (11/20/2020)--------------------------
+@mixin Rremove-highlight {
+  a,
+  div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+@mixin rotate {
+  animation: spin 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

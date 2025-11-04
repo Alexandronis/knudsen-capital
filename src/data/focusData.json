@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "title": "Health related",
+    "iconImage": "/Portfolio/Focus/Health-related.svg",
+    "className": "title",
+    "alt": "Health related Icon",
+    "dotPosition": "91"
+  },
+  {
+    "id": 1,
+    "title": "Supplements",
+    "iconImage": "/Portfolio/Focus/Suppliments.svg",
+    "className": "title",
+    "alt": "Supplements Icon",
+    "dotPosition": "79"
+  },
+  {
+    "id": 2,
+    "title": "Good for you",
+    "iconImage": "/Portfolio/Focus/Good-for-you.svg",
+    "className": "title",
+    "alt": "Good for you Icon",
+    "dotPosition": "66"
+  },
+  {
+    "id": 3,
+    "title": "Clean formulations",
+    "iconImage": "/Portfolio/Focus/Clean-formulations.svg",
+    "className": "title",
+    "alt": "Clean formulations Icon",
+    "dotPosition": "54"
+  },
+  {
+    "id": 4,
+    "title": "Immunity products",
+    "iconImage": "/Portfolio/Focus/immune-system.svg",
+    "className": "title-left-Side",
+    "alt": "Immunity products Icon",
+    "dotPosition": "42"
+  },
+  {
+    "id": 5,
+    "title": "Plant-based",
+    "iconImage": "/Portfolio/Focus/Plant-based.svg",
+    "className": "title-left-Side",
+    "alt": "Plant-based Icon",
+    "dotPosition": "29"
+  },
+  {
+    "id": 6,
+    "title": "Protein",
+    "iconImage": "/Portfolio/Focus/Protein.svg",
+    "className": "title-left-Side",
+    "alt": "Protein Icon",
+    "dotPosition": "16"
+  },
+  {
+    "id": 7,
+    "title": "Subscription",
+    "iconImage": "/Portfolio/Focus/Subcriptions.svg",
+    "className": "title-left-Side",
+    "alt": "Subscription Icon",
+    "dotPosition": "4"
+  }
+]

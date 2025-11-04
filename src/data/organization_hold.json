@@ -1,0 +1,653 @@
+{
+  "Category01": [
+    {
+      "id": 0,
+      "companyName": "Lasso",
+      "url": "https://lassogear.com/",
+      "website": "www.sampleweb.com",
+      "logoImage": "/Portfolio/company_logos/Lasso.png",
+      "LargeLogoImage": "/Portfolio/company_logos/4+-+500+Startups+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 1,
+      "companyName": "500 Global",
+      "url": "https://500.co/",
+      "website": "www.500.co",
+      "logoImage": "/Portfolio/company_logos/500globel---231.png",
+      "LargeLogoImage": "/Portfolio/company_logos/500globel---231.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 2,
+      "companyName": "Pilates metrics",
+      "url": "https://pilatesmetrics.com/",
+      "website": "www.sampleweb.com",
+      "logoImage": "/Portfolio/company_logos/Pilates_Metrics.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Pilates_Metrics.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 3,
+      "companyName": "RPM",
+      "url": "https://rpmtraining.com/",
+      "website": "www.rpmtraining.com",
+      "logoImage": "/Portfolio/company_logos/RPM.png",
+      "LargeLogoImage": "/Portfolio/company_logos/RPM.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 4,
+      "companyName": "Designer Wellness",
+      "url": "https://designerprotein.com/",
+      "website": "www.designerprotein.com",
+      "logoImage": "/Portfolio/company_logos/DP_LOGO-1993.png",
+      "LargeLogoImage": "/Portfolio/company_logos/DP_LOGO-1993.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ],
+  "Category02": [
+    {
+      "id": 5,
+      "companyName": "Playper",
+      "url": "https://www.playper.com/",
+      "website": "www.playper.com",
+      "logoImage": "/Portfolio/company_logos/Playper+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Playper+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 6,
+      "companyName": "Axcend",
+      "url": "https://www.axcendcorp.com/",
+      "website": "www.axcendcorp.com",
+      "logoImage": "/Portfolio/company_logos/Axcend+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Axcend+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 7,
+      "companyName": "Wild friends",
+      "url": "https://wildfriendsfoods.com/",
+      "website": "www.wildfriendsfoods.com",
+      "logoImage": "/Portfolio/company_logos/10+-+Wild+Friends+Logo+PNG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/10+-+Wild+Friends+Logo+PNG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 8,
+      "companyName": "Lovevery",
+      "url": "https://lovevery.com/",
+      "website": "www.lovevery.com",
+      "logoImage": "/Portfolio/company_logos/6+-+Lovevery+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/6+-+Lovevery+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ],
+  "Category03": [
+    {
+      "id": 9,
+      "companyName": "Bambino",
+      "url": "https://www.bambinositters.com/",
+      "website": "www.bambinositters.com",
+      "logoImage": "/Portfolio/company_logos/orqnQXce_400x400.png",
+      "LargeLogoImage": "/Portfolio/company_logos/orqnQXce_400x400.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 10,
+      "companyName": "Curbside",
+      "url": "https://curbsidehealth.com/",
+      "website": "www.curbsidehealth.com",
+      "logoImage": "/Portfolio/company_logos/Curbside+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Curbside+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 11,
+      "companyName": "Smart familry nutrition",
+      "url": "https://smartfamilynutrition.com/",
+      "website": "www.smartfamilynutrition.com",
+      "logoImage": "/Portfolio/company_logos/9+-+Smart+Family+Nutrition+PNG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/9+-+Smart+Family+Nutrition+PNG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 12,
+      "companyName": "RealtyShares",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/Portfolio/company_logos/ReatlyShares.png",
+      "LargeLogoImage": "/Portfolio/company_logos/ReatlyShares.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 13,
+      "companyName": "Fledge",
+      "url": "http://fledge.co/",
+      "website": "www.fledge.co",
+      "logoImage": "/Portfolio/company_logos/11+-+Fledge+PNG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/11+-+Fledge+PNG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ],
+
+  "Category04": [
+    {
+      "id": 0,
+      "companyName": "XRP",
+      "url": "https://ripple.com/xrp/",
+      "website": "www.ripple.com",
+      "logoImage": "/Portfolio/company_logos/XRP+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/XRP+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 1,
+      "companyName": "Actiview",
+      "url": "http://actiview.co/",
+      "website": "www.sampleweb.com",
+      "logoImage": "/Portfolio/company_logos/Actiview+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Actiview+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 2,
+      "companyName": "Cerebelly",
+      "url": "https://cerebelly.com/",
+      "website": "www.cerebelly.com",
+      "logoImage": "/Portfolio/company_logos/Cerebelly+Logo.png",
+      "LargeLogoImage": "/Portfolio/company_logos/Cerebelly+Logo.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 3,
+      "companyName": "Intacct",
+      "url": "https://www.sageintacct.com/",
+      "website": "www.sageintacct.com",
+      "logoImage": "/Portfolio/company_logos/2+-+Intacct+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/2+-+Intacct+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 4,
+      "companyName": "iirim",
+      "url": "https://monj.com/",
+      "website": "www.monj.com",
+      "logoImage": "/Portfolio/company_logos/1+-+iTrim+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/1+-+iTrim+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ],
+  "Category05": [
+    {
+      "id": 5,
+      "companyName": "LB Equity",
+      "url": "http://www.lucasgroupinc.com/",
+      "website": "www.lucasgroupinc.com",
+      "logoImage": "/Portfolio/company_logos/3+-+LB+Equity+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/3+-+LB+Equity+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 6,
+      "companyName": "Carin",
+      "url": "https://www.getcairn.com/",
+      "website": "www.getcairn.com",
+      "logoImage": "/Portfolio/company_logos/5+-+Cairn+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/5+-+Cairn+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 7,
+      "companyName": "Conure music",
+      "url": "https://conuremusic.com/",
+      "website": "www.conuremusic.com",
+      "logoImage": "/Portfolio/company_logos/7+-+Conure+JPG.png",
+      "LargeLogoImage": "/Portfolio/company_logos/7+-+Conure+JPG.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 8,
+      "companyName": "Auddy",
+      "url": "https://auddy.co/",
+      "website": "www.auddy.co",
+      "logoImage": "/organization/Auddy.png",
+      "LargeLogoImage": "/organization/Auddy.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 9,
+      "companyName": "PEAR Sports",
+      "url": "https://www.pearsports.com/",
+      "website": "www.pearsports.com",
+      "logoImage": "/organization/pear.png",
+      "LargeLogoImage": "/organization/pear.png",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ],
+  "Category06": [
+    {
+      "id": 10,
+      "companyName": "COMPANY NAME",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/organization/LOGO.png",
+      "LargeLogoImage": "/organization/Large_logo.svg",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 11,
+      "companyName": "COMPANY NAME",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/organization/LOGO.png",
+      "LargeLogoImage": "/organization/Large_logo.svg",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 12,
+      "companyName": "COMPANY NAME",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/organization/LOGO.png",
+      "LargeLogoImage": "/organization/Large_logo.svg",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 13,
+      "companyName": "COMPANY NAME",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/organization/LOGO.png",
+      "LargeLogoImage": "/organization/Large_logo.svg",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    },
+    {
+      "id": 14,
+      "companyName": "COMPANY NAME",
+      "url": "",
+      "website": "www.sampleweb.com",
+      "logoImage": "/organization/LOGO.png",
+      "LargeLogoImage": "/organization/Large_logo.svg",
+      "coverImage": "/organization/cover_image.svg",
+      "subheading": "Lorem ipsum dolor sit amet,  adipiscing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus.",
+      "Longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Nibh tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo. Commodo ullamcorper a lacus Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "leadership": "John Doe",
+      "designation": "CEO",
+      "features": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing"
+      ],
+      "altlogoImage": "",
+      "altLargelogoImage": "",
+      "altCoverImage": ""
+    }
+  ]
+}

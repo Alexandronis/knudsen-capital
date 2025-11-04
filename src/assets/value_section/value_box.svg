@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="341" viewBox="0 0 350 341">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.648" y1="2.188" x2="0.158" y2="-2.586" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6f6f6"/>
+      <stop offset="1" stop-color="#37648f"/>
+    </linearGradient>
+    <filter id="Rectangle_1409" x="-18" y="-18" width="386" height="377" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.648" y1="2.188" x2="0.158" y2="-2.586" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#223d57"/>
+      <stop offset="1" stop-color="#37648f"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_1409)">
+        <rect id="Rectangle_1409-2" data-name="Rectangle 1409" width="350" height="341" rx="12" transform="translate(4017 12992)" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Group_1636" data-name="Group 1636" transform="translate(-6003 -9417)">
+    <rect id="Rectangle_1407" data-name="Rectangle 1407" width="350" height="341" rx="12" transform="translate(6003 9417)" fill="url(#linear-gradient-2)"/>
+    <g id="Mask_Group_56" data-name="Mask Group 56" transform="translate(1986 -3575)" opacity="0.41" clip-path="url(#clip-path)">
+      <g id="Group_1625" data-name="Group 1625" transform="translate(3953.851 12883.29)">
+        <path id="Path_6855" data-name="Path 6855" d="M0,0,228.764-.327,114.451,115.256,228.433,230.514-.33,230.841Z" transform="translate(145.53 0) rotate(39)" fill="#284867"/>
+        <path id="Path_6856" data-name="Path 6856" d="M0,0,228.764-.327,114.451,115.256,228.433,230.514-.33,230.841Z" transform="translate(145.53 0) rotate(39)" fill="none" stroke="rgba(85,187,172,0.47)" stroke-width="1"/>
+        <path id="Path_6857" data-name="Path 6857" d="M114.239-.164-.165,115.419,113.908,230.677l114.055-.163L113.7,114.634,228.294-.327Z" transform="translate(266.472 97.651) rotate(39)" fill="#284867"/>
+        <path id="Path_6858" data-name="Path 6858" d="M114.239-.164-.165,115.419,113.908,230.677l114.055-.163L113.7,114.634,228.294-.327Z" transform="translate(266.472 97.651) rotate(39)" fill="none" stroke="rgba(85,187,172,0.47)" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
