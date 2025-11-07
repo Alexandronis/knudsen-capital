@@ -125,9 +125,6 @@
                     }
                 }
                 .value-wrapper {
-                    // padding: 20px;
-                    // width: 95%;
-                    // margin: 40px auto;
                     margin: 70px auto;
                     width: 80%;
                     @include respond-to("small") {
@@ -157,7 +154,7 @@
                         }
                     }
 
-                    
+
                     h3 {
                         color: #ffffff;
                         font-size: 24px;
@@ -176,9 +173,8 @@
                         }
                     }
                     .common_card {
-                        // padding: 40px 92px;
                         @include respond-to("medium_lg") {
-                            padding: 40px 0px;
+                            padding: 40px 0;
                         }
                         @include respond-to("medium") {
                             margin: auto 0;
@@ -193,7 +189,6 @@
                                 margin: 44px 0;
                             }
                             .image_containar {
-                                //@include glowEffect;
                                 @include respond-to("small") {
                                     width: 120px;
                                     height: 120px;

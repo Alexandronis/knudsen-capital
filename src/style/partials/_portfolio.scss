@@ -23,7 +23,7 @@
             }
             .values-title {
                 @include respond-to("small") {
-                    padding: 70px 40px 0px;
+                    padding: 70px 40px 0;
                 }
             }
         }
@@ -37,10 +37,6 @@
                 padding: 0;
             }
             .values-title {
-                // margin-left: 15%;
-                @include respond-to("medium") {
-                    // margin-left: 10%;
-                }
                 .sub-heaading {
                     span {
                         display: none;
@@ -52,13 +48,12 @@
                         }
                     }
                     h2 {
-                        margin-left: 0px;
+                        margin-left: 0;
                         @include respond-to("small") {
                             padding: 0 40px;
                             color: #ffffff;
                             font-size: 18px;
                             font-weight: 600;
-                            // margin-left: 20px;
                         }
                     }
                 }
@@ -66,19 +61,16 @@
             .Category-title {
                 display: flex;
                 justify-content: space-between;
-                // padding: 0 24px;
                 @include respond-to("small") {
                     margin: 28px auto;
                 }
             }
             .card-investments {
-                // padding: 3% 6%;
-                // margin: 4% auto;
                 margin: 44px 0;
                 @include respond-to("small") {
                     background-color: #e5f5f3;
                     padding: 10% 6% 3%;
-                    margin: 7% auto 0%;
+                    margin: 7% auto 0;
                 }
                 .card-wrapper {
                     display: flex;
@@ -163,7 +155,7 @@
                                 box-shadow: 0 0 18px 6px #142c44;
                                 transform: scale(1.05);
                                 @include respond-to("small") {
-                                    box-shadow: 0 0px 12px 8px rgba(0, 0, 0, 0.2);
+                                    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.2);
                                 }
                             }
                         }
@@ -250,7 +242,7 @@
                                 }
                                 @include respond-to("small") {
                                     left: 5px;
-                                    bottom: 0px;
+                                    bottom: 0;
                                     width: 45%;
                                 }
                             }
@@ -276,8 +268,7 @@
                                     letter-spacing: 0.86px;
                                     font-size: 24px;
                                     font-weight: 600;
-                                    padding: 23px;
-                                    padding-left: 24%;
+                                    padding: 23px 23px 23px 24%;
                                     @include respond-to("medium") {
                                         padding-left: 60px;
                                     }
@@ -286,7 +277,6 @@
                                         font-weight: 600;
                                         letter-spacing: 0.65px;
                                         color: #223d57;
-                                        padding: 0 0 0;
                                         padding: 32px 0 33px 65px;
                                     }
                                 }
@@ -299,7 +289,6 @@
                                 margin: auto 65px;
                             }
                             @include respond-to("small") {
-                                padding: 0;
                                 margin: auto 15px;
                                 padding: 10px 0;
                             }
@@ -378,32 +367,6 @@
                     }
                 }
             }
-            // .Column {
-            //     //display: flex;
-            //     margin: 0 auto;
-            //     width: 59%;
-            //     @include respond-to("ex_large_max") {
-            //         width: 73%;
-            //     }
-            //     @include respond-to("medium_lg") {
-            //         width: 80%;
-            //     }
-            //     @include respond-to("medium") {
-            //         width: 85%;
-            //     }
-            //     @include respond-to("small") {
-            //         display: block;
-            //         background-color: #e5f5f3;
-            //         margin: 0;
-            //         width: 100%;
-            //     }
-            //     .col-one {
-            //         width: 50%;
-            //         @include respond-to("small") {
-            //             width: 100%;
-            //         }
-            //     }
-            // }
             .values-cards {
                 margin: 80px auto 0;
 
@@ -528,159 +491,6 @@
         margin: 80px auto;
         padding: 40px 0;
     }
-    // .selector-wapper {
-    //     .selector {
-    //         position: absolute;
-    //         left: 50%;
-    //         top: 50%;
-    //         width: 180px;
-    //         height: 180px;
-    //         margin-top: -70px;
-    //         margin-left: -70px;
-    //         @include respond-to("medium_lg") {
-    //             width: 180px;
-    //             height: 180px;
-    //             margin-top: -70px;
-    //             margin-left: -88px;
-    //         }
-    //         @include respond-to("medium") {
-    //             width: 180px;
-    //             height: 180px;
-    //             margin-top: -70px;
-    //             margin-left: -88px;
-    //         }
-    //         @include respond-to("small") {
-    //             width: 100px;
-    //             height: 100px;
-    //             margin-top: -50px;
-    //             margin-left: -50px;
-    //         }
-
-    //         ul {
-    //             //@include rotate;
-    //             @keyframes spin {
-    //                 from {
-    //                     transform: rotate(0deg);
-    //                 }
-    //                 to {
-    //                     transform: rotate(360deg);
-    //                 }
-    //             }
-    //             position: absolute;
-    //             list-style: none;
-    //             padding: 0;
-    //             margin: 0;
-    //             top: -90px;
-    //             right: -90px;
-    //             bottom: -90px;
-    //             left: -90px;
-    //             @include respond-to("medium_lg") {
-    //                 top: -20px;
-    //                 right: -20px;
-    //                 bottom: -20px;
-    //                 left: -20px;
-    //             }
-    //             @include respond-to("small") {
-    //                 top: -32px;
-    //                 right: 9px;
-    //                 bottom: -31px;
-    //                 left: 9px;
-    //             }
-    //             li {
-    //                 transform: rotate(0deg);
-    //                 &:nth-child(2) {
-    //                     transform: rotate(45deg);
-    //                 }
-    //                 &:nth-child(3) {
-    //                     transform: rotate(90deg);
-    //                 }
-    //                 &:nth-child(4) {
-    //                     transform: rotate(135deg);
-    //                 }
-    //                 &:nth-child(5) {
-    //                     transform: rotate(180deg);
-    //                 }
-    //                 &:nth-child(6) {
-    //                     transform: rotate(225deg);
-    //                 }
-    //                 &:nth-child(7) {
-    //                     transform: rotate(270deg);
-    //                 }
-    //                 &:nth-child(8) {
-    //                     transform: rotate(315deg);
-    //                 }
-    //                 position: absolute;
-    //                 width: 0;
-    //                 height: 100%;
-    //                 margin: 0 50%;
-    //                 -webkit-transform: rotate(-360deg);
-    //                 transition: all 0.8s ease-in-out;
-    //                 input {
-    //                     display: none;
-    //                 }
-    //                 input + label {
-    //                     //@include rotate;
-    //                     animation-direction: reverse;
-    //                     @keyframes spin {
-    //                         from {
-    //                             transform: rotate(0deg);
-    //                         }
-    //                         to {
-    //                             transform: rotate(360deg);
-    //                         }
-    //                     }
-    //                     width: 195px;
-    //                     height: 195px;
-    //                     line-height: 29px;
-    //                     margin-left: -40px;
-    //                     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    //                     font-size: 21px;
-    //                     color: #ffffff;
-    //                     font-weight: 400;
-    //                     position: absolute;
-    //                     left: 50%;
-    //                     bottom: 100%;
-    //                     background: linear-gradient(331deg, #30567c, #356089);
-    //                     border-radius: 50%;
-    //                     text-align: center;
-    //                     overflow: hidden;
-    //                     cursor: pointer;
-    //                     transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
-    //                     transition-duration: 0.4s;
-    //                     display: flex;
-    //                     justify-content: center;
-    //                     align-items: center;
-    //                     &:hover {
-    //                         box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.16);
-    //                         @include respond-to("small") {
-    //                             box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.16);
-    //                         }
-    //                     }
-    //                     @include respond-to("medium_lg") {
-    //                         width: 150px;
-    //                         height: 150px;
-    //                         line-height: 29px;
-    //                         margin-left: 41px;
-    //                         font-size: 16px;
-    //                     }
-    //                     @include respond-to("medium") {
-    //                         width: 150px;
-    //                         height: 150px;
-    //                         line-height: 29px;
-    //                         margin-left: 41px;
-    //                     }
-    //                     @include respond-to("small") {
-    //                         width: 96px;
-    //                         height: 94px;
-    //                         line-height: 18px;
-    //                         margin-left: -40px;
-    //                         font-size: 12px;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 //-------------focus vertical design for mobile----------------------
@@ -786,9 +596,6 @@
         padding: 90px 0;
         margin: 170px auto;
     }
-    @include respond-to("medium_lg") {
-        //margin: 150px auto;
-    }
     @include respond-to("medium") {
         margin: 110px auto;
     }
@@ -828,7 +635,6 @@
             }
         }
         .half-circle {
-            display: block;
             position: absolute;
             height: 500px;
             width: 500px;
@@ -865,7 +671,6 @@
             }
         }
         .circular-wrapper {
-            display: block;
             position: absolute;
             height: 250px;
             width: 250px;
@@ -918,7 +723,7 @@
                         width: 28px;
                         background-color: #223d57;
                         border-radius: 50%;
-                        right: 0%;
+                        right: 0;
                         border-color: #ffffff;
                         border-style: solid;
                         @include respond-to("medium") {
@@ -930,7 +735,6 @@
             }
         }
         .item-wrapper {
-            display: block;
             position: absolute;
             height: 250px;
             width: 250px;

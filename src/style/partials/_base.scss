@@ -5,9 +5,6 @@
 body {
   font-family: "Poppins";
 }
-html {
-  //scroll-behavior: smooth;     //This is an auto smooth scrolling
-}
 ul,
 li,
 p,
@@ -30,19 +27,10 @@ h6 {
 @include respond-to("small") {
   @include Rremove-highlight;
 }
-//--------------------Remove text decorations for all <a> tags created by sachith (12/01/2020)---------------
-// a {
-//   text-decoration: none;
-//   color: #7098d2;
-// }
 
 //--------------------Break line in member description created by sachith (11/19/2020)-----------------------
 p {
-  //white-space: pre-line;
   text-align: justify; //---------Justify the all <p> tages
-  @include respond-to("small") {
-    //white-space: normal;
-  }
 }
 
 // =========================================
@@ -161,7 +149,6 @@ p {
       }
       .item {
         display: flex;
-        //padding: 12px 0;
         margin: 20px auto;
         .image_icon {
           width: 4%;
@@ -247,7 +234,6 @@ p {
 
 .select-menu {
   position: absolute;
-  // font-family: "Poppins", sans-serif;
   right: 10%;
   top: 9.5%;
   z-index: 99;
@@ -287,8 +273,8 @@ p {
       font-size: 18px;
       letter-spacing: 0.65px;
       font-weight: 600;
-      border: 0px;
-      outline: 0px;
+      border: 0;
+      outline: 0;
       border-radius: 8px;
       box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06);
       width: 324px;
@@ -321,7 +307,6 @@ p {
       font-size: 18px;
       border: none;
       outline: none;
-      border-style: none;
       &:active {
         font-weight: 600;
       }
@@ -349,7 +334,7 @@ p {
   label:before {
     content: "";
     right: 4px;
-    top: 0px;
+    top: 0;
     width: 23px;
     height: 18px;
     position: absolute;
@@ -375,7 +360,6 @@ p {
 .placeholder-wrapper {
   .placeholder {
     margin: 0 auto;
-    /* max-width: 200px; */
     min-height: 250px;
     background-color: #eee;
     width: 100%;

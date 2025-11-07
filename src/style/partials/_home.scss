@@ -20,10 +20,6 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    // background: rgb(85, 187, 172);
-    // background: -moz-linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
-    // background: -webkit-linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
-    // background: linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#55bbac",endColorstr="#223d57",GradientType=1);
     min-height: 600px;
     .video-thumb {
@@ -74,7 +70,7 @@
         left: 7% !important;
       }
       h2 {
-        margin: 0 0%;
+        margin: 0 0;
         width: 28%;
         font-size: 71px;
         color: #ffff;
@@ -296,8 +292,7 @@
   padding: 70px 0;
   overflow: hidden;
   @include respond-to("small") {
-    padding: 0;
-    padding-bottom: 50px;
+    padding: 0 0 50px;
   }
   .portfolio {
     .section-title {
@@ -368,49 +363,6 @@
                   cursor: pointer;
                   width: 100%;
                 }
-                // &.opened {
-                //   @include data_logo_in;
-                //   z-index: 99;
-                //   position: absolute;
-                //   bottom: 137px;
-                //   left: -17px;
-                //   transform: translateY(2px) translateX(6px);
-
-                //   margin-right: 380px;
-                //   margin: 10px;
-                //   cursor: pointer;
-                //   transition-duration: 0.3s;
-                //   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-                //   width: 125px;
-                //   height: 125px;
-                //   object-fit: contain;
-                //   @include respond-to("small") {
-                //     width: 110px;
-                //     height: 110px;
-                //     bottom: 153px;
-                //     left: 14px;
-                //   }
-                //   &:hover {
-                //     @include respond-to("small") {
-                //       @include mobilecardHover;
-                //       bottom: 150px;
-                //       left: 19px;
-                //     }
-                //   }
-                // }
-                // &.none-active {
-                //   width: 125px;
-                //   height: 125px;
-                //   object-fit: contain;
-                //   border-radius: 12px;
-                //   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-                //   margin: 10px;
-                //   cursor: pointer;
-                //   @include respond-to("small") {
-                //     width: 70px;
-                //     height: 70px;
-                //   }
-                // }
                 transition: 0.2s ease-in-out;
                 &.active {
                   @include cardHover;
@@ -420,7 +372,7 @@
                     box-shadow: none;
                   }
                   @include respond-to("small") {
-                    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
                   }
                 }
 
@@ -588,9 +540,6 @@
   .value {
     background-color: #d6efeb;
     height: 70px;
-    @include respond-to("medium") {
-      //height: 115px;
-    }
     @include respond-to("small") {
       height: 28px;
     }
@@ -643,7 +592,7 @@
         background-color: transparent;
         box-shadow: none;
         margin: 12px;
-        padding: 0 0px;
+        padding: 0 0;
         border-radius: 8px;
       }
       img {
@@ -775,7 +724,7 @@
       &:hover {
         @include cardHover;
         @include respond-to("small") {
-          box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
         }
         .glow {
           @include glowEffect;
@@ -911,14 +860,12 @@
 .second-card-wrapper {
   display: flex;
   align-items: center;
-  // padding: 80px;
   padding: 40px 0 0;
   flex-flow: row wrap;
   flex: 1 1 auto;
   justify-content: center;
   margin: 0 auto;
   width: 63%;
-  justify-content: center;
   @include respond-to("medium_lg") {
     width: 90%;
     padding: 37px;
@@ -1020,13 +967,13 @@
       @keyframes scale-up-tl {
         0% {
           transform: scale(0.5);
-          transform-origin: 0%;
+          transform-origin: 0;
           width: 55%;
           height: 20px;
         }
         100% {
           transform: scale(1);
-          transform-origin: 0%;
+          transform-origin: 0;
           width: 70%;
           height: 400px;
         }
@@ -1098,7 +1045,7 @@
           @include respond-to("medium") {
             transition-duration: 0s;
             transition-delay: 0s;
-            padding: 0px 36px;
+            padding: 0 36px;
           }
 
           span {
@@ -1222,7 +1169,7 @@
           }
           .card_list_items {
             @include transitinTime;
-            padding: 0px 10px;
+            padding: 0 10px;
             object-fit: contain;
             font-family: Poppins;
             font-size: 14px;

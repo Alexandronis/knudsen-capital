@@ -47,7 +47,6 @@
                 }
             }
             .company-values {
-                margin-bottom: 50px;
                 width: 85%;
                 margin: 0 auto;
                 @include respond-to("small") {
@@ -100,7 +99,6 @@
             }
             .common_card {
                 @include respond-to("small") {
-                    margin: auto 0;
                     background-color: #e5f5f3;
                     padding: 1px 12px;
                     margin: 38px auto;
@@ -189,7 +187,7 @@
                 .values-title {
                     @include respond-to("small") {
                         background-color: #ffffff;
-                        padding: 0px 40px;
+                        padding: 0 40px;
                         display: block;
                     }
                     span {
@@ -319,7 +317,6 @@
                     }
                 }
                 width: 70%;
-                margin: 0 auto;
                 background-color: #dcf1ee;
                 padding: 20px;
                 margin: 77px auto;
@@ -331,7 +328,6 @@
 //-------------profile cards styles-------------------------
 .team-profile-wrapper {
     @include transitinTime;
-    margin: 100px auto 0;
     width: 52%;
     margin: 0 26%;
     @include respond-to("medium_lg") {
@@ -514,7 +510,7 @@
             }
             .second-line {
                 @include transitinTime;
-                height: 0px;
+                height: 0;
                 overflow: hidden;
                 visibility: hidden;
                 opacity: 0;
@@ -523,7 +519,7 @@
                     align-items: flex-end;
                     height: 170px;
                     @include respond-to("small") {
-                        height: 0px;
+                        height: 0;
                     }
                     .lg-profile-image {
                         visibility: hidden;
@@ -652,8 +648,7 @@
                 height: 100%;
                 @include respond-to("small") {
                     background-color: #223d57;
-                    // height: 710px;
-                    border-radius: 0px;
+                    border-radius: 0;
                 }
                 .profile-image {
                     left: 76px;
@@ -684,7 +679,7 @@
                     }
                 }
                 .profileCard {
-                    height: 0px;
+                    height: 0;
                     visibility: hidden;
                     opacity: 1;
                     @include respond-to("small") {
@@ -700,7 +695,7 @@
                             .name {
                                 visibility: hidden;
                                 opacity: 0;
-                                font-size: 0px;
+                                font-size: 0;
                                 @include respond-to("small") {
                                     visibility: visible;
                                     opacity: 1;
@@ -710,7 +705,7 @@
                             .title {
                                 visibility: hidden;
                                 opacity: 0;
-                                font-size: 0px;
+                                font-size: 0;
                                 @include respond-to("small") {
                                     visibility: visible;
                                     opacity: 1;
@@ -723,7 +718,7 @@
                         a {
                             img {
                                 opacity: 0;
-                                width: 0px;
+                                width: 0;
                                 @include respond-to("small") {
                                     opacity: 1;
                                     width: 36px;
@@ -766,7 +761,7 @@
                 .second-line {
                     height: 500px;
                     visibility: visible;
-                    opacity: 1;            
+                    opacity: 1;
                     transform: scale(0.85);
                     @include respond-to("ex_large_max") {
                         transform: scale(0.89);
@@ -774,9 +769,6 @@
                     }
                     @include respond-to("medium") {
                         height: 616px;
-                    }
-                    @include respond-to("small") {
-                        // height: 463px;
                     }
                 }
             }
@@ -806,9 +798,8 @@
             @include respond-to("small") {
                 transition-duration: 0.8s;
                 transition-delay: 0.15s;
-                margin: 0 auto;
+                margin: 100px auto 0;
                 width: 88%;
-                margin-top: 100px;
             }
         }
         &.active {
@@ -849,7 +840,6 @@
                 .dataProfile_wrapper{
                     .profile-image{
                         bottom: 570px;
-                       
                         @include respond-to("medium") {
                             left: 34px;
                             width: 45%;
@@ -865,7 +855,7 @@
                             height: 145px;
 
                             @include respond-to("small"){
-                                height: 0px;
+                                height: 0;
                             }
                         }
                     }

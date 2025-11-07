@@ -73,14 +73,12 @@
   font-size: 18px;
   font-weight: 600;
   color: #191515;
-  //line-height: 2;
   letter-spacing: 0.65px;
 }
 @mixin Int_teamCard_title {
   font-size: 14px;
   font-weight: normal;
   color: #191515;
-  //line-height: 2.57;
   letter-spacing: 0.5px;
 }
 
@@ -110,7 +108,6 @@
 }
 
 @mixin seemore {
-  //left: 50%;
   color: #55bbac;
   line-height: 1.5;
   opacity: 0.7;
@@ -140,7 +137,6 @@
 //----------------card hover---------------------
 @mixin cardHover {
   transition: 0.2s ease-in;
-  //box-shadow: 0 0 16px 4px #142c44;
   box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.16);
   transform: scale(1.05);
 }
@@ -460,8 +456,8 @@
     0% {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(4px);
       filter: blur(4px);
       opacity: 0;
@@ -469,8 +465,8 @@
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(0px);
       filter: blur(0px);
       opacity: 1;
@@ -480,8 +476,8 @@
     0% {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(4px);
       filter: blur(4px);
       opacity: 0;
@@ -489,8 +485,8 @@
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(0px);
       filter: blur(0px);
       opacity: 1;
@@ -530,15 +526,15 @@
     0% {
       -webkit-transform: scale(0);
       transform: scale(0);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
   }
@@ -546,15 +542,15 @@
     0% {
       -webkit-transform: scale(0);
       transform: scale(0);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
   }
@@ -748,15 +744,15 @@
     0% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
     100% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
   }
@@ -764,15 +760,15 @@
     0% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
     100% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
   }
@@ -785,18 +781,13 @@
   background-size: 100vh;
   animation: glowAnimation 0.8s ease-out;
 
-  //animation: glowAnimation 10s infinite;
-
   @keyframes glowAnimation {
     0% {
       background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 0 50%;
     }
-    // 100% {
-    //   background-position: 0% 50%;
-    // }
   }
 }
 //----------------------------------Mobile responsive settings code snippet----------------------------------

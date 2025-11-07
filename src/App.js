@@ -1,7 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import "./App.css";
-import "./style/main.scss";
 
 import Header from "./components/layout/header";
 import Home from "./components/pages/home";
@@ -11,6 +9,8 @@ import Contact from "./components/pages/Contact";
 import ClientPage from "./components/layout/clientPage";
 import NotFoundPage from "./components/templates/404";
 import CharitableContributions from "./components/pages/CharitableContributions";
+
+import "./style/main.scss";
 
 function App() {
   return (
