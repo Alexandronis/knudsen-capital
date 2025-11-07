@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ScrollHandler = () => {
   const location = useLocation();
@@ -9,7 +9,7 @@ const ScrollHandler = () => {
 
     setTimeout(() => {
       window.scrollTo({
-        behavior: "auto",
+        behavior: 'auto',
         top: element ? element.offsetTop : 0,
       });
     }, 0);

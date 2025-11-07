@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function MenuCat() {
   const [onHover, setonHover] = useState(8);
-  const focusData = require("../../../../data/focusData.json");
+  const focusData = require('../../../../data/focusData.json');
 
   return (
     <>
@@ -26,7 +26,7 @@ function MenuCat() {
             {focusData.map((data, index) => {
               return (
                 <li
-                key={data.id}
+                  key={data.id}
                   className="icon-circle"
                   style={{
                     transform: `rotateZ(calc((360deg / 10) * ${data.id + 1}))`,
@@ -35,27 +35,19 @@ function MenuCat() {
                   <span
                     className={
                       onHover === index + 1
-                        ? "white-circle active"
+                        ? 'white-circle active'
                         : onHover === 0
-                        ? "white-circle"
-                        : "white-circle none-active"
+                          ? 'white-circle'
+                          : 'white-circle none-active'
                     }
                     onMouseEnter={() => {
-                      onHover === index + 1
-                        ? setonHover(0)
-                        : setonHover(index + 1);
+                      onHover === index + 1 ? setonHover(0) : setonHover(index + 1);
                     }}
                     style={{
-                      transform: `rotateZ(calc(79deg - (360deg /10) * ${
-                        data.id + 1
-                      }))`,
+                      transform: `rotateZ(calc(79deg - (360deg /10) * ${data.id + 1}))`,
                     }}
                   >
-                    <img
-                      className="icon-image"
-                      src={data.iconImage}
-                      alt={data.alt}
-                    />
+                    <img className="icon-image" src={data.iconImage} alt={data.alt} />
                     <p className={data.className}>{data.title}</p>
                   </span>
                 </li>

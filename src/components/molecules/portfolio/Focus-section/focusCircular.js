@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function FocusCircular() {
   return (
@@ -10,7 +10,7 @@ function FocusCircular() {
             <label
               for="1"
               style={{
-                transform: "rotate(0deg)",
+                transform: 'rotate(0deg)',
               }}
             >
               Health related
@@ -21,7 +21,7 @@ function FocusCircular() {
             <label
               for="2"
               style={{
-                transform: "rotate(-45deg)",
+                transform: 'rotate(-45deg)',
               }}
             >
               Supplements
@@ -32,7 +32,7 @@ function FocusCircular() {
             <label
               for="3"
               style={{
-                transform: "rotate(-90deg)",
+                transform: 'rotate(-90deg)',
               }}
             >
               Protein
@@ -43,7 +43,7 @@ function FocusCircular() {
             <label
               for="4"
               style={{
-                transform: "rotate(-135deg)",
+                transform: 'rotate(-135deg)',
               }}
             >
               Plant-based
@@ -54,7 +54,7 @@ function FocusCircular() {
             <label
               for="5"
               style={{
-                transform: "rotate(-180deg)",
+                transform: 'rotate(-180deg)',
               }}
             >
               Good for you
@@ -65,7 +65,7 @@ function FocusCircular() {
             <label
               for="6"
               style={{
-                transform: "rotate(-225deg)",
+                transform: 'rotate(-225deg)',
               }}
             >
               Clean formulations
@@ -76,7 +76,7 @@ function FocusCircular() {
             <label
               for="7"
               style={{
-                transform: "rotate(-270deg)",
+                transform: 'rotate(-270deg)',
               }}
             >
               Immunity products
@@ -87,7 +87,7 @@ function FocusCircular() {
             <label
               for="8"
               style={{
-                transform: "rotate(-315deg)",
+                transform: 'rotate(-315deg)',
               }}
             >
               Subscriptions

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function CircularMenu() {
   return (
@@ -11,19 +11,15 @@ function CircularMenu() {
           <div className="navigation-circle__inner">
             <ul className="navigation-circle__list">
               <li className="navigation-circle-list-item">
-              <img src="/focus_Icon/Group_1488.svg" />
+                <img src="/focus_Icon/Group_1488.svg" />
                 <a
                   className="navigation-circle-list-item__point"
                   onclick="onClick(1)"
                   onmouseenter="calculateOffset(1)"
                   onMouseLeave="onMouseLeave()"
-
                 >
-
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Subcriptions
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Subcriptions</h3>
                   </div>
                 </a>
               </li>
@@ -35,9 +31,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Health related
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Health related</h3>
                   </div>
                 </a>
               </li>
@@ -49,9 +43,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Suppliments
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Suppliments</h3>
                   </div>
                 </a>
               </li>
@@ -63,9 +55,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Good for you
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Good for you</h3>
                   </div>
                 </a>
               </li>
@@ -77,9 +67,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Clean formulations
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Clean formulations</h3>
                   </div>
                 </a>
               </li>
@@ -91,9 +79,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Immunity products
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Immunity products</h3>
                   </div>
                 </a>
               </li>
@@ -105,9 +91,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Plant-based
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Plant-based</h3>
                   </div>
                 </a>
               </li>
@@ -119,9 +103,7 @@ function CircularMenu() {
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
-                    <h3 className="navigation-circle-list-item__title">
-                      Protein
-                    </h3>
+                    <h3 className="navigation-circle-list-item__title">Protein</h3>
                   </div>
                 </a>
               </li>

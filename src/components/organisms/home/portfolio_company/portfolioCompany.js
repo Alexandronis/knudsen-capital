@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import PortfolioItem from "../../../molecules/home/portfolio_company/portfolioItem";
+import React, { useState } from 'react';
+import PortfolioItem from '../../../molecules/home/portfolio_company/portfolioItem';
 
 function PortfolioCompany() {
-  const companyData = require("../../../../data/companiesData.json");
+  const companyData = require('../../../../data/companiesData.json');
   const [cardselect, setcardselect] = useState(0);
   const [tooltipShow, settooltipShow] = useState(0);
 
@@ -14,27 +14,25 @@ function PortfolioCompany() {
       </div>
       <div className="prtfolio-card">
         <div className="prtfolio-container">
-          {companyData.sort((a,b)=> a.companyName > b.companyName ? 1 : -1).map((company, index) => {
-            return (
-              <div
-                className="card"
-                key={index + 1}
-              >
-                <PortfolioItem
-
-                  companyName={company.companyName}
-                  url={company.url}
-                  logoImage={company.logoImage}
-                  description={company.description}
-                  alt={company.alt}
-                  id={company.id}
-                  cardselected={cardselect}
-                  tooltipShow={tooltipShow}
-                  type={company.type}
-                />
-              </div>
-            );
-          })}
+          {companyData
+            .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
+            .map((company, index) => {
+              return (
+                <div className="card" key={index + 1}>
+                  <PortfolioItem
+                    companyName={company.companyName}
+                    url={company.url}
+                    logoImage={company.logoImage}
+                    description={company.description}
+                    alt={company.alt}
+                    id={company.id}
+                    cardselected={cardselect}
+                    tooltipShow={tooltipShow}
+                    type={company.type}
+                  />
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>

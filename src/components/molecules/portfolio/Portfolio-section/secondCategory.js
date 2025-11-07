@@ -1,12 +1,12 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SecondCategory() {
-  const organization = require("../../../../data/organization.json");
+  const organization = require('../../../../data/organization.json');
   const navigate = useNavigate();
 
   const handleClick = (data) => {
-    navigate("/client-page", { state: { data } });
+    navigate('/client-page', { state: { data } });
   };
 
   return (
@@ -25,17 +25,9 @@ function SecondCategory() {
           <div className="card-investments">
             <div className="card-wrapper">
               {organization[`Category0${num}`].map((data) => (
-                <div
-                  className="logo-box"
-                  key={data.id}
-                  onClick={() => handleClick(data)}
-                >
+                <div className="logo-box" key={data.id} onClick={() => handleClick(data)}>
                   <div className="logo-img-box">
-                    <img
-                      className="image_containar"
-                      src={data.logoImage}
-                      alt={data.id}
-                    />
+                    <img className="image_containar" src={data.logoImage} alt={data.id} />
                   </div>
                 </div>
               ))}

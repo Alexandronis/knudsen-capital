@@ -1,8 +1,8 @@
-import React from "react";
-import InvCard from "../../../molecules/portfolio/InvestmentCategories-section/invCard";
+import React from 'react';
+import InvCard from '../../../molecules/portfolio/InvestmentCategories-section/invCard';
 
 function InvCategories() {
-  const invCategories = require("../../../../data/InvCategories.json");
+  const invCategories = require('../../../../data/InvCategories.json');
   return (
     <div className="content-wrapper Investment">
       <div className="Investment-container">

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function PortfolioItem(props) {
   const [cardselect, setcardselect] = useState(0);
@@ -13,15 +13,15 @@ function PortfolioItem(props) {
           <div
             className={
               cardselect === props.id + 1
-                ? "portfolioItem active"
+                ? 'portfolioItem active'
                 : cardselect === 0
-                ? "portfolioItem"
-                : "portfolioItem none-active"
+                  ? 'portfolioItem'
+                  : 'portfolioItem none-active'
             }
           >
             <LazyLoadImage
               effect="blur"
-            className="port-logo-image"
+              className="port-logo-image"
               src={props.logoImage}
               alt={props.alt}
               onMouseEnter={() => {
@@ -37,10 +37,10 @@ function PortfolioItem(props) {
           <div
             className={
               tooltipShow === props.id + 1
-                ? "tool-tip active"
+                ? 'tool-tip active'
                 : tooltipShow === 0
-                ? "tool-tip"
-                : "tool-tip none-active"
+                  ? 'tool-tip'
+                  : 'tool-tip none-active'
             }
           >
             <div className="arrow"></div>

@@ -1,6 +1,6 @@
-import React from "react";
-import MenuCat from "../../../molecules/portfolio/Focus-section/menuCat";
-import MenuCatMobile from "../../../molecules/portfolio/Focus-section/menuCatMobile";
+import React from 'react';
+import MenuCat from '../../../molecules/portfolio/Focus-section/menuCat';
+import MenuCatMobile from '../../../molecules/portfolio/Focus-section/menuCatMobile';
 
 function Focus() {
   return (

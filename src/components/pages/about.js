@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-import OurMission from "../organisms/about/about-KCLLC-Section/ourMission";
-import OurValues from "../organisms/about/about-KCLLC-Section/ourValues";
-import OurPrinciples from "../organisms/about/about-KCLLC-Section/ourPrinciples";
-import PdfCard from "../organisms/about/Pager-download-section/pagerCard";
-import TeamProfile from "../organisms/about/our-team-Section/teamProfile";
-import ScrollHandler from "../templates/scrollHandler";
-import Footer from "../layout/footer";
+import OurMission from '../organisms/about/about-KCLLC-Section/ourMission';
+import OurValues from '../organisms/about/about-KCLLC-Section/ourValues';
+import OurPrinciples from '../organisms/about/about-KCLLC-Section/ourPrinciples';
+import PdfCard from '../organisms/about/Pager-download-section/pagerCard';
+import TeamProfile from '../organisms/about/our-team-Section/teamProfile';
+import ScrollHandler from '../templates/scrollHandler';
+import Footer from '../layout/footer';
 
 function About() {
   const location = useLocation();
@@ -16,18 +16,18 @@ function About() {
 
   // --- Add "inner-header" class on load ---
   useEffect(() => {
-    if (location.pathname.startsWith("/about")) {
-      document.body.classList.add("inner-header");
+    if (location.pathname.startsWith('/about')) {
+      document.body.classList.add('inner-header');
     }
     return () => {
-      document.body.classList.remove("inner-header");
+      document.body.classList.remove('inner-header');
     };
   }, [location.pathname]);
 
   // --- Scroll into view if visiting /about ---
   useEffect(() => {
-    if (location.pathname === "/about" && aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "auto", block: "start" });
+    if (location.pathname === '/about' && aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
       window.scrollBy(0, -100);
     }
   }, [location.pathname]);
@@ -52,16 +52,14 @@ function About() {
                 <span></span>
                 <h1 className="main-title">About KC/LLC Investors</h1>
                 <h2 className="about-us-text-mobile">
-                  We invest in early-stage, high-growth businesses that have the
-                  potential to improve lives, and change their industries and
-                  the world for the better.
+                  We invest in early-stage, high-growth businesses that have the potential to
+                  improve lives, and change their industries and the world for the better.
                 </h2>
               </div>
               <div className="company-values">
                 <h2 className="about-us-text">
-                  We invest in early-stage, high-growth businesses that have the
-                  potential to improve lives, and change their industries and
-                  the world for the better.
+                  We invest in early-stage, high-growth businesses that have the potential to
+                  improve lives, and change their industries and the world for the better.
                 </h2>
               </div>
             </div>

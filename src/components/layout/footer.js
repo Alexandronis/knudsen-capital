@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import Logo from "../../assets/Logo/KCLLC_Navbar_Logo.svg";
-import FbIcon from "../../assets/Footer/facebook_icon.svg";
-import instagramIcon from "../../assets/Footer/instagram_icon.svg";
-import TwitterIcon from "../../assets/Footer/twitter_icon.svg";
-import linkedincon from "../../assets/Footer/linkedin_icon.svg";
+import Logo from '../../assets/Logo/KCLLC_Navbar_Logo.svg';
+import FbIcon from '../../assets/Footer/facebook_icon.svg';
+import instagramIcon from '../../assets/Footer/instagram_icon.svg';
+import TwitterIcon from '../../assets/Footer/twitter_icon.svg';
+import linkedincon from '../../assets/Footer/linkedin_icon.svg';
 
 function Footer() {
   // reset Dropdown created by sachith
   const resetDropdown = () => {
-    localStorage.removeItem("portfolioOption");
+    localStorage.removeItem('portfolioOption');
   };
   // Auto update year in footer copyright section created by sachith
   const [date, setDate] = useState();
@@ -32,7 +32,7 @@ function Footer() {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                PO Box 7,
+                  PO Box 7,
                   <br></br>Los Gatos,
                   <br></br>CA 95031
                 </p>
@@ -199,7 +199,7 @@ function Footer() {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                PO Box 7,
+                  PO Box 7,
                   <br></br>Los Gatos,
                   <br></br>CA 95031
                 </p>

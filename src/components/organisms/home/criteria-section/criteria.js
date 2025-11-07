@@ -1,7 +1,7 @@
-import React from "react";
-import Purpose from "../../../../assets/Criteria-Section/PURPOSE.svg";
-import People from "../../../../assets/Criteria-Section/PEOPLE.svg";
-import Profit from "../../../../assets/Criteria-Section/PROFIT.svg";
+import React from 'react';
+import Purpose from '../../../../assets/Criteria-Section/PURPOSE.svg';
+import People from '../../../../assets/Criteria-Section/PEOPLE.svg';
+import Profit from '../../../../assets/Criteria-Section/PROFIT.svg';
 
 function Criteria() {
   return (
@@ -46,8 +46,8 @@ function Criteria() {
         <div className="card-containar">
           <div className="center-text">
             <p>
-              We invest in early-stage, high-growth businesses that change their
-              industries and improve lives - individually and on a global scale.
+              We invest in early-stage, high-growth businesses that change their industries and
+              improve lives - individually and on a global scale.
             </p>
           </div>
         </div>
@@ -61,8 +61,8 @@ function Criteria() {
         <div className="card-containar">
           <div className="center-text">
             <p>
-              We treat people with respect, and only invest when we're confident
-              that we can add real value.
+              We treat people with respect, and only invest when we're confident that we can add
+              real value.
             </p>
           </div>
         </div>

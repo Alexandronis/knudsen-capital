@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import PlaceholderAnime from "../common/placeholder";
-import Footer from "./footer";
-import CloseIcon from "../../assets/client-page/close-btn.svg";
+import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import PlaceholderAnime from '../common/placeholder';
+import Footer from './footer';
+import CloseIcon from '../../assets/client-page/close-btn.svg';
 
 function ClientPage() {
   const location = useLocation();
@@ -13,22 +13,22 @@ function ClientPage() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   function handleClick() {
-    navigate("/portfolio");
-    document.body.classList.remove("popup-page");
+    navigate('/portfolio');
+    document.body.classList.remove('popup-page');
   }
 
   // Add/remove body class when on this page
   useEffect(() => {
-    if (location.pathname === "/client-page") {
-      document.body.classList.add("popup-page", "inner-header");
+    if (location.pathname === '/client-page') {
+      document.body.classList.add('popup-page', 'inner-header');
     } else {
-      document.body.classList.remove("popup-page", "inner-header");
+      document.body.classList.remove('popup-page', 'inner-header');
     }
   }, [location.pathname]);
 
   // Scroll effect
   useEffect(() => {
-    if (location.pathname === "/client-page" && clientPageRef.current) {
+    if (location.pathname === '/client-page' && clientPageRef.current) {
       clientPageRef.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
@@ -43,7 +43,7 @@ function ClientPage() {
     return (
       <div className="inner-page-wrapper client-wrapper">
         <h2>No client data available.</h2>
-        <button onClick={() => navigate("/portfolio")}>Go Back</button>
+        <button onClick={() => navigate('/portfolio')}>Go Back</button>
       </div>
     );
   }
@@ -53,12 +53,7 @@ function ClientPage() {
       <link rel="canonical" href="https://kcinvestors.com/client-page" />
       <div className="content-wrapper">
         <div className="content-inner-box">
-          <img
-            className="close-img"
-            onClick={handleClick}
-            src={CloseIcon}
-            alt="close Icon"
-          />
+          <img className="close-img" onClick={handleClick} src={CloseIcon} alt="close Icon" />
 
           <div className="company-values">
             <div className="values-title">
@@ -70,7 +65,7 @@ function ClientPage() {
           <div className="card-content-wrapper">
             <div
               className="placeholder-wrapper cover"
-              style={{ display: isImageLoaded ? "none" : "block" }}
+              style={{ display: isImageLoaded ? 'none' : 'block' }}
             >
               <PlaceholderAnime />
             </div>
@@ -80,17 +75,13 @@ function ClientPage() {
               className="cover-photo"
               alt={data.alt}
               onLoad={onLoadedData}
-              style={{ display: isImageLoaded ? "block" : "none" }}
+              style={{ display: isImageLoaded ? 'block' : 'none' }}
             />
 
             <div className="card-content-col">
               <div className="image-cap">
                 <div className="logo-img-box">
-                  <img
-                    src={data.LargeLogoImage}
-                    alt={data.alt}
-                    className="profile-image"
-                  />
+                  <img src={data.LargeLogoImage} alt={data.alt} className="profile-image" />
                   <a
                     href={data.url}
                     className="btn-btn-visit mobile"
@@ -160,11 +151,7 @@ function ClientPage() {
                     <ul>
                       <li>Website</li>
                       <h5>
-                        <a
-                          href={data.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <a href={data.url} target="_blank" rel="noopener noreferrer">
                           {data.website}
                         </a>
                       </h5>

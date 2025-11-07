@@ -1,17 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import Slider from "react-slick";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import React, { useEffect, useRef, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Slider from 'react-slick';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import AddressIcon from "../../assets/Contact-page/pin.svg";
-import EmailIcon from "../../assets/Contact-page/email.svg";
-import PhoneIcon from "../../assets/Contact-page/phone-call.svg";
-import prev from "../../assets/Contact-page/Prev.svg";
-import Next from "../../assets/Contact-page/Next.svg";
+import AddressIcon from '../../assets/Contact-page/pin.svg';
+import EmailIcon from '../../assets/Contact-page/email.svg';
+import PhoneIcon from '../../assets/Contact-page/phone-call.svg';
+import prev from '../../assets/Contact-page/Prev.svg';
+import Next from '../../assets/Contact-page/Next.svg';
 
-import PlaceholderAnime from "../common/placeholder";
-import Footer from "../layout/footer";
+import PlaceholderAnime from '../common/placeholder';
+import Footer from '../layout/footer';
 
 const NextArrow = ({ className, style, onClick }) => (
   <>
@@ -19,9 +19,9 @@ const NextArrow = ({ className, style, onClick }) => (
       className={className}
       style={{
         ...style,
-        display: "block",
-        background: "#55bbac",
-        borderRadius: "50%",
+        display: 'block',
+        background: '#55bbac',
+        borderRadius: '50%',
       }}
       onClick={onClick}
     />
@@ -30,8 +30,8 @@ const NextArrow = ({ className, style, onClick }) => (
       src={Next}
       style={{
         ...style,
-        width: "10px",
-        marginRight: "10px",
+        width: '10px',
+        marginRight: '10px',
       }}
       onClick={onClick}
       alt="Next button"
@@ -45,9 +45,9 @@ const PrevArrow = ({ className, style, onClick }) => (
       className={className}
       style={{
         ...style,
-        display: "block",
-        background: "#55bbac",
-        borderRadius: "50%",
+        display: 'block',
+        background: '#55bbac',
+        borderRadius: '50%',
       }}
       onClick={onClick}
     />
@@ -56,8 +56,8 @@ const PrevArrow = ({ className, style, onClick }) => (
       src={prev}
       style={{
         ...style,
-        width: "10px",
-        marginLeft: "10px",
+        width: '10px',
+        marginLeft: '10px',
       }}
       onClick={onClick}
       alt="Previous button"
@@ -66,21 +66,21 @@ const PrevArrow = ({ className, style, onClick }) => (
 );
 
 function Contact() {
-  const sliderData = require("../../data/contactSlider.json");
+  const sliderData = require('../../data/contactSlider.json');
   const location = useLocation(); // ✅ correct hook
   const contactRef = useRef();
 
   // ✅ Use `location.pathname` instead of props
   useEffect(() => {
-    if (location.pathname === "/contact") {
-      document.body.classList.add("inner-header");
+    if (location.pathname === '/contact') {
+      document.body.classList.add('inner-header');
     } else {
-      document.body.classList.remove("inner-header");
+      document.body.classList.remove('inner-header');
     }
   }, [location.pathname]);
 
   useEffect(() => {
-    if (location.pathname === "/contact" && contactRef.current) {
+    if (location.pathname === '/contact' && contactRef.current) {
       contactRef.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
@@ -96,7 +96,7 @@ function Contact() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    lazyLoad: "progressive",
+    lazyLoad: 'progressive',
     autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -119,7 +119,7 @@ function Contact() {
             <div key={slider.id}>
               <div
                 className="placeholder-wrapper"
-                style={{ display: isImageLoaded ? "none" : "block" }}
+                style={{ display: isImageLoaded ? 'none' : 'block' }}
               >
                 <PlaceholderAnime />
               </div>
@@ -128,7 +128,7 @@ function Contact() {
                 src={slider.image}
                 alt={slider.alt}
                 onLoad={onLoadedData}
-                style={{ display: isImageLoaded ? "block" : "none" }}
+                style={{ display: isImageLoaded ? 'block' : 'none' }}
               />
             </div>
           ))}
@@ -146,17 +146,15 @@ function Contact() {
                 <div className="common_card">
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img
-                        className="image_icon"
-                        src={AddressIcon}
-                        alt="Address Icon"
-                      />
+                      <img className="image_icon" src={AddressIcon} alt="Address Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">
                         <ul>
                           <li>
-                            PO Box 7,<br /> Los Gatos,<br /> CA, 95031
+                            PO Box 7,
+                            <br /> Los Gatos,
+                            <br /> CA, 95031
                           </li>
                         </ul>
                       </div>
@@ -165,11 +163,7 @@ function Contact() {
 
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img
-                        className="image_icon"
-                        src={PhoneIcon}
-                        alt="Phone Icon"
-                      />
+                      <img className="image_icon" src={PhoneIcon} alt="Phone Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">
@@ -182,11 +176,7 @@ function Contact() {
 
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img
-                        className="image_icon"
-                        src={EmailIcon}
-                        alt="Email Icon"
-                      />
+                      <img className="image_icon" src={EmailIcon} alt="Email Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">

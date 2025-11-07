@@ -1,14 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function FirstCategory() {
-  const organization = require("../../../../data/unrealizedInvestment.json");
+  const organization = require('../../../../data/unrealizedInvestment.json');
   const navigate = useNavigate();
 
   const handleClick = (data) => {
-    navigate("/client-page", { state: { data } });
+    navigate('/client-page', { state: { data } });
   };
 
   return (
@@ -27,11 +27,7 @@ function FirstCategory() {
           {organization
             .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
             .map((data, index) => (
-              <div
-                className="logo-box"
-                key={index}
-                onClick={() => handleClick(data)}
-              >
+              <div className="logo-box" key={index} onClick={() => handleClick(data)}>
                 <div className="logo-img-box">
                   <LazyLoadImage
                     effect="blur"

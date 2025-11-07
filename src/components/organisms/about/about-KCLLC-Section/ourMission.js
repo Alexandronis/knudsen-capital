@@ -1,5 +1,5 @@
-import React from "react";
-import Our_Mission from "../../../../assets/About-page/Our_Mission.svg";
+import React from 'react';
+import Our_Mission from '../../../../assets/About-page/Our_Mission.svg';
 function OurMission() {
   return (
     <>

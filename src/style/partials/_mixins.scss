@@ -149,7 +149,7 @@
 @mixin transitinTime {
   transition-duration: 0.8s;
   transition-delay: 0.15s;
-  @include respond-to("small") {
+  @include respond-to('small') {
     transition-duration: 0.5s;
     transition-delay: 0s;
   }
@@ -273,15 +273,15 @@
 @mixin image_cap_in {
   -webkit-animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  @include respond-to("medium") {
+  @include respond-to('medium') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
@@ -776,7 +776,7 @@
 
 //-----------glow drop effect--------------------
 @mixin glowEffect {
-  background-image: linear-gradient(-45deg, transparent 44%, #ffffff 50% , transparent 57%);
+  background-image: linear-gradient(-45deg, transparent 44%, #ffffff 50%, transparent 57%);
   opacity: 0.3;
   background-size: 100vh;
   animation: glowAnimation 0.8s ease-out;

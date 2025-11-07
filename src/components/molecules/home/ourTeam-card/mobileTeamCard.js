@@ -1,5 +1,5 @@
-import React from "react";
-import ArrowUp from "../../../../assets/Our-Team/team_arrow_up.svg";
+import React from 'react';
+import ArrowUp from '../../../../assets/Our-Team/team_arrow_up.svg';
 
 const MobileTeamCard = ({
   name,
@@ -26,9 +26,11 @@ const MobileTeamCard = ({
                 <a href={email}>
                   <img src={emailIcon} alt="email icon"></img>
                 </a>
-                {linkedin ? <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                  <img src={linkedinIcon} alt="linkedin icon"></img>
-                </a> : null }
+                {linkedin ? (
+                  <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinIcon} alt="linkedin icon"></img>
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

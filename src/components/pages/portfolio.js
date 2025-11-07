@@ -1,30 +1,30 @@
-import React, { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-import InvCriteria from "../organisms/portfolio/InvCriteria-section/InvCriteria";
-import CategoryWapper from "../organisms/portfolio/Category-section/categoryWrapper";
-import Focus from "../organisms/portfolio/Focus-section/focus";
-import Footer from "../layout/footer";
+import InvCriteria from '../organisms/portfolio/InvCriteria-section/InvCriteria';
+import CategoryWapper from '../organisms/portfolio/Category-section/categoryWrapper';
+import Focus from '../organisms/portfolio/Focus-section/focus';
+import Footer from '../layout/footer';
 
 function Portfolio() {
   const location = useLocation();
   const portfolioRef = useRef();
 
   useEffect(() => {
-    if (location.pathname === "/portfolio" || location.pathname === "/portfolio/") {
-      document.body.classList.add("inner-header");
+    if (location.pathname === '/portfolio' || location.pathname === '/portfolio/') {
+      document.body.classList.add('inner-header');
     } else {
-      document.body.classList.remove("inner-header");
+      document.body.classList.remove('inner-header');
     }
 
-    if (location.pathname === "/portfolio-page") {
-      localStorage.setItem("activePage", "portfolio");
+    if (location.pathname === '/portfolio-page') {
+      localStorage.setItem('activePage', 'portfolio');
     }
   }, [location.pathname]);
 
   useEffect(() => {
-    if (location.pathname === "/portfolio" && portfolioRef.current) {
+    if (location.pathname === '/portfolio' && portfolioRef.current) {
       portfolioRef.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
@@ -34,9 +34,7 @@ function Portfolio() {
     <>
       <div className="portfolio-page-wrapper" ref={portfolioRef}>
         <Helmet>
-          <title>
-            KC/LLC investment portfolio in early-stage high-growth businesses
-          </title>
+          <title>KC/LLC investment portfolio in early-stage high-growth businesses</title>
           <meta
             name="description"
             content="KC/LLC portfolio companies are: Lasso, Playper, Good money, Designer protein, Good money, Cerebelly, LB equity and XRP"

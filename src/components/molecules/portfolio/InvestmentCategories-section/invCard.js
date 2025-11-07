@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
 function InvCard(props) {
-  
   return (
     <div className="inv-card">
       <div className="first-line">

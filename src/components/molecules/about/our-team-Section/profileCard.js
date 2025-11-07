@@ -1,13 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const ProfileCard = ({
-  name,
-  title,
-  longDescription,
-  profileSrc,
-  linkedin,
-  email,
-}) => {
+const ProfileCard = ({ name, title, longDescription, profileSrc, linkedin, email }) => {
   return (
     <>
       <div className="profile-largeCard">
@@ -22,9 +15,11 @@ const ProfileCard = ({
               <a href={email}>
                 <img src="/Our-Team/Icon-set/email.svg" alt="Email Icon" />
               </a>
-              {linkedin ? <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                <img src="/Our-Team/Icon-set/linkedin.svg" alt="Linkedin Icon"  />
-              </a> :null}
+              {linkedin ? (
+                <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                  <img src="/Our-Team/Icon-set/linkedin.svg" alt="Linkedin Icon" />
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

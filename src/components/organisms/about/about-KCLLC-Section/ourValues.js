@@ -1,8 +1,8 @@
-import React from "react";
-import Our_Values_1 from "../../../../assets/About-page/Our_Values_1.svg";
-import Our_Values_2 from "../../../../assets/About-page/Our_Values_2.svg";
-import Our_Values_3 from "../../../../assets/About-page/Our_Values_3.svg";
-import Our_Values_4 from "../../../../assets/About-page/Our_Values_4.svg";
+import React from 'react';
+import Our_Values_1 from '../../../../assets/About-page/Our_Values_1.svg';
+import Our_Values_2 from '../../../../assets/About-page/Our_Values_2.svg';
+import Our_Values_3 from '../../../../assets/About-page/Our_Values_3.svg';
+import Our_Values_4 from '../../../../assets/About-page/Our_Values_4.svg';
 
 function OurValues() {
   return (
@@ -19,7 +19,9 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                <p>Do we believe in the company's<b> purpose</b>? </p>
+                <p>
+                  Do we believe in the company's<b> purpose</b>?{' '}
+                </p>
               </div>
             </div>
           </div>
@@ -32,7 +34,9 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                <p>What <b>impact</b> will the business have on the world?</p>
+                <p>
+                  What <b>impact</b> will the business have on the world?
+                </p>
               </div>
             </div>
           </div>
@@ -45,7 +49,9 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                <p>Do we believe in the <b>people</b> behind the company?</p>
+                <p>
+                  Do we believe in the <b>people</b> behind the company?
+                </p>
               </div>
             </div>
           </div>
@@ -58,7 +64,9 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                <p>Can the business drive a significant <b>sustainable</b> profit?</p>
+                <p>
+                  Can the business drive a significant <b>sustainable</b> profit?
+                </p>
               </div>
             </div>
           </div>

@@ -1,30 +1,28 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-import HomeBanner from "../organisms/home/homeBanner/homeBanner";
-import Criteria from "../organisms/home/criteria-section/criteria";
-import PortfolioCompany from "../organisms/home/portfolio_company/portfolioCompany";
-import Value from "../organisms/home/value-section/value";
-import OurTeam from "../organisms/home/ourTeam/ourTeam";
-import HomeContact from "../organisms/home/home-contact/homeContact";
-import Footer from "../layout/footer";
+import HomeBanner from '../organisms/home/homeBanner/homeBanner';
+import Criteria from '../organisms/home/criteria-section/criteria';
+import PortfolioCompany from '../organisms/home/portfolio_company/portfolioCompany';
+import Value from '../organisms/home/value-section/value';
+import OurTeam from '../organisms/home/ourTeam/ourTeam';
+import HomeContact from '../organisms/home/home-contact/homeContact';
+import Footer from '../layout/footer';
 
 function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      document.body.classList.remove("inner-header");
+    if (location.pathname === '/') {
+      document.body.classList.remove('inner-header');
     }
   }, [location.pathname]);
 
   return (
     <div>
       <Helmet>
-        <title>
-          KC/LLC investors - Investing in early-stage, high-growth businesses
-        </title>
+        <title>KC/LLC investors - Investing in early-stage, high-growth businesses</title>
         <meta
           name="description"
           content="KC/LLC is a family office for early stage investments for your high growth business"

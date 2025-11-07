@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function MenuCatMobile() {
   const [onHover, setonHover] = useState(8);
   const [dotPosition, setdotPosition] = useState(4);
-  const focusData = require("../../../../data/focusData.json");
+  const focusData = require('../../../../data/focusData.json');
   return (
     <>
       <div className="menu-section-mobile">
@@ -19,10 +19,10 @@ function MenuCatMobile() {
                 key={data.id}
                 className={
                   onHover === index + 1
-                    ? "titles active"
+                    ? 'titles active'
                     : onHover === 0
-                    ? "titles"
-                    : "titles none-active"
+                      ? 'titles'
+                      : 'titles none-active'
                 }
                 onMouseEnter={() => {
                   onHover === index + 1 ? setonHover(0) : setonHover(index + 1);

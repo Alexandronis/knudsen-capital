@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import TeamCard from "../../../molecules/home/ourTeam-card/teamCard";
-import MobileTeamCard from "../../../molecules/home/ourTeam-card/mobileTeamCard";
+import React, { useState } from 'react';
+import TeamCard from '../../../molecules/home/ourTeam-card/teamCard';
+import MobileTeamCard from '../../../molecules/home/ourTeam-card/mobileTeamCard';
 
 function OurTeam() {
-  const memberDetails = require("../../../../data/memberDetails.json");
+  const memberDetails = require('../../../../data/memberDetails.json');
   const [cardhover, setCardHover] = useState(0);
   return (
     <div className="Our-team">
@@ -16,17 +16,15 @@ function OurTeam() {
             <div
               className={
                 cardhover === index + 1
-                  ? "sec-team-card active"
+                  ? 'sec-team-card active'
                   : cardhover === 0
-                  ? "sec-team-card"
-                  : "sec-team-card none-active"
+                    ? 'sec-team-card'
+                    : 'sec-team-card none-active'
               }
               id={index}
               key={index}
               onClick={() => {
-                cardhover === index + 1
-                  ? setCardHover(0)
-                  : setCardHover(index + 1);
+                cardhover === index + 1 ? setCardHover(0) : setCardHover(index + 1);
               }}
             >
               <TeamCard
@@ -48,22 +46,20 @@ function OurTeam() {
         })}
       </div>
       <div className="second-card-mobile-wrapper">
-      {memberDetails.map((member, index) => {
+        {memberDetails.map((member, index) => {
           return (
             <div
               className={
                 cardhover === index + 1
-                  ? "team-card active"
+                  ? 'team-card active'
                   : cardhover === 0
-                  ? "team-card"
-                  : "team-card none-active"
+                    ? 'team-card'
+                    : 'team-card none-active'
               }
               id={index}
               key={index}
               onClick={() => {
-                cardhover === index + 1
-                  ? setCardHover(0)
-                  : setCardHover(index + 1);
+                cardhover === index + 1 ? setCardHover(0) : setCardHover(index + 1);
               }}
             >
               <MobileTeamCard
