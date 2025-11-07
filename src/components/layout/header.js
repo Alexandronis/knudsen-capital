@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import Logo from "../../assets/Logo/KCLLC_Navbar_Logo.svg";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       setScroll(window.scrollY > 50);
-    });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const menuOnclick = () => {
-    document.getElementById("burgerBtnMob").checked = false;
+    const checkbox = document.getElementById("burgerBtnMob");
+    if (checkbox) checkbox.checked = false;
+  };
+
+  const goTo = (path) => {
+    menuOnclick();
+    navigate(path, { replace: true });
   };
 
   return (
@@ -23,104 +31,99 @@ function Header() {
       <header className="main-header">
         <div
           className="logo"
-          onClick={() => {
-            localStorage.setItem("activePage", "");
-          }}
+          onClick={() => localStorage.setItem("activePage", "")}
         >
           <a href="/">
-          <img src={Logo} alt="KC/LLC Logo" />
-
+            <img src={Logo} alt="KC/LLC Logo" />
           </a>
         </div>
+
         <nav>
           <div className="nav-list">
             <ul>
               <li className="list">
                 <Link
-                      className={location.pathname === "/about" || location.pathname === "/about/" ? "active" : ""}
-                      to="/about"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/about");
-                      }}
-                    >
-                      <p className={scroll || location.pathname !== "" ? "white-font" : ""}>About</p>
-                      <span></span>
-                  </Link>
-
+                  className={
+                    location.pathname === "/about" || location.pathname === "/about/"
+                      ? "active"
+                      : ""
+                  }
+                  to="/about"
+                  spy={true}
+                  hashSpy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={1500}
+                  onClick={() => goTo("/about")}
+                >
+                  <p className={scroll || location.pathname !== "" ? "white-font" : ""}>About</p>
+                  <span></span>
+                </Link>
               </li>
-              <li className="list">
-                    <Link
-                      className={location.pathname === "/portfolio" ? "active" : ""}
-                      to="/portfolio"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/portfolio");
-                      }}
-                    >
-                      <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Portfolio</p>
-                      <span></span>
-                    </Link>
 
+              <li className="list">
+                <Link
+                  className={location.pathname === "/portfolio" ? "active" : ""}
+                  to="/portfolio"
+                  spy={true}
+                  hashSpy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={1500}
+                  onClick={() => goTo("/portfolio")}
+                >
+                  <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Portfolio</p>
+                  <span></span>
+                </Link>
               </li>
-              <li className="list">
-                    <Link
-                      className={location.pathname === "/charitable-contributions" ? "active" : ""}
-                      to="/charitable-contributions"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/charitable-contributions");
-                      }}
-                    >
-                      <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Charitable Contributions</p>
-                      <span></span>
-                    </Link>
-                  </li>
-                  <li className="list">
-                    <Link
-                      className={location.pathname === "/contact" ? "active" : ""}
-                      to="/contact"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={2500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/contact");
-                      }}
-                    >
-                      <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Contact</p>
-                      <span></span>
-                    </Link>
 
-                  </li>
+              <li className="list">
+                <Link
+                  className={location.pathname === "/charitable-contributions" ? "active" : ""}
+                  to="/charitable-contributions"
+                  spy={true}
+                  hashSpy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={1500}
+                  onClick={() => goTo("/charitable-contributions")}
+                >
+                  <p className={scroll || location.pathname !== "" ? "white-font" : ""}>
+                    Charitable Contributions
+                  </p>
+                  <span></span>
+                </Link>
+              </li>
+
+              <li className="list">
+                <Link
+                  className={location.pathname === "/contact" ? "active" : ""}
+                  to="/contact"
+                  spy={true}
+                  hashSpy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={2500}
+                  onClick={() => goTo("/contact")}
+                >
+                  <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Contact</p>
+                  <span></span>
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
       </header>
+
+      {/* MOBILE HEADER */}
       <header className="header-mob">
         <nav>
           <div className="logo">
             <a href="/">
-            <img src={Logo} alt="KC/LLC Logo" />
+              <img src={Logo} alt="KC/LLC Logo" />
             </a>
           </div>
+
           <div className="menu">
             <div className="menuIcon">
               <div id="menuToggle">
@@ -138,10 +141,7 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/about");
-                      }}
+                      onClick={() => goTo("/about")}
                     >
                       About
                     </Link>
@@ -156,44 +156,37 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/portfolio");
-                      }}
+                      onClick={() => goTo("/portfolio")}
                     >
                       Portfolio
                     </Link>
                   </li>
+
                   <li className="list">
                     <Link
-                      className={location.pathname === "/charitable-contributions" ? "active" : " "}
+                      className={location.pathname === "/charitable-contributions" ? "active" : ""}
                       to="/charitable-contributions"
                       spy={true}
                       hashSpy={true}
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/charitable-contributions");
-                      }}
+                      onClick={() => goTo("/charitable-contributions")}
                     >
                       Charitable Contributions
                     </Link>
                   </li>
+
                   <li className="list">
                     <Link
-                      className={location.pathname === "/contact" ? "active" : " "}
+                      className={location.pathname === "/contact" ? "active" : ""}
                       to="/contact"
                       spy={true}
                       hashSpy={true}
                       smooth={true}
                       offset={-150}
                       duration={2500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/contact");
-                      }}
+                      onClick={() => goTo("/contact")}
                     >
                       Contact
                     </Link>

@@ -1,5 +1,5 @@
 import React from "react";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 
 import ScrollHandler from "../templates/scrollHandler";
 import Footer from "../layout/footer";
@@ -15,13 +15,13 @@ function CharitableContributions() {
       <div
         className='charityble-contribution-wrapper'
         >
-        <MetaTags>
+        <Helmet>
           <title></title>
           <meta
             name='description'
             content=''
           />
-        </MetaTags>
+        </Helmet>
         <link rel='canonical' href='https://kcinvestors.com/charitable-contributions'></link>
         <section id='#charity-kcllc'>
           <div className='content-wrapper'>
