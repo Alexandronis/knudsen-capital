@@ -1,119 +1,48 @@
 import React from "react";
-
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function SecondCategory() {
   const organization = require("../../../../data/organization.json");
-  const history = useHistory();
+  const navigate = useNavigate();
+
+  const handleClick = (data) => {
+    navigate("/client-page", { state: { data } });
+  };
+
   return (
     <>
-      <div className="Category-wrapper">
-        <div className="Category-title">
-          <div className="values-title">
-            <div className="sub-heaading">
-              <span></span>
-              <h2>Category 04</h2>
+      {[4, 5, 6].map((num) => (
+        <div className="Category-wrapper" key={num}>
+          <div className="Category-title">
+            <div className="values-title">
+              <div className="sub-heaading">
+                <span></span>
+                <h2>{`Category 0${num}`}</h2>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="card-investments">
-          <div className="card-wrapper">
-            {organization.Category04.map((data) => {
-              return (
+          <div className="card-investments">
+            <div className="card-wrapper">
+              {organization[`Category0${num}`].map((data) => (
                 <div
                   className="logo-box"
                   key={data.id}
-                  onClick={() => {
-                    history.push({
-                      pathname: "/client-page",
-                      state: {
-                        data: data,
-                      },
-                    });
-                  }}
+                  onClick={() => handleClick(data)}
                 >
                   <div className="logo-img-box">
-                    <img className="image_containar" src={data.logoImage} />
+                    <img
+                      className="image_containar"
+                      src={data.logoImage}
+                      alt={data.id}
+                    />
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="Category-wrapper">
-        <div className="Category-title">
-          <div className="values-title">
-            <div className="sub-heaading">
-              <span></span>
-              <h2>Category 05</h2>
+              ))}
             </div>
           </div>
         </div>
-
-        <div className="card-investments">
-          <div className="card-wrapper">
-            {organization.Category05.map((data) => {
-              return (
-                <div
-                  className="logo-box"
-                  key={data.id}
-                  onClick={() => {
-                    history.push({
-                      pathname: "/client-page",
-                      state: {
-                        data: data,
-                      },
-                    });
-                  }}
-                >
-                  <div className="logo-img-box">
-                    <img className="image_containar" src={data.logoImage} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="Category-wrapper">
-        <div className="Category-title">
-          <div className="values-title">
-            <div className="sub-heaading">
-              <span></span>
-              <h2>Category 06</h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-investments">
-          <div className="card-wrapper">
-            {organization.Category06.map((data) => {
-              return (
-                <div
-                  className="logo-box"
-                  key={data.id}
-                  onClick={() => {
-                    history.push({
-                      pathname: "/client-page",
-                      state: {
-                        data: data,
-                      },
-                    });
-                  }}
-                >
-                  <div className="logo-img-box">
-                    <img className="image_containar" src={data.logoImage} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      ))}
     </>
   );
 }
