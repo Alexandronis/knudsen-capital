@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import ScrollHandler from '../templates/scrollHandler';
-import Footer from '../layout/footer';
-import Chart from '../molecules/charity/chart';
+import ScrollHandler from '../templates/ScrollHandler';
+import Footer from '../layout/Footer';
+import Chart from '../molecules/Charity/Chart';
 
 const charityData = require('../../data/charityData.json');
 const otherCharities = require('../../data/otherCharity.json');

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './components/layout/header';
-import Home from './components/pages/home';
-import About from './components/pages/about';
-import Portfolio from './components/pages/portfolio';
+import Header from './components/layout/Header';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
-import ClientPage from './components/layout/clientPage';
+import ClientPage from './components/layout/ClientPage';
 import NotFoundPage from './components/templates/404';
 import CharitableContributions from './components/pages/CharitableContributions';
 

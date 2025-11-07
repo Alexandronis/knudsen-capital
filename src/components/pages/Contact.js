@@ -10,8 +10,8 @@ import phoneIcon from '../../assets/contact-page/phone-call.svg';
 import prevIcon from '../../assets/contact-page/prev.svg';
 import nextIcon from '../../assets/contact-page/next.svg';
 
-import PlaceholderAnime from '../common/placeholder';
-import Footer from '../layout/footer';
+import PlaceholderAnime from '../common/Placeholder';
+import Footer from '../layout/Footer';
 
 const NextArrow = ({ className, style, onClick }) => (
   <>
