@@ -8,7 +8,7 @@ function FocusCircular() {
           <li>
             <input id="1" type="checkbox" />
             <label
-              for="1"
+              htmlFor="1"
               style={{
                 transform: 'rotate(0deg)',
               }}
@@ -19,7 +19,7 @@ function FocusCircular() {
           <li>
             <input id="2" type="checkbox" />
             <label
-              for="2"
+              htmlFor="2"
               style={{
                 transform: 'rotate(-45deg)',
               }}
@@ -30,7 +30,7 @@ function FocusCircular() {
           <li>
             <input id="3" type="checkbox" />
             <label
-              for="3"
+              htmlFor="3"
               style={{
                 transform: 'rotate(-90deg)',
               }}
@@ -41,7 +41,7 @@ function FocusCircular() {
           <li>
             <input id="4" type="checkbox" />
             <label
-              for="4"
+              htmlFor="4"
               style={{
                 transform: 'rotate(-135deg)',
               }}
@@ -52,7 +52,7 @@ function FocusCircular() {
           <li>
             <input id="5" type="checkbox" />
             <label
-              for="5"
+              htmlFor="5"
               style={{
                 transform: 'rotate(-180deg)',
               }}
@@ -63,7 +63,7 @@ function FocusCircular() {
           <li>
             <input id="6" type="checkbox" />
             <label
-              for="6"
+              htmlFor="6"
               style={{
                 transform: 'rotate(-225deg)',
               }}
@@ -74,7 +74,7 @@ function FocusCircular() {
           <li>
             <input id="7" type="checkbox" />
             <label
-              for="7"
+              htmlFor="7"
               style={{
                 transform: 'rotate(-270deg)',
               }}
@@ -85,7 +85,7 @@ function FocusCircular() {
           <li>
             <input id="8" type="checkbox" />
             <label
-              for="8"
+              htmlFor="8"
               style={{
                 transform: 'rotate(-315deg)',
               }}

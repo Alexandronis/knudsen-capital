@@ -14,8 +14,8 @@ function CircularMenu() {
                 <img src="/focus_Icon/Group_1488.svg" />
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(1)"
-                  onmouseenter="calculateOffset(1)"
+                  onClick="onClick(1)"
+                  onMouseEnter="calculateOffset(1)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -26,8 +26,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(2)"
-                  onmouseenter="calculateOffset(2)"
+                  onClick="onClick(2)"
+                  onMouseEnter="calculateOffset(2)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -38,8 +38,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(3)"
-                  onmouseenter="calculateOffset(3)"
+                  onClick="onClick(3)"
+                  onMouseEnter="calculateOffset(3)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -50,8 +50,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(4)"
-                  onmouseenter="calculateOffset(4)"
+                  onClick="onClick(4)"
+                  onMouseEnter="calculateOffset(4)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -62,8 +62,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(5)"
-                  onmouseenter="calculateOffset(5)"
+                  onClick="onClick(5)"
+                  onMouseEnter="calculateOffset(5)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -74,8 +74,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(6)"
-                  onmouseenter="calculateOffset(6)"
+                  onClick="onClick(6)"
+                  onMouseEnter="calculateOffset(6)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -86,8 +86,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(7)"
-                  onmouseenter="calculateOffset(7)"
+                  onClick="onClick(7)"
+                  onMouseEnter="calculateOffset(7)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">
@@ -98,8 +98,8 @@ function CircularMenu() {
               <li className="navigation-circle-list-item">
                 <a
                   className="navigation-circle-list-item__point"
-                  onclick="onClick(8)"
-                  onmouseenter="calculateOffset(8)"
+                  onClick="onClick(8)"
+                  onMouseEnter="calculateOffset(8)"
                   onMouseLeave="onMouseLeave()"
                 >
                   <div className="navigation-circle-list-item__meta">

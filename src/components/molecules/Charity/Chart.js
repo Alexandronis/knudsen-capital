@@ -54,7 +54,7 @@ function Chart() {
                   >
                     <p>{data.description}</p>
                     <p className="right-align">
-                      <a href={data.webLink} target="_blank">
+                      <a href={data.webLink} target="_blank" rel="noreferrer">
                         See More &gt;
                       </a>
                     </p>
