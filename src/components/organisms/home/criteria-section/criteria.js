@@ -1,7 +1,7 @@
 import React from 'react';
-import Purpose from '../../../../assets/Criteria-Section/PURPOSE.svg';
-import People from '../../../../assets/Criteria-Section/PEOPLE.svg';
-import Profit from '../../../../assets/Criteria-Section/PROFIT.svg';
+import purposeIcon from '../../../../assets/criteria-section/purpose.svg';
+import peopleIcon from '../../../../assets/criteria-section/people.svg';
+import profitIcon from '../../../../assets/criteria-section/profit.svg';
 
 function Criteria() {
   return (
@@ -13,7 +13,7 @@ function Criteria() {
       <div className="criteria-card">
         <div className="card">
           <div className="card-icon">
-            <img src={People} alt="cardIcon" />
+            <img src={peopleIcon} alt="cardIcon" />
           </div>
           <div className="card-title">
             <h2>PEOPLE</h2>
@@ -22,7 +22,7 @@ function Criteria() {
 
         <div className="card">
           <div className="card-icon">
-            <img src={Purpose} alt="cardIcon" />
+            <img src={purposeIcon} alt="cardIcon" />
           </div>
           <div className="card-title">
             <h2>PURPOSE</h2>
@@ -31,7 +31,7 @@ function Criteria() {
 
         <div className="card">
           <div className="card-icon">
-            <img src={Profit} alt="cardIcon" />
+            <img src={profitIcon} alt="cardIcon" />
           </div>
           <div className="card-title">
             <h2>PROFIT</h2>

@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../../assets/Logo/KCLLC_Navbar_Logo.svg';
-import FbIcon from '../../assets/Footer/facebook_icon.svg';
-import instagramIcon from '../../assets/Footer/instagram_icon.svg';
-import TwitterIcon from '../../assets/Footer/twitter_icon.svg';
-import linkedincon from '../../assets/Footer/linkedin_icon.svg';
+import logoIcon from '../../assets/logo/navbar-logo.svg';
+import fbIcon from '../../assets/footer/facebook-icon.svg';
+import instagramIcon from '../../assets/footer/instagram-icon.svg';
+import twitterIcon from '../../assets/footer/twitter-icon.svg';
+import linkedinIcon from '../../assets/footer/linkedin-icon.svg';
 
 function Footer() {
-  // reset Dropdown created by sachith
   const resetDropdown = () => {
     localStorage.removeItem('portfolioOption');
   };
-  // Auto update year in footer copyright section created by sachith
   const [date, setDate] = useState();
   const getYear = () => setDate(new Date().getFullYear());
   useEffect(() => {
@@ -23,7 +21,7 @@ function Footer() {
     <div>
       <footer>
         <div className="footer-top">
-          <img src={Logo} alt="KC/LLC Logo" />
+          <img src={logoIcon} alt="KC/LLC Logo" />
           <div className="line"></div>
         </div>
         <div className="footer-center">
@@ -101,7 +99,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="" src={FbIcon} alt="Facebook Icon" />
+                  <img className="" src={fbIcon} alt="Facebook Icon" />
                 </a>
               </li>
               <li>
@@ -119,7 +117,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="" src={TwitterIcon} alt="Twitter Icon" />
+                  <img className="" src={twitterIcon} alt="Twitter Icon" />
                 </a>
               </li>
               <li>
@@ -128,7 +126,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="" src={linkedincon} alt="Linkedin Icon" />
+                  <img className="" src={linkedinIcon} alt="Linkedin Icon" />
                 </a>
               </li>
             </ul>
@@ -190,7 +188,7 @@ function Footer() {
 
         <div className="footer-center">
           <div className="footer-top">
-            <img src={Logo} alt="KC/LLC Logo" />
+            <img src={logoIcon} alt="KC/LLC Logo" />
             <div className="line"></div>
           </div>
 
@@ -225,7 +223,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="" src={FbIcon} alt="Facebook Icon" />
+                <img className="" src={fbIcon} alt="Facebook Icon" />
               </a>
             </li>
             <li>
@@ -243,7 +241,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="" src={TwitterIcon} alt="Twitter Icon" />
+                <img className="" src={twitterIcon} alt="Twitter Icon" />
               </a>
             </li>
             <li>
@@ -252,7 +250,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="" src={linkedincon} alt="Linkedin Icon" />
+                <img className="" src={linkedinIcon} alt="Linkedin Icon" />
               </a>
             </li>
           </ul>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BackgroundImage from '../../../../assets/Home-contact/Home-Contact-KCLLC.svg';
-import MobileBackImg from '../../../../assets/Home-contact/Mobile-Contact-KCLLC.svg';
+import backgroundImage from '../../../../assets/home-contact/home-contact.svg';
+import mobileBackImage from '../../../../assets/home-contact/mobile-contact.svg';
 
 function HomeContact() {
   return (
     <>
-      <img className="contact-img" src={BackgroundImage} alt="KCLLC Logo"></img>
-      <img className="contact-img-mobile" src={MobileBackImg} alt="KCLLC Logo"></img>
+      <img className="contact-img" src={backgroundImage} alt="KCLLC Logo"></img>
+      <img className="contact-img-mobile" src={mobileBackImage} alt="KCLLC Logo"></img>
       <div className="contact">
         <div className="content">
           <p>

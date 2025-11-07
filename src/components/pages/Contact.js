@@ -4,11 +4,11 @@ import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import AddressIcon from '../../assets/Contact-page/pin.svg';
-import EmailIcon from '../../assets/Contact-page/email.svg';
-import PhoneIcon from '../../assets/Contact-page/phone-call.svg';
-import prev from '../../assets/Contact-page/Prev.svg';
-import Next from '../../assets/Contact-page/Next.svg';
+import addressIcon from '../../assets/contact-page/pin.svg';
+import emailIcon from '../../assets/contact-page/email.svg';
+import phoneIcon from '../../assets/contact-page/phone-call.svg';
+import prevIcon from '../../assets/contact-page/prev.svg';
+import nextIcon from '../../assets/contact-page/next.svg';
 
 import PlaceholderAnime from '../common/placeholder';
 import Footer from '../layout/footer';
@@ -27,7 +27,7 @@ const NextArrow = ({ className, style, onClick }) => (
     />
     <img
       className={className}
-      src={Next}
+      src={nextIcon}
       style={{
         ...style,
         width: '10px',
@@ -53,7 +53,7 @@ const PrevArrow = ({ className, style, onClick }) => (
     />
     <img
       className={className}
-      src={prev}
+      src={prevIcon}
       style={{
         ...style,
         width: '10px',
@@ -146,7 +146,7 @@ function Contact() {
                 <div className="common_card">
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img className="image_icon" src={AddressIcon} alt="Address Icon" />
+                      <img className="image_icon" src={addressIcon} alt="Address Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">
@@ -163,7 +163,7 @@ function Contact() {
 
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img className="image_icon" src={PhoneIcon} alt="Phone Icon" />
+                      <img className="image_icon" src={phoneIcon} alt="Phone Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">
@@ -176,7 +176,7 @@ function Contact() {
 
                   <div className="common_card_containar">
                     <div className="image_containar">
-                      <img className="image_icon" src={EmailIcon} alt="Email Icon" />
+                      <img className="image_icon" src={emailIcon} alt="Email Icon" />
                     </div>
                     <div className="leftside_text contact_leftside_text">
                       <div className="card_list_items contact-us-item">

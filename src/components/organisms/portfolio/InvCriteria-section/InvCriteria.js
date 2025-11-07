@@ -1,5 +1,5 @@
 import React from 'react';
-import KCLLC_grenn_Icon from '../../../../assets/Portfolio-page/KCLLC_grenn_Icon.svg';
+import greenIcon from '../../../../assets/portfolio-page/green-icon.svg';
 
 function InvCriteria() {
   return (
@@ -15,7 +15,7 @@ function InvCriteria() {
               <div className="common_card_containar">
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
-                    <img className="image_icon" src={KCLLC_grenn_Icon} alt="KC/LLC Green Icon" />
+                    <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
                     <p>Quickly adapted to the new omnichannel business paradigm</p>
                   </div>
                 </div>
@@ -26,7 +26,7 @@ function InvCriteria() {
               <div className="common_card_containar">
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
-                    <img className="image_icon" src={KCLLC_grenn_Icon} alt="KC/LLC Green Icon" />
+                    <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
                     <p>Experiencing exceptional growth rates in today's climate</p>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ function InvCriteria() {
               <div className="common_card_containar">
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
-                    <img className="image_icon" src={KCLLC_grenn_Icon} alt="KC/LLC Green Icon" />
+                    <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
                     <p>
                       Effectively capture DTC (own site) + Amazon mastery and solid retail reach
                     </p>
@@ -49,7 +49,7 @@ function InvCriteria() {
               <div className="common_card_containar">
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
-                    <img className="image_icon" src={KCLLC_grenn_Icon} alt="KC/LLC Green Icon" />
+                    <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
                     <p>Have high gross margins (40%+)</p>
                   </div>
                 </div>
@@ -59,7 +59,7 @@ function InvCriteria() {
               <div className="common_card_containar">
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
-                    <img className="image_icon" src={KCLLC_grenn_Icon} alt="KC/LLC Green Icon" />
+                    <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
                     <p>Have a high LTV-CAC ratio (&lt;4 and profitable on first order)</p>
                   </div>
                 </div>

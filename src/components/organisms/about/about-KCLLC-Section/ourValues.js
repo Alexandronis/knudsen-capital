@@ -1,8 +1,8 @@
 import React from 'react';
-import Our_Values_1 from '../../../../assets/About-page/Our_Values_1.svg';
-import Our_Values_2 from '../../../../assets/About-page/Our_Values_2.svg';
-import Our_Values_3 from '../../../../assets/About-page/Our_Values_3.svg';
-import Our_Values_4 from '../../../../assets/About-page/Our_Values_4.svg';
+import ourValues1 from '../../../../assets/about-page/our-values-1.svg';
+import ourValues2 from '../../../../assets/about-page/our-values-2.svg';
+import ourValues3 from '../../../../assets/about-page/our-values-3.svg';
+import ourValues4 from '../../../../assets/about-page/our-values-4.svg';
 
 function OurValues() {
   return (
@@ -14,7 +14,7 @@ function OurValues() {
       <div className="common_card">
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Values_1} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourValues1} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
@@ -29,7 +29,7 @@ function OurValues() {
 
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Values_2} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourValues2} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
@@ -44,7 +44,7 @@ function OurValues() {
 
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Values_3} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourValues3} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
@@ -59,7 +59,7 @@ function OurValues() {
 
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Values_4} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourValues4} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">

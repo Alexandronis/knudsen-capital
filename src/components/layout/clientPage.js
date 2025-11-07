@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PlaceholderAnime from '../common/placeholder';
 import Footer from './footer';
-import CloseIcon from '../../assets/client-page/close-btn.svg';
+import closeIcon from '../../assets/client-page/close-btn.svg';
 
 function ClientPage() {
   const location = useLocation();
@@ -53,7 +53,7 @@ function ClientPage() {
       <link rel="canonical" href="https://kcinvestors.com/client-page" />
       <div className="content-wrapper">
         <div className="content-inner-box">
-          <img className="close-img" onClick={handleClick} src={CloseIcon} alt="close Icon" />
+          <img className="close-img" onClick={handleClick} src={closeIcon} alt="close Icon" />
 
           <div className="company-values">
             <div className="values-title">

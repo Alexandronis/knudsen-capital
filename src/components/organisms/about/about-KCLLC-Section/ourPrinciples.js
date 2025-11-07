@@ -1,6 +1,6 @@
 import React from 'react';
-import Our_Principles_1 from '../../../../assets/About-page/Our_Principles_1.svg';
-import Our_Principles_2 from '../../../../assets/About-page/Our_Principles_2.svg';
+import ourPrinciples1 from '../../../../assets/about-page/our-principles-1.svg';
+import ourPrinciples2 from '../../../../assets/about-page/our-principles-2.svg';
 
 function OurPrinciples() {
   return (
@@ -12,7 +12,7 @@ function OurPrinciples() {
       <div className="common_card">
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Principles_1} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourPrinciples1} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
@@ -27,7 +27,7 @@ function OurPrinciples() {
 
         <div className="common_card_containar oursecond">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Principles_2} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourPrinciples2} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">

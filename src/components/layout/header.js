@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import Logo from '../../assets/Logo/KCLLC_Navbar_Logo.svg';
+import logoIcon from '../../assets/logo/navbar-logo.svg';
 
 function Header() {
   const [scroll, setScroll] = useState(false);
@@ -31,7 +31,7 @@ function Header() {
       <header className="main-header">
         <div className="logo" onClick={() => localStorage.setItem('activePage', '')}>
           <a href="/">
-            <img src={Logo} alt="KC/LLC Logo" />
+            <img src={logoIcon} alt="KC/LLC Logo" />
           </a>
         </div>
 
@@ -119,7 +119,7 @@ function Header() {
         <nav>
           <div className="logo">
             <a href="/">
-              <img src={Logo} alt="KC/LLC Logo" />
+              <img src={logoIcon} alt="KC/LLC Logo" />
             </a>
           </div>
 

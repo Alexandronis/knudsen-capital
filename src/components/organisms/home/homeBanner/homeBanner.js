@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import Mountain from '../../../../assets/Home-Banner/mountain.mp4';
-import MountainThumb from '../../../../assets/Home-Banner/mountain_thumbnail.png';
+import mountainVideo from '../../../../assets/home-banner/mountain.mp4';
+import mountainIcon from '../../../../assets/home-banner/mountain-thumbnail.png';
 
 function HomeBanner() {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
-  const src = Mountain;
+  const src = mountainVideo;
 
   const onLoadedData = () => {
     setIsVideoLoaded(true);
@@ -14,7 +14,7 @@ function HomeBanner() {
   return (
     <div className="home-banner">
       <img
-        src={MountainThumb}
+        src={mountainIcon}
         className="video-thumb tiny"
         alt="KCLLC video thumb"
         style={{ display: isVideoLoaded ? 'none' : 'block' }}

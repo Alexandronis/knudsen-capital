@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowUp from '../../../../assets/Our-Team/team_arrow_up.svg';
+import arrowUpIcon from '../../../../assets/our-team/team-arrow-up.svg';
 
 const MobileTeamCard = ({
   name,
@@ -18,7 +18,7 @@ const MobileTeamCard = ({
         <div className="first-line">
           <img className="image_containar" src={imgSrc} alt={alt} />
           <div className="leftside_text">
-            <img className="arrow" src={ArrowUp} alt="Card Crrow Up icon"></img>
+            <img className="arrow" src={arrowUpIcon} alt="Card Crrow Up icon"></img>
             <div className="card_list_items">
               <p className="name">{name}</p>
               <p className="title">{title}</p>

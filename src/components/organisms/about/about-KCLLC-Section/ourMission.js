@@ -1,5 +1,5 @@
 import React from 'react';
-import Our_Mission from '../../../../assets/About-page/Our_Mission.svg';
+import ourMission from '../../../../assets/about-page/our-mission.svg';
 function OurMission() {
   return (
     <>
@@ -10,7 +10,7 @@ function OurMission() {
       <div className="common_card">
         <div className="common_card_containar">
           <div className="image_containar">
-            <img className="image_icon" src={Our_Mission} alt="KC/LLC Icon" />
+            <img className="image_icon" src={ourMission} alt="KC/LLC Icon" />
           </div>
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
