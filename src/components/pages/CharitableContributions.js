@@ -70,7 +70,7 @@ function CharitableContributions() {
         {
           otherCharities.map((data,i)=>{
             return(
-              <div className="data-card">
+              <div className="data-card" key={`data-card-${i}`}>
                 {data.name}
                 </div>
             )
