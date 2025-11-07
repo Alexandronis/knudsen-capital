@@ -10,7 +10,6 @@ const TeamCard = ({
   emailIcon,
   linkedinIcon,
   linkedin,
-  idx,
   alt,
   email,
 }) => {
@@ -32,7 +31,7 @@ const TeamCard = ({
             {linkedin ?  <a href={linkedin} target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="linkedin icon"></img>
             </a> : null}
-           
+
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 
 import HomeBanner from "../organisms/home/homeBanner/homeBanner";

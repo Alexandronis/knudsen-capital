@@ -6,7 +6,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 function RealizedInvestment() {
   const organization = require("../../../../data/realizedInvestment.json");
-  const [data, setData] = useState();
   const history = useHistory();
   return (
     <>

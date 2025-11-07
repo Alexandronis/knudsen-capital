@@ -1,5 +1,4 @@
 import React from "react";
-
 import InvCard from "../../../molecules/portfolio/InvestmentCategories-section/invCard";
 
 function InvCategories() {

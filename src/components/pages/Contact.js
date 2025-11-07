@@ -1,16 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  BrowserRouter as Router,
-  // Route,
-  // Link,
-  // Switch,
-  useLocation,
-  // useParams,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 import Slider from "react-slick";
-
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import AddressIcon from "../../assets/Contact-page/pin.svg";
@@ -142,22 +133,12 @@ function Contact(props) {
                   src={slider.image}
                   alt={slider.alt}
                   key={slider.id}
-                  //placeholderSrc={placeholder}
                   onLoad={onLoadedData}
                   style={{ display: isImageLoaded ? "block" : "none" }}
                 />
               </div>
             );
           })}
-          {/* <div>
-            <LazyLoadImage
-              effect="blur"
-              className="sliderImages"
-              src="/contact-page/slider_images/184 Villa 047 MLS@3x.png"
-              alt="KCLLC Slider Image"
-              // placeholderSrc={placeholder}
-            />
-          </div> */}
         </Slider>
         <div className='content-wrapper'>
           <div className='content-inner-box'>
@@ -168,11 +149,6 @@ function Contact(props) {
                 <h2 className='main-title mobile'>Contact</h2>
               </div>
               <div className='value-wrapper'>
-                {/* <div className="sub-heaading">
-                  <span></span>
-                  <h2>Contact Details</h2>
-                </div> */}
-                {/* <h3>San Fransisco</h3> */}
                 <div className='common_card'>
                   <div className='common_card_containar'>
                     <div className='image_containar'>
@@ -186,7 +162,7 @@ function Contact(props) {
                       <div className='card_list_items contact-us-item'>
                         <ul>
                           <li>
-                          PO Box 7,<br></br> Los Gatos, 
+                          PO Box 7,<br></br> Los Gatos,
                             <br></br> CA, 95031
                             <br></br>
                           </li>

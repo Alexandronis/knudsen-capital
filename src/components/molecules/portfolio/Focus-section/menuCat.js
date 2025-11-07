@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function MenuCat() {
   const [onHover, setonHover] = useState(8);
   const focusData = require("../../../../data/focusData.json");
-  
+
   return (
     <>
       <div className="menu-section">
@@ -45,10 +45,6 @@ function MenuCat() {
                         ? setonHover(0)
                         : setonHover(index + 1);
                     }}
-                    // onMouseEnter={() => {
-                    //   setonHover(index + 1);
-                    // }}
-                    //className="white-circle"
                     style={{
                       transform: `rotateZ(calc(79deg - (360deg /10) * ${
                         data.id + 1

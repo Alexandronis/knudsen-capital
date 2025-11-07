@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import TeamCard from "../../../molecules/home/ourTeam-card/teamCard";
 import MobileTeamCard from "../../../molecules/home/ourTeam-card/mobileTeamCard";
 
@@ -76,8 +75,6 @@ function OurTeam() {
                 emailIcon={member.emailIcon}
                 linkedin={member.linkedin}
                 linkedinIcon={member.linkedinIcon}
-                idx={index + 1}
-                id={member.id}
                 alt={member.alt}
                 email={member.email}
               />

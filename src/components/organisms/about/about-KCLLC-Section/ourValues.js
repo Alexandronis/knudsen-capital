@@ -1,7 +1,4 @@
 import React from "react";
-
-import CardIcon from "../../../../assets/About-page/CK_logo_blue_icon.svg";
-import CardIconWhite from "../../../../assets/About-page/CK_logo_icon.svg";
 import Our_Values_1 from "../../../../assets/About-page/Our_Values_1.svg";
 import Our_Values_2 from "../../../../assets/About-page/Our_Values_2.svg";
 import Our_Values_3 from "../../../../assets/About-page/Our_Values_3.svg";
@@ -22,7 +19,6 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                {/* <img className="image_icon" src={CardIcon} alt="KC/LLC Icon" /> */}
                 <p>Do we believe in the company's<b> purpose</b>? </p>
               </div>
             </div>
@@ -36,7 +32,6 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                {/* <img className="image_icon" src={CardIcon} alt="KC/LLC Icon" /> */}
                 <p>What <b>impact</b> will the business have on the world?</p>
               </div>
             </div>
@@ -50,7 +45,6 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                {/* <img className="image_icon" src={CardIcon} alt="KC/LLC Icon" /> */}
                 <p>Do we believe in the <b>people</b> behind the company?</p>
               </div>
             </div>
@@ -64,7 +58,6 @@ function OurValues() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                {/* <img className="image_icon" src={CardIcon} alt="KC/LLC Icon" /> */}
                 <p>Can the business drive a significant <b>sustainable</b> profit?</p>
               </div>
             </div>

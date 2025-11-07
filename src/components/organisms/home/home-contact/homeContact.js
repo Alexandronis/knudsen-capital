@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import BackgroundImage from "../../../../assets/Home-contact/Home-Contact-KCLLC.svg";
 import MobileBackImg from "../../../../assets/Home-contact/Mobile-Contact-KCLLC.svg";
 
@@ -15,7 +14,6 @@ function HomeContact() {
       ></img>
       <div className="contact">
         <div className="content">
-          {/* <h2>Join hands with KC/LLC</h2> */}
           <p>
             We'd love to work with you! Please reach out if you're interested in
             an investment from us, investing with us or partnering in other

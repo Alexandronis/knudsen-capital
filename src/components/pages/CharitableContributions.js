@@ -1,8 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import React from "react";
 import MetaTags from "react-meta-tags";
 
 import ScrollHandler from "../templates/scrollHandler";
@@ -12,7 +8,7 @@ import Chart from "../molecules/charity/chart";
 const charityData = require('../../data/charityData.json')
 const otherCharities = require('../../data/otherCharity.json')
 
-function CharitableContributions(props) {
+function CharitableContributions() {
   return (
     <>
       <ScrollHandler />
@@ -38,9 +34,9 @@ function CharitableContributions(props) {
                  <p>Our team is committed to giving back to local charities to support a variety of communities. From building houses for low-income families to researching rare pediatric cancers, we each chose causes close to our hearts to fight for. Here are the organizations our team members donated to, with matched donations from KC/LLC, in 2022.</p>
             </div>
             </div>
-          
+
           </div>
-        </section>    
+        </section>
      </div>
      <div className="chart-container">
               <div className="chart-web">
@@ -81,7 +77,7 @@ function CharitableContributions(props) {
           })
         }
         </div>
-     
+
       </div>
       <Footer />
     </>

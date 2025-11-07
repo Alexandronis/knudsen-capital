@@ -1,5 +1,4 @@
 import React from "react";
-
 import downloadIcon from "../../../../assets/About-page/computing-cloud.svg";
 function PagerCard(props) {
   return (

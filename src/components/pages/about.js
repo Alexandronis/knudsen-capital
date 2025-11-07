@@ -1,12 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  // Route,
-  // Link,
-  // Switch,
-  useLocation,
-  // useParams,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 
 import OurMission from "../organisms/about/about-KCLLC-Section/ourMission";
@@ -84,15 +77,9 @@ function About(props) {
               <div className='values-title'>
                 <span></span>
                 <h2 className='main-title'>Our Team</h2>
-                {/* <p className="short-Desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  doeiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p> */}
               </div>
             </div>
-            {/* <div className="team-profile-wrapper"> */}
             <TeamProfile />
-            {/* </div> */}
           </div>
           <div className='content-wrapper learn-more-about'>
             <div className='content-inner-box'>
@@ -109,11 +96,6 @@ function About(props) {
                 name={"KC/LLC One-pager"}
                 alttext={"KC/LLC Icon"}
               />
-              {/* <PdfCard
-                link={"/KCLLC_3_Pager/KCLLC - 3 Pager.pdf"}
-                name={"KC/LLC 3-pager"}
-                alttext={"KC/LLC Icon"}
-              /> */}
             </div>
           </div>
         </section>

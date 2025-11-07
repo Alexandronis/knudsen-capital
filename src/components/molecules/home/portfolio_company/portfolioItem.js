@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-
 
 function PortfolioItem(props) {
   const [cardselect, setcardselect] = useState(0);
@@ -13,7 +11,6 @@ function PortfolioItem(props) {
       <div className="Item-wrapper">
         <a target="_BLANK" rel="noopener noreferrer" href={props.url}>
           <div
-            // className="portfolioItem"
             className={
               cardselect === props.id + 1
                 ? "portfolioItem active"
@@ -37,7 +34,7 @@ function PortfolioItem(props) {
               }}
             />
           </div>
-          <div //className="tool-tip"
+          <div
             className={
               tooltipShow === props.id + 1
                 ? "tool-tip active"
@@ -51,28 +48,7 @@ function PortfolioItem(props) {
               <h2>{props.type}</h2>
             </div>
           </div>
-          <div
-            className="dataCard_wrapper"
-            // className={
-            //   cardselected === id + 1
-            //     ? "dataCard_wrapper opened"
-            //     : cardselected === 0
-            //     ? "dataCard_wrapper"
-            //     : "dataCard_wrapper none-active"
-            // }
-          >
-            {/* <div className="dataCard">
-              <div className="title_section">
-                <h3>{props.companyName}</h3>
-                <a target="_BLANK" rel="noopener noreferrer" href={props.url}>
-                  Website
-                </a>
-              </div>
-              <div className="desc_section">
-                <p>{props.description}</p>
-              </div>
-            </div> */}
-          </div>
+          <div className="dataCard_wrapper"></div>
         </a>
       </div>
     </>

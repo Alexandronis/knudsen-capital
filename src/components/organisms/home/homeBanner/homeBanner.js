@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactPlayer from 'react-player'
 import Mountain from "../../../../assets/Home-Banner/mountain.mp4";
 import MountainThumb from "../../../../assets/Home-Banner/mountain_thumbnail.png";
 
 function HomeBanner() {
-
   const [isVideoLoaded , setIsVideoLoaded] = React.useState(false);
   const src = Mountain;
 
@@ -12,13 +11,8 @@ function HomeBanner() {
     setIsVideoLoaded(true);
   };
 
-
-  useEffect(() => {
-    // var scene = document.getElementById("scene");
-  });
-
   return (
-    
+
     <div className="home-banner">
       <img src={MountainThumb} className="video-thumb tiny" alt="KCLLC video thumb" style={{ display: isVideoLoaded ? "none" : "block" }}/>
        <ReactPlayer

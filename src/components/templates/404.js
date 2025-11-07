@@ -1,5 +1,4 @@
 import React from "react";
-
 import KCLLC_404 from "../../assets/404_page/404_image.png";
 
 function NotFoundPage() {

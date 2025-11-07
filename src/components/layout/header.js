@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link as RLink, useLocation, useHistory } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 import Logo from "../../assets/Logo/KCLLC_Navbar_Logo.svg";
 
 function Header() {
-  const [isShown, setIsShown] = useState(0);
-  // const boxRef = React.useRef(null);
-
   const [scroll, setScroll] = useState(false);
   const history = useHistory();
   const location = useLocation();
@@ -22,11 +19,7 @@ function Header() {
   };
 
   return (
-    <div className={scroll ? "App-header bg-black" : "App-header bg-white"}
-    onMouseLeave={() => {
-      setIsShown(0);
-    }}>
-      {/* {!window.matchMedia("(max-width: 1199px)").matches ? ():()} */}
+    <div className={scroll ? "App-header bg-black" : "App-header bg-white"}>
       <header className="main-header">
         <div
           className="logo"
@@ -59,7 +52,7 @@ function Header() {
                       <p className={scroll || location.pathname !== "" ? "white-font" : ""}>About</p>
                       <span></span>
                   </Link>
-               
+
               </li>
               <li className="list">
                     <Link
@@ -78,7 +71,7 @@ function Header() {
                       <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Portfolio</p>
                       <span></span>
                     </Link>
-                   
+
               </li>
               <li className="list">
                     <Link
@@ -115,7 +108,7 @@ function Header() {
                       <p className={scroll || location.pathname !== "" ? "white-font" : ""}>Contact</p>
                       <span></span>
                     </Link>
-                    
+
                   </li>
             </ul>
           </div>
@@ -132,9 +125,9 @@ function Header() {
             <div className="menuIcon">
               <div id="menuToggle">
                 <input type="checkbox" id="burgerBtnMob" />
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
                 <ul id={scroll ? "menu-white" : "menu-black"}>
                   <li className="list">
                     <Link
@@ -153,7 +146,7 @@ function Header() {
                       About
                     </Link>
                   </li>
-                 
+
                   <li className="list">
                     <Link
                       className={location.pathname === "/portfolio" ? "active" : ""}

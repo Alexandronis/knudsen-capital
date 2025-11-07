@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Logo from "../../assets/Logo/KCLLC_Navbar_Logo.svg";
 import FbIcon from "../../assets/Footer/facebook_icon.svg";
@@ -32,7 +32,7 @@ function Footer() {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                PO Box 7, 
+                PO Box 7,
                   <br></br>Los Gatos,
                   <br></br>CA 95031
                 </p>
@@ -138,7 +138,7 @@ function Footer() {
           <p>Copyright © {date} Knudsen Capital, LLC All Rights Reserved</p>
         </div>
       </footer>
-      {/* mobile viwe */}
+      {/* mobile view */}
       <div className="footer_mobile">
         <div className="footer-wrapper">
           <div className="menu">
@@ -199,7 +199,7 @@ function Footer() {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                PO Box 7, 
+                PO Box 7,
                   <br></br>Los Gatos,
                   <br></br>CA 95031
                 </p>

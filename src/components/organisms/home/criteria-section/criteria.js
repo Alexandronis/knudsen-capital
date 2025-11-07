@@ -1,5 +1,4 @@
 import React from "react";
-
 import Purpose from "../../../../assets/Criteria-Section/PURPOSE.svg";
 import People from "../../../../assets/Criteria-Section/PEOPLE.svg";
 import Profit from "../../../../assets/Criteria-Section/PROFIT.svg";

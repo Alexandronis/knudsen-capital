@@ -1,18 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  useLocation,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ProfileCard from "../../../molecules/about/our-team-Section/profileCard";
 
-function TeamProfile(props) {
+function TeamProfile() {
   const memberDetails = require("../../../../data/memberDetails.json");
   const [isShown, setIsShown] = useState(0);
-  const [indexValue, setindexValue] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(false);
   const handleExpandClick = (index) => {
     if (selectedIndex === index) {
@@ -106,7 +99,7 @@ function TeamProfile(props) {
                               alt="Linkedin Icon"
                             />
                           </a> :null}
-                         
+
                         </div>
                       </div>
                       <div className="short-desc">
@@ -138,7 +131,6 @@ function TeamProfile(props) {
                       ) : (
                         <a>See more</a>
                       )}
-                      {/* <a>See more</a> */}
 
                       <img
                         src="/Our-Team/Icon-set/Down_arrow.svg"

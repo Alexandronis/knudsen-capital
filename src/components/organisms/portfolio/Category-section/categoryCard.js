@@ -1,7 +1,5 @@
 import React from "react";
 
-import LogoImg from "../../../../assets/Portfolio-page/LOGO.png";
-
 const CategoryCard = ({ logoImage }) => {
   return (
     <>

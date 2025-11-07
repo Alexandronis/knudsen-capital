@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useHistory } from "react-router-dom";
 
 function SecondCategory() {
   const organization = require("../../../../data/organization.json");
-  const [data, setData] = useState();
   const history = useHistory();
   return (
     <>
@@ -20,7 +19,7 @@ function SecondCategory() {
 
         <div className="card-investments">
           <div className="card-wrapper">
-            {organization.Category04.map((data, index) => {
+            {organization.Category04.map((data) => {
               return (
                 <div
                   className="logo-box"
@@ -56,7 +55,7 @@ function SecondCategory() {
 
         <div className="card-investments">
           <div className="card-wrapper">
-            {organization.Category05.map((data, index) => {
+            {organization.Category05.map((data) => {
               return (
                 <div
                   className="logo-box"
@@ -92,7 +91,7 @@ function SecondCategory() {
 
         <div className="card-investments">
           <div className="card-wrapper">
-            {organization.Category06.map((data, index) => {
+            {organization.Category06.map((data) => {
               return (
                 <div
                   className="logo-box"

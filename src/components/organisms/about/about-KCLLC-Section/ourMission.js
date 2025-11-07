@@ -1,7 +1,4 @@
 import React from "react";
-
-import CardIcon from "../../../../assets/About-page/CK_logo_blue_icon.svg";
-import CardIconWhite from "../../../../assets/About-page/CK_logo_icon.svg";
 import Our_Mission from "../../../../assets/About-page/Our_Mission.svg";
 function OurMission() {
   return (
@@ -18,7 +15,6 @@ function OurMission() {
           <div className="leftside_text about_leftside_text">
             <div className="card_list_items about-item">
               <div className="item">
-                {/* <img className="image_icon" src={CardIcon} alt="KC/LLC Icon" /> */}
                 <p>We back founders with innovative solutions to challenges</p>
               </div>
             </div>

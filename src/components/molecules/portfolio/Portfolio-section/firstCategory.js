@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useHistory } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -6,7 +6,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 function FirstCategory() {
   const organization = require("../../../../data/unrealizedInvestment.json");
-  const [data, setData] = useState();
   const history = useHistory();
   return (
     <>

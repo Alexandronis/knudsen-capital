@@ -1,6 +1,4 @@
 import React from "react";
-
-import CardIcon from "../../../../assets/About-page/CK_logo_icon.svg";
 import KCLLC_grenn_Icon from "../../../../assets/Portfolio-page/KCLLC_grenn_Icon.svg";
 
 function InvCriteria() {
@@ -11,10 +9,6 @@ function InvCriteria() {
           <div className='values-title'>
             <span></span>
             <h2 className='main-title'>Investment Criteria</h2>
-            {/* <p className="short-Desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              doeiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> */}
           </div>
           <div className='values-cards'>
             <div className='common_card'>

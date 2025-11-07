@@ -1,18 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import {
-  // BrowserRouter as Router,
-  // Route,
-  // Link,
-  // Switch,
-  useLocation,
-  // useParams,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 
-// import Investment from "../organisms/portfolio/InvestmentCategories-section/InvCategories";
 import InvCriteria from "../organisms/portfolio/InvCriteria-section/InvCriteria";
 import CategoryWapper from "../organisms/portfolio/Category-section/categoryWrapper";
-// import PortfolioCard from "../organisms/home/portfolio_company/portfolioCompany";
 import Focus from "../organisms/portfolio/Focus-section/focus";
 import Footer from "../layout/footer";
 
@@ -65,13 +56,9 @@ function Portfolio(props) {
               </div>
             </div>
             <CategoryWapper />
-            {/* <div className="portfolio-wrapper">
-              <PortfolioCard />
-            </div> */}
           </div>
         </section>
         <section>
-          {/* <Investment /> */}
           <Focus />
         </section>
         <section>

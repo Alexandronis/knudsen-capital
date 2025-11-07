@@ -5,11 +5,7 @@ function FocusCircular() {
     <>
       <div className="selector">
         <ul>
-          <li
-            // style={{
-            //   transform: "rotate(0deg)",
-            // }}
-          >
+          <li>
             <input id="1" type="checkbox" />
             <label
               for="1"
@@ -20,11 +16,7 @@ function FocusCircular() {
               Health related
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(45deg)",
-            // }}
-          >
+          <li>
             <input id="2" type="checkbox" />
             <label
               for="2"
@@ -35,11 +27,7 @@ function FocusCircular() {
               Supplements
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(90deg)",
-            // }}
-          >
+          <li>
             <input id="3" type="checkbox" />
             <label
               for="3"
@@ -50,11 +38,7 @@ function FocusCircular() {
               Protein
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(135deg)",
-            // }}
-          >
+          <li>
             <input id="4" type="checkbox" />
             <label
               for="4"
@@ -65,11 +49,7 @@ function FocusCircular() {
               Plant-based
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(180deg)",
-            // }}
-          >
+          <li>
             <input id="5" type="checkbox" />
             <label
               for="5"
@@ -80,11 +60,7 @@ function FocusCircular() {
               Good for you
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(225deg)",
-            // }}
-          >
+          <li>
             <input id="6" type="checkbox" />
             <label
               for="6"
@@ -95,11 +71,7 @@ function FocusCircular() {
               Clean formulations
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(270deg)",
-            // }}
-          >
+          <li>
             <input id="7" type="checkbox" />
             <label
               for="7"
@@ -110,11 +82,7 @@ function FocusCircular() {
               Immunity products
             </label>
           </li>
-          <li
-            // style={{
-            //   transform: "rotate(315deg)",
-            // }}
-          >
+          <li>
             <input id="8" type="checkbox" />
             <label
               for="8"
@@ -126,7 +94,6 @@ function FocusCircular() {
             </label>
           </li>
         </ul>
-
         <button>
           <img src="/KCLLC_Logo.svg" alt="KC/LLC Logo" />
         </button>

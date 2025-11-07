@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import PortfolioItem from "../../../molecules/home/portfolio_company/portfolioItem";
 
 function PortfolioCompany() {
@@ -13,9 +12,6 @@ function PortfolioCompany() {
         <h2>Portfolio Companies</h2>
         <span className="horizontal-line"></span>
       </div>
-      {/* <div className="section-title">
-        <h2>KC/LLC Portfolio</h2>
-      </div> */}
       <div className="prtfolio-card">
         <div className="prtfolio-container">
           {companyData.sort((a,b)=> a.companyName > b.companyName ? 1 : -1).map((company, index) => {
@@ -23,16 +19,9 @@ function PortfolioCompany() {
               <div
                 className="card"
                 key={index + 1}
-                // onClick={() => {
-                //   cardselect === company.id + 1
-                //     ? setcardselect(0)
-                //     : setcardselect(company.id + 1);
-                // }}
-                // onMouseEnter={() => {settooltipShow(company.id + 1) ; setcardselect(company.id + 1);}}
-                // onMouseLeave={() => {settooltipShow(0) ; setcardselect(0);}}
               >
                 <PortfolioItem
-                
+
                   companyName={company.companyName}
                   url={company.url}
                   logoImage={company.logoImage}

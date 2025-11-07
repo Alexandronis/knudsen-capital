@@ -15,8 +15,8 @@ function MenuCatMobile() {
         <div className="titles-wrapper">
           {focusData.map((data, index) => {
             return (
-              <div //className="titles"
-              key={data.id}
+              <div
+                key={data.id}
                 className={
                   onHover === index + 1
                     ? "titles active"

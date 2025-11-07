@@ -1,10 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import ArrowUp from "../../../../assets/Our-Team/team_arrow_up.svg";
 
 const MobileTeamCard = ({
-  id,
   name,
   title,
   description,
@@ -12,7 +9,6 @@ const MobileTeamCard = ({
   emailIcon,
   linkedinIcon,
   linkedin,
-  idx,
   alt,
   email,
 }) => {
@@ -33,7 +29,6 @@ const MobileTeamCard = ({
                 {linkedin ? <a href={linkedin} target="_blank" rel="noopener noreferrer">
                   <img src={linkedinIcon} alt="linkedin icon"></img>
                 </a> : null }
-                
               </div>
             </div>
           </div>

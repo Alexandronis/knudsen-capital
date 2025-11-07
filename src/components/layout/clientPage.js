@@ -1,16 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  useHistory,
-  useLocation,
-} from "react-router-dom";
-import CloseIcon from "../../assets/client-page/close-btn.svg";
-import Footer from "./footer";
-
+import { useHistory, useLocation } from "react-router-dom";
 import PlaceholderAnime from "../common/placeholder";
+import Footer from "./footer";
+import CloseIcon from "../../assets/client-page/close-btn.svg";
 
 function ClientPage(props) {
   const Location = useLocation();
@@ -68,7 +60,6 @@ function ClientPage(props) {
               <PlaceholderAnime />
             </div>
             <img
-              // effect="blur"
               src={data.coverImage}
               className='cover-photo'
               alt={data.alt}
@@ -96,7 +87,7 @@ function ClientPage(props) {
                 {
                       data.description ? (
                         <div className='desc_section'>
-                   
+
                         <span>"</span>
                         <p>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -106,11 +97,10 @@ function ClientPage(props) {
                       </div>
                       ) : null
                     }
-                 
+
                   <div className='name_labels'>
                     <h4>{data.quotedby}</h4>
                     <h4>{data.quotedDesignation}</h4>
-                    {/* <h4>{data.companyName}</h4> */}
                   </div>
                 </div>
               </div>
@@ -149,7 +139,7 @@ function ClientPage(props) {
 
                       <h5>{data.leadership} </h5>
                       </> : ''}
-                      
+
                     </ul>
                   </div>
                   <div className='list-items-bottom'>

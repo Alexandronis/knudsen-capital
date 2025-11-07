@@ -1,5 +1,4 @@
 import React from "react";
-
 import ValueBOx from "../../../../assets/value_section/value_box.png";
 import ValueBOxCenter from "../../../../assets/value_section/value_box_center.png";
 
