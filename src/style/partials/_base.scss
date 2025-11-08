@@ -1,12 +1,9 @@
 // =================================================
 // === Browser reset and common elements styles ====
 // =================================================
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-  font-family: "Poppins";
-}
-html {
-  //scroll-behavior: smooth;     //This is an auto smooth scrolling
+  font-family: 'Poppins';
 }
 ul,
 li,
@@ -21,28 +18,19 @@ h6 {
   padding: 0;
 }
 //--------------------Rremove highlight in mobile and ipad created by sachith (11/20/2020)-------------------
-@include respond-to("medium_lg") {
+@include respond-to('medium_lg') {
   @include Rremove-highlight;
 }
-@include respond-to("medium") {
+@include respond-to('medium') {
   @include Rremove-highlight;
 }
-@include respond-to("small") {
+@include respond-to('small') {
   @include Rremove-highlight;
 }
-//--------------------Remove text decorations for all <a> tags created by sachith (12/01/2020)---------------
-// a {
-//   text-decoration: none;
-//   color: #7098d2;
-// }
 
 //--------------------Break line in member description created by sachith (11/19/2020)-----------------------
 p {
-  //white-space: pre-line;
   text-align: justify; //---------Justify the all <p> tages
-  @include respond-to("small") {
-    //white-space: normal;
-  }
 }
 
 // =========================================
@@ -59,7 +47,7 @@ p {
     border-radius: 50px;
     background-color: #55bbac;
     display: block;
-    @include respond-to("small") {
+    @include respond-to('small') {
       display: none;
     }
   }
@@ -71,13 +59,13 @@ p {
     letter-spacing: 1.73px;
     color: #ffffff;
     margin-left: 35px;
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       font-size: 44px;
     }
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       font-size: 31px;
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       margin-left: 0;
       font-size: 36px;
       line-height: 1.3;
@@ -114,10 +102,10 @@ p {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   position: relative;
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     margin: 44px 5px;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     margin: 44px 0;
   }
   .image_containar {
@@ -129,7 +117,7 @@ p {
     top: -12px;
     left: -12px;
     width: 168px;
-    @include respond-to("small") {
+    @include respond-to('small') {
       top: -12px;
       left: -12px;
       width: 120px;
@@ -149,28 +137,27 @@ p {
     padding-left: 24%;
     min-height: 127px;
     align-items: center;
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       padding-left: 32%;
     }
 
     .card_list_items {
       font-size: 16px;
       padding: 0 75px;
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         padding: 0 75px;
       }
       .item {
         display: flex;
-        //padding: 12px 0;
         margin: 20px auto;
         .image_icon {
           width: 4%;
-          @include respond-to("medium_lg") {
+          @include respond-to('medium_lg') {
             width: 6%;
           }
-          @include respond-to("medium") {
+          @include respond-to('medium') {
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             width: 10%;
           }
         }
@@ -181,7 +168,7 @@ p {
           font-size: 16px;
           font-weight: normal;
           text-align: left;
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             font-size: 13px;
           }
           ul {
@@ -213,12 +200,12 @@ p {
 //************The common style used for Main Headings in Home page************
 .section-title {
   margin: 30px 0;
-  @include respond-to("small") {
+  @include respond-to('small') {
     margin: 30px 40px;
   }
   h2 {
     @include HeadingTitle;
-    @include respond-to("small") {
+    @include respond-to('small') {
       font-size: 24px;
       font-weight: 600;
       line-height: 1;
@@ -233,12 +220,12 @@ p {
 
   .about_leftside_text {
     padding-left: 20%;
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       padding-left: 30%;
     }
     .about-item {
       padding: 0 40px;
-      @include respond-to("medium_lg") {
+      @include respond-to('medium_lg') {
         padding: 0 42px;
       }
     }
@@ -247,48 +234,47 @@ p {
 
 .select-menu {
   position: absolute;
-  // font-family: "Poppins", sans-serif;
   right: 10%;
   top: 9.5%;
   z-index: 99;
-  @include respond-to("ex_large_max") {
+  @include respond-to('ex_large_max') {
     right: 10%;
     top: 12%;
   }
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     right: 10%;
     top: 14%;
   }
-  @include respond-to("medium") {
+  @include respond-to('medium') {
     right: 10%;
     top: 16%;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     right: 20px;
     top: 17%;
     left: 43px;
   }
 
-  //------------------Dropdown menu in portfolio page-----------------------------
+  //------------------Dropdown menu in Portfolio page-----------------------------
   label {
     color: #ffffff;
     letter-spacing: 0.65px;
     font-size: 18px;
     font-weight: normal;
     select {
-      @include respond-to("small") {
+      @include respond-to('small') {
         background-color: #345d85;
         color: #ffffff;
       }
       margin-left: 20px;
       padding-left: 8%;
       background-color: #ffffff;
-      font-family: "Poppins";
+      font-family: 'Poppins';
       font-size: 18px;
       letter-spacing: 0.65px;
       font-weight: 600;
-      border: 0px;
-      outline: 0px;
+      border: 0;
+      outline: 0;
       border-radius: 8px;
       box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06);
       width: 324px;
@@ -300,15 +286,15 @@ p {
       background-size: auto;
       color: #000000;
       appearance: none;
-      @include respond-to("medium_lg") {
+      @include respond-to('medium_lg') {
         width: 252px;
       }
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         width: 170px;
         font-size: 14px;
         margin-left: 10px;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         width: 69%;
       }
       &:focus {
@@ -321,7 +307,6 @@ p {
       font-size: 18px;
       border: none;
       outline: none;
-      border-style: none;
       &:active {
         font-weight: 600;
       }
@@ -332,8 +317,8 @@ p {
     }
   }
   label:after {
-    content: "\f078";
-    font-family: "FontAwesome";
+    content: '\f078';
+    font-family: 'FontAwesome';
     font-size: 14px;
     color: #000000;
     right: 20px;
@@ -341,15 +326,15 @@ p {
     padding: 0 0 2px;
     position: absolute;
     pointer-events: none;
-    @include respond-to("small") {
+    @include respond-to('small') {
       color: #ffffff;
       font-size: 12px;
     }
   }
   label:before {
-    content: "";
+    content: '';
     right: 4px;
-    top: 0px;
+    top: 0;
     width: 23px;
     height: 18px;
     position: absolute;
@@ -358,7 +343,7 @@ p {
   }
 }
 
-//------------This code used for the portfolio company card pop up-------------------
+//------------This code used for the Portfolio company card pop up-------------------
 .popup-page {
   .App-header {
     @include fade_out;
@@ -375,7 +360,6 @@ p {
 .placeholder-wrapper {
   .placeholder {
     margin: 0 auto;
-    /* max-width: 200px; */
     min-height: 250px;
     background-color: #eee;
     width: 100%;
@@ -391,7 +375,7 @@ p {
       background-size: 900px 604px;
       height: 450px;
       position: relative;
-      @include respond-to("small") {
+      @include respond-to('small') {
         height: 310px;
       }
       img {
@@ -399,13 +383,13 @@ p {
         left: 45%;
         top: 50%;
         opacity: 0.5;
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           left: 42%;
         }
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           left: 38%;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           left: 28%;
         }
       }
@@ -420,10 +404,10 @@ p {
       }
     }
   }
-  &.cover{
+  &.cover {
     .animated-background {
       height: 275px;
-      @include respond-to("small") {
+      @include respond-to('small') {
         height: 160px;
       }
     }

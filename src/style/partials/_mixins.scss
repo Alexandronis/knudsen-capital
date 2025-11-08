@@ -73,14 +73,12 @@
   font-size: 18px;
   font-weight: 600;
   color: #191515;
-  //line-height: 2;
   letter-spacing: 0.65px;
 }
 @mixin Int_teamCard_title {
   font-size: 14px;
   font-weight: normal;
   color: #191515;
-  //line-height: 2.57;
   letter-spacing: 0.5px;
 }
 
@@ -110,7 +108,6 @@
 }
 
 @mixin seemore {
-  //left: 50%;
   color: #55bbac;
   line-height: 1.5;
   opacity: 0.7;
@@ -140,7 +137,6 @@
 //----------------card hover---------------------
 @mixin cardHover {
   transition: 0.2s ease-in;
-  //box-shadow: 0 0 16px 4px #142c44;
   box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.16);
   transform: scale(1.05);
 }
@@ -153,7 +149,7 @@
 @mixin transitinTime {
   transition-duration: 0.8s;
   transition-delay: 0.15s;
-  @include respond-to("small") {
+  @include respond-to('small') {
     transition-duration: 0.5s;
     transition-delay: 0s;
   }
@@ -277,15 +273,15 @@
 @mixin image_cap_in {
   -webkit-animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-in-left-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  @include respond-to("medium") {
+  @include respond-to('medium') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     -webkit-animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     animation: swing-in-left-bck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
@@ -420,7 +416,7 @@
   }
 }
 
-//--------------portfolio Data card open animation -----------------------
+//--------------Portfolio Data card open animation -----------------------
 @mixin portfolio_data_card {
   -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -460,8 +456,8 @@
     0% {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(4px);
       filter: blur(4px);
       opacity: 0;
@@ -469,8 +465,8 @@
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(0px);
       filter: blur(0px);
       opacity: 1;
@@ -480,8 +476,8 @@
     0% {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(4px);
       filter: blur(4px);
       opacity: 0;
@@ -489,8 +485,8 @@
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       -webkit-filter: blur(0px);
       filter: blur(0px);
       opacity: 1;
@@ -530,15 +526,15 @@
     0% {
       -webkit-transform: scale(0);
       transform: scale(0);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
   }
@@ -546,15 +542,15 @@
     0% {
       -webkit-transform: scale(0);
       transform: scale(0);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
     100% {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transform-origin: 0% 50%;
-      transform-origin: 0% 50%;
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
       opacity: 1;
     }
   }
@@ -710,7 +706,7 @@
   }
 }
 
-//-----------Logo Card hover tool-tip animation-------------------
+//-----------logo Card hover tool-tip animation-------------------
 @mixin tool-tip {
   -webkit-animation: slide-in-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -748,15 +744,15 @@
     0% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
     100% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
   }
@@ -764,15 +760,15 @@
     0% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
     100% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
       opacity: 1;
     }
   }
@@ -780,23 +776,18 @@
 
 //-----------glow drop effect--------------------
 @mixin glowEffect {
-  background-image: linear-gradient(-45deg, transparent 44%, #ffffff 50% , transparent 57%);
+  background-image: linear-gradient(-45deg, transparent 44%, #ffffff 50%, transparent 57%);
   opacity: 0.3;
   background-size: 100vh;
   animation: glowAnimation 0.8s ease-out;
-
-  //animation: glowAnimation 10s infinite;
 
   @keyframes glowAnimation {
     0% {
       background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+      background-position: 0 50%;
     }
-    // 100% {
-    //   background-position: 0% 50%;
-    // }
   }
 }
 //----------------------------------Mobile responsive settings code snippet----------------------------------

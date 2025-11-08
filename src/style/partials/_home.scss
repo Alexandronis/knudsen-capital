@@ -5,25 +5,21 @@
 //-------------------Home banner section styles-------------------
 .home-main-wrapper {
   min-height: 95vh;
-  @include respond-to("ex_large_max") {
+  @include respond-to('ex_large_max') {
     min-height: 42vh;
   }
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     min-height: 42vh;
   }
-  @include respond-to("medium") {
+  @include respond-to('medium') {
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     min-height: 0;
   }
   .home-banner {
     width: 100%;
     position: relative;
     overflow: hidden;
-    // background: rgb(85, 187, 172);
-    // background: -moz-linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
-    // background: -webkit-linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
-    // background: linear-gradient(114deg, rgba(85, 187, 172, 1) 0%, rgba(34, 61, 87, 1) 200%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#55bbac",endColorstr="#223d57",GradientType=1);
     min-height: 600px;
     .video-thumb {
@@ -31,27 +27,25 @@
       height: 100%;
       transition: opacity 400ms ease 1s;
     }
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       align-items: flex-start;
       min-height: 450px;
-
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       padding-top: 80px;
       padding-bottom: 0px;
       min-height: 200px;
-
     }
     .textlayer {
       width: 100%;
       z-index: 3;
       visibility: visible !important;
       top: -50px !important;
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         top: -5px !important;
         left: -3% !important;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         visibility: hidden !important;
       }
     }
@@ -61,51 +55,51 @@
       left: 16% !important;
       top: 200px !important;
       visibility: hidden !important;
-      @include respond-to("ex_large_max") {
+      @include respond-to('ex_large_max') {
         left: 14% !important;
         top: 134px !important;
       }
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         top: 104px !important;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         visibility: visible !important;
         top: 20px !important;
         left: 7% !important;
       }
       h2 {
-        margin: 0 0%;
+        margin: 0 0;
         width: 28%;
         font-size: 71px;
         color: #ffff;
         font-weight: 400;
         line-height: 1.3;
-        @include respond-to("ex_large_max") {
+        @include respond-to('ex_large_max') {
           font-size: 50px;
         }
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           font-size: 38px;
         }
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           font-size: 28px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 20px;
           width: 46%;
         }
         strong {
           font-size: 110px;
           font-weight: 800;
-          @include respond-to("ex_large_max") {
+          @include respond-to('ex_large_max') {
             font-size: 86px;
           }
-          @include respond-to("medium_lg") {
+          @include respond-to('medium_lg') {
             font-size: 65px;
           }
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             font-size: 50px;
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             font-size: 40px;
           }
         }
@@ -137,14 +131,14 @@
     z-index: 99;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       top: -54px;
     }
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       padding: 65px 0 0;
       top: -54px;
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       top: -38px;
       margin: auto 7%;
     }
@@ -152,24 +146,24 @@
       text-align: center;
       width: 40%;
       margin: 0 auto;
-      @include respond-to("medium_lg") {
+      @include respond-to('medium_lg') {
         width: 52%;
       }
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         width: 70%;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         width: 90%;
       }
       h2 {
         @include criteriaHeading;
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 27px;
         }
       }
       p {
         @include criteriaSubHeading;
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 14px;
         }
       }
@@ -181,7 +175,7 @@
       width: 80%;
       align-items: center;
       margin: 0 auto;
-      @include respond-to("small") {
+      @include respond-to('small') {
         flex-wrap: wrap;
         padding: 50px 0;
       }
@@ -196,19 +190,19 @@
         transform: scale(1);
         transition: 0.2s ease-in-out;
         @include criteriaCard;
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           padding: 15px 30px;
           width: 40%;
         }
         .card-icon {
           min-height: 124px;
-          @include respond-to("small") {
+          @include respond-to('small') {
             min-height: 74px;
           }
           img {
             object-fit: cover;
             object-position: top;
-            @include respond-to("small") {
+            @include respond-to('small') {
               width: 60px;
             }
           }
@@ -216,7 +210,7 @@
         .card-title {
           h2 {
             @include criteriaCardTitle;
-            @include respond-to("small") {
+            @include respond-to('small') {
               font-size: 14px;
             }
           }
@@ -229,12 +223,12 @@
       }
     }
     .section-title {
-      @include respond-to("small") {
+      @include respond-to('small') {
         display: none;
       }
       h1 {
         @include HeadingTitle;
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 24px;
           font-weight: 600;
           line-height: 1;
@@ -246,13 +240,13 @@
       padding: 40px 0;
       margin: 0 auto;
       width: 60%;
-      @include respond-to("medium_lg") {
+      @include respond-to('medium_lg') {
         width: 80%;
       }
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         width: 90%;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         padding: 0 0 40px;
       }
       .card-containar {
@@ -264,16 +258,16 @@
         transition: 0.2s ease-in-out;
         .center-text {
           padding: 46px 127px;
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             padding: 46px 38px;
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             padding: 30px 38px;
           }
 
           p {
             @include txt_Principles;
-            @include respond-to("small") {
+            @include respond-to('small') {
               font-size: 12px;
               font-weight: 300;
               line-height: 1.57;
@@ -295,9 +289,8 @@
   background-color: #f2f2f2;
   padding: 70px 0;
   overflow: hidden;
-  @include respond-to("small") {
-    padding: 0;
-    padding-bottom: 50px;
+  @include respond-to('small') {
+    padding: 0 0 50px;
   }
   .portfolio {
     .section-title {
@@ -311,7 +304,7 @@
         background-color: #55bbac;
         display: block;
         margin-top: 20px;
-        @include respond-to("small") {
+        @include respond-to('small') {
           width: 95px;
           margin-top: 6px;
         }
@@ -328,16 +321,16 @@
         align-items: center;
         margin: 0 auto;
         flex-wrap: wrap;
-        @include respond-to("ex_large_max") {
+        @include respond-to('ex_large_max') {
           width: 82%;
         }
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           width: 88%;
         }
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           width: 96%;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           width: 95%;
           padding: 10px 0 0;
           justify-content: center;
@@ -359,7 +352,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                @include respond-to("small") {
+                @include respond-to('small') {
                   width: 65px;
                   height: 65px;
                   margin: 35px 7px 10px;
@@ -368,49 +361,6 @@
                   cursor: pointer;
                   width: 100%;
                 }
-                // &.opened {
-                //   @include data_logo_in;
-                //   z-index: 99;
-                //   position: absolute;
-                //   bottom: 137px;
-                //   left: -17px;
-                //   transform: translateY(2px) translateX(6px);
-
-                //   margin-right: 380px;
-                //   margin: 10px;
-                //   cursor: pointer;
-                //   transition-duration: 0.3s;
-                //   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-                //   width: 125px;
-                //   height: 125px;
-                //   object-fit: contain;
-                //   @include respond-to("small") {
-                //     width: 110px;
-                //     height: 110px;
-                //     bottom: 153px;
-                //     left: 14px;
-                //   }
-                //   &:hover {
-                //     @include respond-to("small") {
-                //       @include mobilecardHover;
-                //       bottom: 150px;
-                //       left: 19px;
-                //     }
-                //   }
-                // }
-                // &.none-active {
-                //   width: 125px;
-                //   height: 125px;
-                //   object-fit: contain;
-                //   border-radius: 12px;
-                //   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-                //   margin: 10px;
-                //   cursor: pointer;
-                //   @include respond-to("small") {
-                //     width: 70px;
-                //     height: 70px;
-                //   }
-                // }
                 transition: 0.2s ease-in-out;
                 &.active {
                   @include cardHover;
@@ -419,8 +369,8 @@
                     @include cardHover;
                     box-shadow: none;
                   }
-                  @include respond-to("small") {
-                    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.16);
+                  @include respond-to('small') {
+                    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
                   }
                 }
 
@@ -428,13 +378,13 @@
                 }
               }
               .tool-tip {
-                @include respond-to("medium_lg") {
+                @include respond-to('medium_lg') {
                   display: none;
                 }
-                @include respond-to("medium") {
+                @include respond-to('medium') {
                   display: none;
                 }
-                @include respond-to("small") {
+                @include respond-to('small') {
                   display: none;
                 }
                 cursor: pointer;
@@ -445,7 +395,7 @@
                 top: 135px;
                 left: 70px;
                 width: 150px;
-                @include respond-to("small") {
+                @include respond-to('small') {
                   top: 75px;
                   left: 10px;
                 }
@@ -464,7 +414,7 @@
                     padding: 5px 10px;
                     font-size: 16px;
                     font-weight: 300;
-                    @include respond-to("small") {
+                    @include respond-to('small') {
                       font-size: 12px;
                     }
                   }
@@ -502,13 +452,13 @@
                     flex-direction: column;
                     justify-content: space-between;
                     height: 240px;
-                    @include respond-to("small") {
+                    @include respond-to('small') {
                       margin: 10px 20px;
                     }
                     .title_section {
                       opacity: 1;
                       margin-left: 110px;
-                      @include respond-to("small") {
+                      @include respond-to('small') {
                         margin-left: 118px;
                       }
                       h3 {
@@ -522,10 +472,10 @@
                         letter-spacing: 0.86px;
                         text-align: left;
                         color: #191515;
-                        @include respond-to("medium") {
+                        @include respond-to('medium') {
                           font-size: 15px;
                         }
-                        @include respond-to("small") {
+                        @include respond-to('small') {
                           font-size: 18px;
                         }
                       }
@@ -578,26 +528,23 @@
   padding: 250px 0 30px;
   position: relative;
   height: 195px;
-  @include respond-to("medium") {
+  @include respond-to('medium') {
     padding: 175px 0 30px;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     padding: 88px 0 30px;
     height: 68px;
   }
   .value {
     background-color: #d6efeb;
     height: 70px;
-    @include respond-to("medium") {
-      //height: 115px;
-    }
-    @include respond-to("small") {
+    @include respond-to('small') {
       height: 28px;
     }
     &.one {
       height: 12px;
       margin-bottom: 20px;
-      @include respond-to("small") {
+      @include respond-to('small') {
         height: 10px;
         margin-bottom: 10px;
       }
@@ -611,10 +558,10 @@
     width: 100%;
     top: 0;
     bottom: 16px;
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       bottom: 54px;
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       bottom: 20px;
     }
 
@@ -633,21 +580,21 @@
       position: relative;
       margin: 48px;
       overflow: hidden;
-      @include respond-to("medium") {
+      @include respond-to('medium') {
         margin: 28px;
         height: 210px;
         padding: 0 40px;
       }
-      @include respond-to("small") {
+      @include respond-to('small') {
         height: 93px;
         background-color: transparent;
         box-shadow: none;
         margin: 12px;
-        padding: 0 0px;
+        padding: 0 0;
         border-radius: 8px;
       }
       img {
-        @include respond-to("small") {
+        @include respond-to('small') {
           width: 100%;
         }
       }
@@ -657,7 +604,6 @@
         height: 285px;
         z-index: 99;
         padding: 0 33px;
-
       }
       .num {
         font-size: 78px;
@@ -667,10 +613,10 @@
         text-align: center;
         position: absolute;
         bottom: 40%;
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           font-size: 68px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 24px;
           font-weight: 600;
           color: #ffffff;
@@ -685,10 +631,10 @@
         position: absolute;
         top: 60%;
         text-align: center;
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           font-size: 16px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 10px;
           font-weight: 600;
           color: #ffffff;
@@ -705,17 +651,17 @@
         z-index: 99;
         position: absolute;
         bottom: 26%;
-        @include respond-to("small") {
+        @include respond-to('small') {
           display: none;
         }
       }
       &.center {
         height: 341px;
         width: 283px;
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           height: 267px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           height: 120px;
           background-color: #ffffff;
 
@@ -726,13 +672,13 @@
           position: absolute;
           bottom: 40%;
           font-size: 80px;
-          @include respond-to("medium_lg") {
+          @include respond-to('medium_lg') {
             font-size: 70px;
           }
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             font-size: 65px;
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             font-size: 30px;
             font-weight: 600;
           }
@@ -742,10 +688,10 @@
           bottom: 13%;
           font-size: 29px;
           font-weight: 600;
-          @include respond-to("medium_lg") {
+          @include respond-to('medium_lg') {
             font-size: 27px;
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             font-size: 12px;
             font-weight: 600;
           }
@@ -759,14 +705,14 @@
           .glow {
             @include glowEffect;
             background-size: 150vh;
-            @include respond-to("ex_large_max") {
+            @include respond-to('ex_large_max') {
               background-size: 200vh;
             }
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               background-size: 150vh;
             }
           }
-          @include respond-to("small") {
+          @include respond-to('small') {
             box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
           }
         }
@@ -774,15 +720,15 @@
       transition: 0.2s ease-in-out;
       &:hover {
         @include cardHover;
-        @include respond-to("small") {
-          box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.16);
+        @include respond-to('small') {
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
         }
         .glow {
           @include glowEffect;
-          @include respond-to("ex_large_max") {
+          @include respond-to('ex_large_max') {
             background-size: 158vh;
           }
-          @include respond-to("medium_lg") {
+          @include respond-to('medium_lg') {
             background-size: 100vh;
           }
         }
@@ -795,7 +741,7 @@
   background-image: linear-gradient(307deg, #2c2e30, #373a3d);
   // padding: 160px 0;
   padding: 80px 0;
-  @include respond-to("small") {
+  @include respond-to('small') {
     padding: 60px 0;
   }
   .Our-team {
@@ -811,7 +757,7 @@
 .home-contact-wrapper {
   position: relative;
   min-height: 90vh;
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     min-height: 33vh;
   }
   .contact-img {
@@ -819,16 +765,16 @@
     object-fit: cover;
     display: block;
     min-height: 90vh;
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       min-height: 33vh;
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       display: none;
     }
   }
   .contact-img-mobile {
     display: none;
-    @include respond-to("small") {
+    @include respond-to('small') {
       display: block;
       width: 100%;
     }
@@ -838,15 +784,15 @@
     top: 30%;
     left: 12%;
     width: 25%;
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       width: 36%;
     }
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       width: 41%;
       left: 10%;
       top: 43px;
     }
-    @include respond-to("small") {
+    @include respond-to('small') {
       width: 70%;
       top: 10%;
     }
@@ -856,10 +802,10 @@
         font-weight: 600;
         color: #223d57;
         margin-bottom: 10px;
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           margin-bottom: 6px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 28px;
           font-weight: 600;
         }
@@ -869,7 +815,7 @@
         font-weight: 300;
         opacity: 0.6;
         color: #000000;
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 12px;
           font-weight: 300;
         }
@@ -895,10 +841,10 @@
           opacity: 0.9;
         }
 
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           margin-top: 30px;
         }
-        @include respond-to("small") {
+        @include respond-to('small') {
           font-size: 16px;
           width: 175px;
         }
@@ -911,24 +857,22 @@
 .second-card-wrapper {
   display: flex;
   align-items: center;
-  // padding: 80px;
   padding: 40px 0 0;
   flex-flow: row wrap;
   flex: 1 1 auto;
   justify-content: center;
   margin: 0 auto;
   width: 63%;
-  justify-content: center;
-  @include respond-to("medium_lg") {
+  @include respond-to('medium_lg') {
     width: 90%;
     padding: 37px;
   }
-  @include respond-to("medium") {
+  @include respond-to('medium') {
     @include transitinTime;
     width: 100%;
     padding: 0;
   }
-  @include respond-to("small") {
+  @include respond-to('small') {
     display: none;
   }
   .sec-team-card {
@@ -936,10 +880,10 @@
     background-color: #ffffff;
     width: 32%;
     margin: 10px;
-    @include respond-to("medium_lg") {
+    @include respond-to('medium_lg') {
       width: 44%;
     }
-    @include respond-to("medium") {
+    @include respond-to('medium') {
       width: 41%;
     }
     .first-line {
@@ -957,31 +901,31 @@
         padding: 11px;
         display: flex;
         justify-content: space-between;
-        @include respond-to("medium_lg") {
+        @include respond-to('medium_lg') {
           padding: 10px;
         }
-        @include respond-to("medium") {
+        @include respond-to('medium') {
           padding: 8px;
         }
         .title-set {
           .name {
             @include Int_teamCard_Name;
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               font-size: 26px;
             }
-            @include respond-to("medium") {
+            @include respond-to('medium') {
               font-size: 18px;
             }
           }
           .title {
             @include Int_teamCard_title;
-            @include respond-to("ex_large_max") {
+            @include respond-to('ex_large_max') {
               font-size: 11px;
             }
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               font-size: 17px;
             }
-            @include respond-to("medium") {
+            @include respond-to('medium') {
               font-size: 13px;
             }
           }
@@ -992,15 +936,15 @@
             img {
               width: 33px;
               margin-left: 14px;
-              @include respond-to("ex_large_max") {
+              @include respond-to('ex_large_max') {
                 width: 32px;
                 margin-left: 9px;
               }
-              @include respond-to("medium_lg") {
+              @include respond-to('medium_lg') {
                 width: 50px;
                 margin-left: 14px;
               }
-              @include respond-to("medium") {
+              @include respond-to('medium') {
                 width: 40px;
                 margin-left: 14px;
               }
@@ -1020,13 +964,13 @@
       @keyframes scale-up-tl {
         0% {
           transform: scale(0.5);
-          transform-origin: 0%;
+          transform-origin: 0;
           width: 55%;
           height: 20px;
         }
         100% {
           transform: scale(1);
-          transform-origin: 0%;
+          transform-origin: 0;
           width: 70%;
           height: 400px;
         }
@@ -1044,10 +988,10 @@
         }
         .card-titles {
           padding: 26px 26px 0;
-          @include respond-to("ex_large_max") {
+          @include respond-to('ex_large_max') {
             padding: 26px 16px 0;
           }
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             @include transitinTime;
             padding: 17px;
           }
@@ -1055,22 +999,22 @@
           display: block;
           .name {
             @include teamCard_Name;
-            @include respond-to("medium") {
+            @include respond-to('medium') {
               font-size: 26px;
             }
           }
           .title {
             padding-bottom: 16px;
             @include teamCard_title;
-            @include respond-to("ex_large_max") {
+            @include respond-to('ex_large_max') {
               font-size: 19px;
             }
-            @include respond-to("medium") {
+            @include respond-to('medium') {
               font-size: 16px;
             }
           }
           .icon-set {
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               margin-top: 15px;
             }
             a {
@@ -1078,7 +1022,7 @@
                 width: 36px;
                 margin-right: 16px;
                 margin-left: 0;
-                @include respond-to("medium_lg") {
+                @include respond-to('medium_lg') {
                   width: 60px;
                   margin-right: 24px;
                 }
@@ -1095,10 +1039,10 @@
           padding: 17px 76px;
           @include teamCard_desc;
           @include cad_text_faid;
-          @include respond-to("medium") {
+          @include respond-to('medium') {
             transition-duration: 0s;
             transition-delay: 0s;
-            padding: 0px 36px;
+            padding: 0 36px;
           }
 
           span {
@@ -1119,15 +1063,15 @@
       .card-titles {
         .title-set {
           .name {
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               font-size: 16px;
             }
           }
           .title {
-            @include respond-to("medium_lg") {
+            @include respond-to('medium_lg') {
               font-size: 11px;
             }
-            @include respond-to("medium") {
+            @include respond-to('medium') {
               font-size: 11px;
             }
           }
@@ -1135,14 +1079,14 @@
         .icon-set {
           a {
             img {
-              @include respond-to("ex_large_max") {
+              @include respond-to('ex_large_max') {
                 width: 29px;
                 margin-left: 3px;
               }
-              @include respond-to("medium_lg") {
+              @include respond-to('medium_lg') {
                 width: 38px;
               }
-              @include respond-to("medium") {
+              @include respond-to('medium') {
                 @include transitinTime;
                 transition-duration: 0s;
                 transition-delay: 0s;
@@ -1171,7 +1115,7 @@
 .second-card-mobile-wrapper {
   display: none;
   padding: 40px 6px;
-  @include respond-to("small") {
+  @include respond-to('small') {
     display: block;
   }
   .team-card {
@@ -1180,7 +1124,7 @@
       border-radius: 8px;
       height: 122px;
       overflow: hidden;
-      @include respond-to("small") {
+      @include respond-to('small') {
         margin: 10px 4px 20px 4px;
       }
       @include transitinTime;
@@ -1196,10 +1140,10 @@
           border-bottom-left-radius: 8px;
           object-fit: cover;
           object-position: center;
-          @include respond-to("small") {
+          @include respond-to('small') {
             width: 49%;
           }
-          @include respond-to("exsmall") {
+          @include respond-to('exsmall') {
             width: 42%;
           }
         }
@@ -1222,7 +1166,7 @@
           }
           .card_list_items {
             @include transitinTime;
-            padding: 0px 10px;
+            padding: 0 10px;
             object-fit: contain;
             font-family: Poppins;
             font-size: 14px;
@@ -1253,7 +1197,7 @@
               img {
                 width: 32px;
                 margin-right: 12px;
-                @include respond-to("small") {
+                @include respond-to('small') {
                   width: 34px;
                   margin-right: 10px;
                 }
@@ -1274,7 +1218,7 @@
           color: #000000;
           padding: 12px;
           text-align: justify;
-          @include respond-to("small") {
+          @include respond-to('small') {
             line-height: 1.4;
           }
         }
@@ -1286,7 +1230,7 @@
       .card_containar {
         background-color: #ffffff;
         height: 345px;
-        @include respond-to("small") {
+        @include respond-to('small') {
           height: 365px;
         }
         .first-line {
@@ -1296,7 +1240,7 @@
             filter: grayscale(0);
             border-radius: 8px;
             width: 45%;
-            @include respond-to("small") {
+            @include respond-to('small') {
               width: 42%;
             }
           }
@@ -1321,6 +1265,6 @@
     }
   }
 }
-.banner-video{
+.banner-video {
   width: 100%;
 }

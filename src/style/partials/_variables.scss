@@ -7,7 +7,7 @@
 $txtNav-fontColor: #ffffff;
 $innerHeader-color: #223d57;
 $innerHeader-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-$criteriaHeading:#191515;
+$criteriaHeading: #191515;
 
 // **************** SIZES ******************
 $txtNav-fontSize: 18px; // Navigation Bar
@@ -18,44 +18,44 @@ $teamCard-width: 60%;
 
 $txtPrimary: #00000088;
 
-$primary-color:  #223d57;
+$primary-color: #223d57;
 $dark: #343a40;
 $white-color: #fff;
 $black-color: #000000;
-$background-green :#dcf1ee;
+$background-green: #dcf1ee;
 
 // =========================================
 // =Mobile responsive settings code snippet=
 // =========================================
 $breakpoints: (
-  "exsmall_320": (
+  'exsmall_320': (
     max-width: 325px,
   ),
-  "exsmall": (
+  'exsmall': (
     max-width: 375px,
   ),
-  "exsmall_574": (
+  'exsmall_574': (
     max-width: 574px,
   ),
-  "small": (
+  'small': (
     max-width: 767px,
   ),
-  "medium": (
+  'medium': (
     max-width: 991px,
   ),
-  "medium_lg": (
+  'medium_lg': (
     max-width: 1024px,
   ),
-  "large": (
+  'large': (
     max-width: 1199px,
   ),
-  "ex_large_max": (
+  'ex_large_max': (
     max-width: 1440px,
   ),
-  "ex_large": (
+  'ex_large': (
     max-width: 1920px,
   ),
-  "min768": (
+  'min768': (
     min-width: 768px,
   ),
 ) !default;

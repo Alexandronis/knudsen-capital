@@ -3,254 +3,248 @@
 // =========================================
 
 //-------------lazy load display block css -------------
-.lazy-load-image-loaded{
-    display: block !important;
+.lazy-load-image-loaded {
+  display: block !important;
 }
 //-----------Slider Styles------------------
 .slick-slider {
-    div {
-        outline: none;
-    }
-    &:focus,
-    a {
-        outline: none;
-    }
-    @include page_fade_in;
-    @include respond-to("small") {
-        margin-bottom: -7px;
-    }
-    &:focus {
-        outline: none;
-    }
+  div {
+    outline: none;
+  }
+  &:focus,
+  a {
+    outline: none;
+  }
+  @include page_fade_in;
+  @include respond-to('small') {
+    margin-bottom: -7px;
+  }
+  &:focus {
+    outline: none;
+  }
 
-    .slick-list {
-        .slick-track {
-            &:focus {
-                outline: none;
-            }
-        }
+  .slick-list {
+    .slick-track {
+      &:focus {
+        outline: none;
+      }
     }
+  }
 
-    .slick-slide {
-        .sliderImages {
-            display: block;
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            object-position: center;
-            &:focus {
-                outline: none;
-            }
-            @include respond-to("small") {
-                height: 310px;
-            }
-        }
+  .slick-slide {
+    .sliderImages {
+      display: block;
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      object-position: center;
+      &:focus {
+        outline: none;
+      }
+      @include respond-to('small') {
+        height: 310px;
+      }
     }
-    .slick-arrow {
-        &.slick-next {
-            right: 10% !important;
-            top: 84% !important;
-            width: 35px;
-            height: 35px;
-            &::before {
-                color: #55bbac;
-                font-size: 38px;
-            }
-        }
-        &.slick-prev {
-            left: 84% !important;
-            top: 84% !important;
-            z-index: 99 !important;
-            width: 35px;
-            height: 35px;
-            @include respond-to("ex_large_max") {
-                left: 82% !important;
-            }
-            @include respond-to("medium_lg") {
-                left: 80% !important;
-            }
-            @include respond-to("medium") {
-                left: 78% !important;
-            }
-            @include respond-to("small") {
-                left: 65% !important;
-            }
-            &::before {
-                color: #55bbac;
-                font-size: 38px;
-            }
-        }
+  }
+  .slick-arrow {
+    &.slick-next {
+      right: 10% !important;
+      top: 84% !important;
+      width: 35px;
+      height: 35px;
+      &::before {
+        color: #55bbac;
+        font-size: 38px;
+      }
     }
+    &.slick-prev {
+      left: 84% !important;
+      top: 84% !important;
+      z-index: 99 !important;
+      width: 35px;
+      height: 35px;
+      @include respond-to('ex_large_max') {
+        left: 82% !important;
+      }
+      @include respond-to('medium_lg') {
+        left: 80% !important;
+      }
+      @include respond-to('medium') {
+        left: 78% !important;
+      }
+      @include respond-to('small') {
+        left: 65% !important;
+      }
+      &::before {
+        color: #55bbac;
+        font-size: 38px;
+      }
+    }
+  }
 }
 //-----------Contact page Styles------------------
 .contact-wrapper {
-    padding: 90px 0 0;
-    background-color: #223d57;
-    @include respond-to("small") {
-        padding: 104px 0 0;
+  padding: 90px 0 0;
+  background-color: #223d57;
+  @include respond-to('small') {
+    padding: 104px 0 0;
+  }
+  .content-wrapper {
+    @include page_fade_in;
+    width: 100%;
+    padding: 50px 0 5px;
+    @include respond-to('small') {
+      padding: 0 0;
     }
-    .content-wrapper {
-        @include page_fade_in;
+    .content-inner-box {
+      width: 70%;
+      margin: 0 auto;
+      @include respond-to('small') {
         width: 100%;
-        padding: 50px 0 5px;
-        @include respond-to("small") {
-            padding: 0 0;
+      }
+      .company-values {
+        margin-bottom: 50px;
+        @include respond-to('small') {
+          margin-bottom: 0;
         }
-        .content-inner-box {
-            width: 70%;
+        .values-title {
+          @include respond-to('small') {
+            background-color: #223d57;
+            padding: 45px 40px;
+          }
+          .main-title {
+            @include respond-to('small') {
+              display: none;
+            }
+            &.mobile {
+              display: none;
+              @include respond-to('small') {
+                display: block;
+              }
+            }
+          }
+        }
+        .value-wrapper {
+          margin: 70px auto;
+          width: 80%;
+          @include respond-to('small') {
+            padding: 0;
+            width: 100%;
             margin: 0 auto;
-            @include respond-to("small") {
-                width: 100%;
+          }
+          .sub-heaading {
+            display: none;
+            margin-left: 19px;
+            h2 {
+              margin-left: 18px;
+              font-size: 18px;
+              letter-spacing: 0.65px;
             }
-            .company-values {
-                margin-bottom: 50px;
-                @include respond-to("small") {
-                    margin-bottom: 0;
-                }
-                .values-title {
-                    @include respond-to("small") {
-                        background-color: #223d57;
-                        padding: 45px 40px;
-                    }
-                    .main-title {
-                        @include respond-to("small") {
-                            display: none;
-                        }
-                        &.mobile {
-                            display: none;
-                            @include respond-to("small") {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-                .value-wrapper {
-                    // padding: 20px;
-                    // width: 95%;
-                    // margin: 40px auto;
-                    margin: 70px auto;
-                    width: 80%;
-                    @include respond-to("small") {
-                        padding: 0;
-                        width: 100%;
-                        margin: 0 auto;
-                    }
-                    .sub-heaading {
-                        display: none;
-                        margin-left: 19px;
-                        h2 {
-                            margin-left: 18px;
-                            font-size: 18px;
-                            letter-spacing: 0.65px;
-                        }
-                        @include respond-to("small") {
-                            display: flex;
-                        }
-                        span {
-                            width: 7px;
-                            height: 30.6px;
-                            border-radius: 50px;
-                            background-color: #223d57;
-                        }
-                        h2 {
-                            color: #000000;
-                        }
-                    }
+            @include respond-to('small') {
+              display: flex;
+            }
+            span {
+              width: 7px;
+              height: 30.6px;
+              border-radius: 50px;
+              background-color: #223d57;
+            }
+            h2 {
+              color: #000000;
+            }
+          }
 
-                    
-                    h3 {
-                        color: #ffffff;
-                        font-size: 24px;
-                        font-weight: normal;
-                        line-height: 1.5;
-                        letter-spacing: 0.86px;
-                        padding: 30px 100px 8px;
-                        @include respond-to("medium_lg") {
-                            padding: 30px 35px 8px;
-                        }
-                        @include respond-to("medium") {
-                            padding: 30px 0 8px;
-                        }
-                        @include respond-to("small") {
-                            display: none;
-                        }
-                    }
-                    .common_card {
-                        // padding: 40px 92px;
-                        @include respond-to("medium_lg") {
-                            padding: 40px 0px;
-                        }
-                        @include respond-to("medium") {
-                            margin: auto 0;
-                        }
-                        @include respond-to("small") {
-                            background-color: #e2f2f0;
-                            padding: 10px 18px;
-                            margin: 0 auto;
-                        }
-                        .common_card_containar {
-                            @include respond-to("small") {
-                                margin: 44px 0;
-                            }
-                            .image_containar {
-                                //@include glowEffect;
-                                @include respond-to("small") {
-                                    width: 120px;
-                                    height: 120px;
-                                    top: -8px;
-                                    left: -1px;
-                                }
-                                .image_icon {
-                                    top: 20%;
-                                    @include respond-to("small") {
-                                        width: 40%;
-                                        top: 26%;
-                                    }
-                                }
-                            }
-                            .leftside_text {
-                                @include respond-to("medium") {
-                                    padding-left: 30%;
-                                }
-                                @include respond-to("small") {
-                                    min-height: 105px;
-                                    padding-left: 43%;
-                                }
-                            }
-                            &:hover {
-                                @include respond-to("small") {
-                                    @include cardHover;
-                                }
-                            }
-                        }
-                        .card_list_items {
-                            @include respond-to("medium") {
-                                padding: 0 69px;
-                            }
-                            @include respond-to("small") {
-                                padding: 0 0;
-                            }
-                            &.contact-us-item {
-                                ul {
-                                    li {
-                                        padding-left: 48px;
-                                        margin-bottom: 0;
-                                        color: #000000;
-                                        font-size: 14px;
-                                        font-weight: 500;
-                                        list-style: none;
-                                        @include respond-to("small") {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                            padding-left: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+          h3 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: 0.86px;
+            padding: 30px 100px 8px;
+            @include respond-to('medium_lg') {
+              padding: 30px 35px 8px;
             }
+            @include respond-to('medium') {
+              padding: 30px 0 8px;
+            }
+            @include respond-to('small') {
+              display: none;
+            }
+          }
+          .common_card {
+            @include respond-to('medium_lg') {
+              padding: 40px 0;
+            }
+            @include respond-to('medium') {
+              margin: auto 0;
+            }
+            @include respond-to('small') {
+              background-color: #e2f2f0;
+              padding: 10px 18px;
+              margin: 0 auto;
+            }
+            .common_card_containar {
+              @include respond-to('small') {
+                margin: 44px 0;
+              }
+              .image_containar {
+                @include respond-to('small') {
+                  width: 120px;
+                  height: 120px;
+                  top: -8px;
+                  left: -1px;
+                }
+                .image_icon {
+                  top: 20%;
+                  @include respond-to('small') {
+                    width: 40%;
+                    top: 26%;
+                  }
+                }
+              }
+              .leftside_text {
+                @include respond-to('medium') {
+                  padding-left: 30%;
+                }
+                @include respond-to('small') {
+                  min-height: 105px;
+                  padding-left: 43%;
+                }
+              }
+              &:hover {
+                @include respond-to('small') {
+                  @include cardHover;
+                }
+              }
+            }
+            .card_list_items {
+              @include respond-to('medium') {
+                padding: 0 69px;
+              }
+              @include respond-to('small') {
+                padding: 0 0;
+              }
+              &.contact-us-item {
+                ul {
+                  li {
+                    padding-left: 48px;
+                    margin-bottom: 0;
+                    color: #000000;
+                    font-size: 14px;
+                    font-weight: 500;
+                    list-style: none;
+                    @include respond-to('small') {
+                      font-size: 12px;
+                      font-weight: 300;
+                      padding-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 }

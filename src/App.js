@@ -1,37 +1,30 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import "./App.css";
-import "./style/main.scss";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import Header from "./components/layout/header";
-import Home from "./components/pages/home";
-import About from "./components/pages/about";
-import Portfolio from "./components/pages/portfolio";
-import Contact from "./components/pages/Contact";
-import ClientPage from "./components/layout/clientPage";
-import NotFoundPage from "./components/templates/404";
-import CharitableContributions from "./components/pages/CharitableContributions";
+import Header from './components/layout/Header';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
+import ClientPage from './components/layout/ClientPage';
+import NotFoundPage from './components/templates/404';
+import CharitableContributions from './components/pages/CharitableContributions';
+
+import './style/main.scss';
 
 function App() {
   return (
     <div className="App">
-      <Route
-        path={"(.+)"}
-        render={() => (
-          <>
-            <Header />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/portfolio" component={Portfolio} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/client-page" component={ClientPage} />
-              <Route exact path="/charitable-contributions" component={CharitableContributions} />
-              <Route component={NotFoundPage} />
-            </Switch>
-          </>
-        )}
-      />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/client-page" element={<ClientPage />} />
+        <Route path="/charitable-contributions" element={<CharitableContributions />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
   );
 }

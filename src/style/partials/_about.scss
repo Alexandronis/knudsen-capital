@@ -3,878 +3,867 @@
 // =========================================
 
 .about-wrapper {
-    padding: 87px 0 0;
-    background-color: #223d57;
-    @include respond-to("small") {
-        background-color: #ffffff;
-        padding: 40px 0 0;
+  padding: 87px 0 0;
+  background-color: #223d57;
+  @include respond-to('small') {
+    background-color: #ffffff;
+    padding: 40px 0 0;
+  }
+  .content-wrapper {
+    @include page_fade_in;
+    width: 100%;
+    padding: 50px 0;
+    @include respond-to('small') {
+      padding: 0 0;
     }
-    .content-wrapper {
-        @include page_fade_in;
+    .content-inner-box {
+      width: 70%;
+      margin: 0 auto;
+      @include respond-to('medium_lg') {
+        width: 80%;
+      }
+      @include respond-to('small') {
         width: 100%;
-        padding: 50px 0;
-        @include respond-to("small") {
-            padding: 0 0;
+      }
+      .values-title {
+        @include respond-to('small') {
+          background-color: #223d57;
+          padding: 70px 40px 35px;
+          display: block;
         }
-        .content-inner-box {
-            width: 70%;
+        .about-us-text-mobile {
+          display: none;
+
+          @include respond-to('small') {
+            color: #ffffff;
+            display: block;
             margin: 0 auto;
-            @include respond-to("medium_lg") {
-                width: 80%;
-            }
-            @include respond-to("small") {
-                width: 100%;
-            }
-            .values-title {
-                @include respond-to("small") {
-                    background-color: #223d57;
-                    padding: 70px 40px 35px;
-                    display: block;
-                }
-                .about-us-text-mobile {
-                    display: none;
-
-                    @include respond-to("small") {
-                        color: #ffffff;
-                        display: block;
-                        margin: 0 auto;
-                        font-size: 14px;
-                        font-weight: 200;
-                        line-height: 1.29;
-                        letter-spacing: normal;
-                        padding: 45px 0 0;
-                    }
-                }
-            }
-            .company-values {
-                margin-bottom: 50px;
-                width: 85%;
-                margin: 0 auto;
-                @include respond-to("small") {
-                    width: 100%;
-                }
-                .about-us-text {
-                    font-size: 16px;
-                    font-weight: 300;
-                    line-height: 1.63;
-                    padding: 0 36px;
-                    margin: 50px auto;
-                    color: #ffffff;
-                    letter-spacing: 0.58px;
-                    display: block;
-                    @include respond-to("small") {
-                        display: none;
-                    }
-                }
-            }
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 1.29;
+            letter-spacing: normal;
+            padding: 45px 0 0;
+          }
         }
-        .values-cards {
-            width: 59%;
-            margin: 0 auto;
-            @include respond-to("medium_lg") {
-                width: 72%;
-            }
-            @include respond-to("small") {
-                width: 100%;
-                margin: 0 auto;
-                padding: 40px 0 0;
-            }
-            .sub-heaading {
-                padding-top: 35px;
-                @include respond-to("small") {
-                    margin-left: 8%;
-                    padding-top: 0;
-                }
-                span {
-                    @include respond-to("small") {
-                        background-color: #223d57;
-                    }
-                }
-                h2 {
-                    @include respond-to("small") {
-                        color: #000000;
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
-                }
-            }
-            .common_card {
-                @include respond-to("small") {
-                    margin: auto 0;
-                    background-color: #e5f5f3;
-                    padding: 1px 12px;
-                    margin: 38px auto;
-                }
-                .common_card_containar {
-                    .image_containar {
-                        @include respond-to("small") {
-                            top: -6px;
-                            left: -5px;
-                            width: 107px;
-                            height: 110px;
-                        }
-                        .image_icon {
-                            @include respond-to("small") {
-                                width: 40%;
-                                top: 26%;
-                            }
-                        }
-                    }
-                    .leftside_text {
-                        margin: 0 auto;
-                        width: 70%;
-                        @include respond-to("small") {
-                            min-height: 98px;
-                            padding-left: 31%;
-                        }
-                        .card_list_items {
-                            .item {
-                                p {
-                                    @include respond-to("medium_lg") {
-                                        margin-left: 3%;
-                                    }
-                                    @include respond-to("medium_lg") {
-                                        margin: 0 8%;
-                                    }
-                                    @include respond-to("small") {
-                                        margin: 0 2%;
-                                    }
-                                }
-                            }
-
-                            padding: 0;
-                            width: 100%;
-                            @include respond-to("small") {
-                                padding: 0;
-                                p {
-                                    @include respond-to("small") {
-                                        font-size: 12px;
-                                        font-weight: 300;
-                                        margin: 0 8%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &:hover {
-                        @include respond-to("small") {
-                            @include cardHover;
-                        }
-                    }
-                    &.oursecond {
-                        .image_containar {
-                            @include respond-to("small") {
-                                height: 114px;
-                                top: -8%;
-                            }
-                            .image_icon {
-                                @include respond-to("small") {
-                                    top: 34%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+      }
+      .company-values {
+        width: 85%;
+        margin: 0 auto;
+        @include respond-to('small') {
+          width: 100%;
         }
-        &.ourTeam {
-            background-color: #ffffff;
-            overflow: hidden;
-            .content-inner-box {
-                width: 70%;
-                margin: 0 auto;
-                @include respond-to("small") {
-                    width: 100%;
-                }
-                .values-title {
-                    @include respond-to("small") {
-                        background-color: #ffffff;
-                        padding: 0px 40px;
-                        display: block;
-                    }
-                    span {
-                        @include respond-to("small") {
-                            display: none;
-                        }
-                    }
-                    h2 {
-                        color: #232323;
-                        @include respond-to("small") {
-                            font-size: 36px;
-                            font-weight: 600;
-                            margin-left: 0;
-                            line-height: 1;
-                            letter-spacing: 1.3px;
-                            color: #000000;
-                            margin-bottom: 36px;
-                        }
-                    }
-                    .short-Desc {
-                        display: none;
-                        @include respond-to("small") {
-                            display: block;
-                            font-size: 12px;
-                            font-weight: 300;
-                            line-height: 1.5;
-                            color: #000000;
-                        }
-                    }
-                }
-                .about-us-text {
-                    font-size: 16px;
-                    font-weight: 300;
-                    line-height: 1.63;
-                    padding: 0 36px;
-                    margin: 70px auto;
-                    color: #ffffff;
-                    letter-spacing: 0.58px;
-                }
-            }
+        .about-us-text {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.63;
+          padding: 0 36px;
+          margin: 50px auto;
+          color: #ffffff;
+          letter-spacing: 0.58px;
+          display: block;
+          @include respond-to('small') {
+            display: none;
+          }
         }
-        //-----------------------pdf download section styles----------------------------
-        &.learn-more-about {
-            background-color: #ffffff;
-            @include respond-to("small") {
-                margin-top: 45px;
-            }
-            .sub-heaading {
-                @include respond-to("small") {
-                    margin-left: 8%;
-                }
-                span {
-                    height: 30.6px;
-                    background-color: #223d57;
-                }
-                h2 {
-                    color: #000000;
-                    @include respond-to("small") {
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
-                }
-            }
-            .pdf-card-container {
-                @include respond-to("small") {
-                    width: 100%;
-                    margin: 40px auto;
-                    padding: 1px 0;
-                }
-                .common_card {
-                    margin: auto 10%;
-                    @include respond-to("medium_lg") {
-                        margin: auto 4%;
-                    }
-                    @include respond-to("medium") {
-                    }
-                    @include respond-to("small") {
-                        margin: auto 20px;
-                    }
-                    //--------download card hover effect---------
-                    .common_card_containar {
-                        .image_containar {
-                            cursor: pointer;
-                            @include respond-to("small") {
-                                top: -6px;
-                                left: -5px;
-                                width: 100px;
-                                height: 110px;
-                            }
-                        }
-                        &:hover {
-                            @include cardHover;
-                        }
-                        .leftside_text {
-                            @include respond-to("medium_lg") {
-                                padding-left: 28%;
-                            }
-                            @include respond-to("small") {
-                                padding: 0 0 0 42%;
-                                min-height: 98px;
-                            }
-                            .card_list_items {
-                                a{
-                                    text-decoration: none;
-                                }
-                                @include respond-to("small") {
-                                    padding: 0;
-                                    p {
-                                        @include respond-to("small") {
-                                            font-size: 12px;
-                                            font-weight: 300;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .download-item {
-                        padding: 0 40px;
-                        p {
-                            color: #000000;
-                            letter-spacing: 0.58px;
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                    }
-                }
-                width: 70%;
-                margin: 0 auto;
-                background-color: #dcf1ee;
-                padding: 20px;
-                margin: 77px auto;
-            }
-        }
+      }
     }
+    .values-cards {
+      width: 59%;
+      margin: 0 auto;
+      @include respond-to('medium_lg') {
+        width: 72%;
+      }
+      @include respond-to('small') {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0 0;
+      }
+      .sub-heaading {
+        padding-top: 35px;
+        @include respond-to('small') {
+          margin-left: 8%;
+          padding-top: 0;
+        }
+        span {
+          @include respond-to('small') {
+            background-color: #223d57;
+          }
+        }
+        h2 {
+          @include respond-to('small') {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+      .common_card {
+        @include respond-to('small') {
+          background-color: #e5f5f3;
+          padding: 1px 12px;
+          margin: 38px auto;
+        }
+        .common_card_containar {
+          .image_containar {
+            @include respond-to('small') {
+              top: -6px;
+              left: -5px;
+              width: 107px;
+              height: 110px;
+            }
+            .image_icon {
+              @include respond-to('small') {
+                width: 40%;
+                top: 26%;
+              }
+            }
+          }
+          .leftside_text {
+            margin: 0 auto;
+            width: 70%;
+            @include respond-to('small') {
+              min-height: 98px;
+              padding-left: 31%;
+            }
+            .card_list_items {
+              .item {
+                p {
+                  @include respond-to('medium_lg') {
+                    margin-left: 3%;
+                  }
+                  @include respond-to('medium_lg') {
+                    margin: 0 8%;
+                  }
+                  @include respond-to('small') {
+                    margin: 0 2%;
+                  }
+                }
+              }
+
+              padding: 0;
+              width: 100%;
+              @include respond-to('small') {
+                padding: 0;
+                p {
+                  @include respond-to('small') {
+                    font-size: 12px;
+                    font-weight: 300;
+                    margin: 0 8%;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            @include respond-to('small') {
+              @include cardHover;
+            }
+          }
+          &.oursecond {
+            .image_containar {
+              @include respond-to('small') {
+                height: 114px;
+                top: -8%;
+              }
+              .image_icon {
+                @include respond-to('small') {
+                  top: 34%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.ourTeam {
+      background-color: #ffffff;
+      overflow: hidden;
+      .content-inner-box {
+        width: 70%;
+        margin: 0 auto;
+        @include respond-to('small') {
+          width: 100%;
+        }
+        .values-title {
+          @include respond-to('small') {
+            background-color: #ffffff;
+            padding: 0 40px;
+            display: block;
+          }
+          span {
+            @include respond-to('small') {
+              display: none;
+            }
+          }
+          h2 {
+            color: #232323;
+            @include respond-to('small') {
+              font-size: 36px;
+              font-weight: 600;
+              margin-left: 0;
+              line-height: 1;
+              letter-spacing: 1.3px;
+              color: #000000;
+              margin-bottom: 36px;
+            }
+          }
+          .short-Desc {
+            display: none;
+            @include respond-to('small') {
+              display: block;
+              font-size: 12px;
+              font-weight: 300;
+              line-height: 1.5;
+              color: #000000;
+            }
+          }
+        }
+        .about-us-text {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.63;
+          padding: 0 36px;
+          margin: 70px auto;
+          color: #ffffff;
+          letter-spacing: 0.58px;
+        }
+      }
+    }
+    //-----------------------pdf download section styles----------------------------
+    &.learn-more-about {
+      background-color: #ffffff;
+      @include respond-to('small') {
+        margin-top: 45px;
+      }
+      .sub-heaading {
+        @include respond-to('small') {
+          margin-left: 8%;
+        }
+        span {
+          height: 30.6px;
+          background-color: #223d57;
+        }
+        h2 {
+          color: #000000;
+          @include respond-to('small') {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+      .pdf-card-container {
+        @include respond-to('small') {
+          width: 100%;
+          margin: 40px auto;
+          padding: 1px 0;
+        }
+        .common_card {
+          margin: auto 10%;
+          @include respond-to('medium_lg') {
+            margin: auto 4%;
+          }
+          @include respond-to('medium') {
+          }
+          @include respond-to('small') {
+            margin: auto 20px;
+          }
+          //--------download card hover effect---------
+          .common_card_containar {
+            .image_containar {
+              cursor: pointer;
+              @include respond-to('small') {
+                top: -6px;
+                left: -5px;
+                width: 100px;
+                height: 110px;
+              }
+            }
+            &:hover {
+              @include cardHover;
+            }
+            .leftside_text {
+              @include respond-to('medium_lg') {
+                padding-left: 28%;
+              }
+              @include respond-to('small') {
+                padding: 0 0 0 42%;
+                min-height: 98px;
+              }
+              .card_list_items {
+                a {
+                  text-decoration: none;
+                }
+                @include respond-to('small') {
+                  padding: 0;
+                  p {
+                    @include respond-to('small') {
+                      font-size: 12px;
+                      font-weight: 300;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .download-item {
+            padding: 0 40px;
+            p {
+              color: #000000;
+              letter-spacing: 0.58px;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+        width: 70%;
+        background-color: #dcf1ee;
+        padding: 20px;
+        margin: 77px auto;
+      }
+    }
+  }
 }
 
 //-------------profile cards styles-------------------------
 .team-profile-wrapper {
-    @include transitinTime;
-    margin: 100px auto 0;
-    width: 52%;
-    margin: 0 26%;
-    @include respond-to("medium_lg") {
-        width: 70%;
-        margin: 0 19%;
-    }
-    @include respond-to("medium") {
-        margin: 0 22%;
-        width: 70%;
-    }
-    @include respond-to("small") {
-        transition-duration: 0s;
-        transition-delay: 0s;
-        width: 88%;
-        margin: 0 auto;
-    }
+  @include transitinTime;
+  width: 52%;
+  margin: 0 26%;
+  @include respond-to('medium_lg') {
+    width: 70%;
+    margin: 0 19%;
+  }
+  @include respond-to('medium') {
+    margin: 0 22%;
+    width: 70%;
+  }
+  @include respond-to('small') {
+    transition-duration: 0s;
+    transition-delay: 0s;
+    width: 88%;
+    margin: 0 auto;
+  }
 
-    .team-profile-container {
-        transition: 0.3s;
-        display: flex;
-        align-items: flex-end;
-        position: relative;
-        margin-top: 100px;
+  .team-profile-container {
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 100px;
 
-        .dataProfile_wrapper {
-            @include transitinTime;
-            border-radius: 12px;
-            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-            background-color: #223d57;
-            overflow: hidden;
-            @include respond-to("small") {
-                height: 148px;
+    .dataProfile_wrapper {
+      @include transitinTime;
+      border-radius: 12px;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+      background-color: #223d57;
+      overflow: hidden;
+      @include respond-to('small') {
+        height: 148px;
+      }
+      .profile-image {
+        z-index: 99;
+        @include transitinTime;
+        position: absolute;
+        left: -114px;
+        bottom: 16px;
+        @include respond-to('ex_large_max') {
+          bottom: 33px;
+        }
+        @include respond-to('medium_lg') {
+          bottom: 38px;
+        }
+        @include respond-to('medium') {
+          width: 50%;
+          left: -138px;
+          bottom: 44px;
+        }
+        @include respond-to('small') {
+          left: 5px;
+          bottom: 0;
+          top: -44px;
+        }
+        img {
+          width: 100%;
+          height: 287px;
+        }
+      }
+      .cover-image {
+        @include transitinTime;
+        object-fit: none;
+        object-position: center;
+        width: 100%;
+        height: 0px;
+        @include respond-to('small') {
+          object-fit: cover;
+        }
+      }
+      .profileCard {
+        @include transitinTime;
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+        padding-left: 24%;
+        height: 177px;
+        @include respond-to('ex_large_max') {
+          height: 240px;
+        }
+        @include respond-to('medium_lg') {
+          height: 196px;
+        }
+        @include respond-to('medium') {
+          padding-left: 23%;
+        }
+        @include respond-to('small') {
+          @include transitinTime;
+          padding-left: 43%;
+        }
+        .first-line {
+          display: flex;
+          @include respond-to('small') {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+          }
+          .title-set {
+            padding: 24px 30px 12px;
+            @include respond-to('medium') {
+              padding: 24px 8px 12px;
             }
-            .profile-image {
-                z-index: 99;
-                @include transitinTime;
-                position: absolute;
-                left: -114px;
-                bottom: 16px;
-                @include respond-to("ex_large_max") {
-                    bottom: 33px;
-                }
-                @include respond-to("medium_lg") {
-                    bottom: 38px;
-                }
-                @include respond-to("medium") {
-                    width: 50%;
-                    left: -138px;
-                    bottom: 44px;
-                }
-                @include respond-to("small") {
-                    left: 5px;
-                    bottom: 0;
-                    top: -44px;
-                }
-                img {
-                    width: 100%;
-                    height: 287px;
-                }
+            @include respond-to('small') {
+              padding: 12px 26px 4px;
             }
-            .cover-image {
-                @include transitinTime;
-                object-fit: none;
-                object-position: center;
-                width: 100%;
-                height: 0px;
-                @include respond-to("small") {
-                    object-fit: cover;
-                }
+            .name {
+              @include transitinTime;
+              visibility: visible;
+              color: #ffffff;
+              letter-spacing: 0.86px;
+              line-height: 1.5;
+              font-size: 24px;
+              font-weight: 600;
+              opacity: 1;
+              @include respond-to('small') {
+                font-size: 14px;
+                font-weight: 600;
+              }
             }
-            .profileCard {
+            .title {
+              @include transitinTime;
+              visibility: visible;
+              color: #ffffff;
+              line-height: 2;
+              letter-spacing: 0.65px;
+              font-size: 18px;
+              font-weight: normal;
+              opacity: 1;
+              @include respond-to('small') {
+                font-size: 12px;
+                line-height: 1.3;
+                font-weight: normal;
+              }
+            }
+          }
+          .icon-set {
+            padding: 24px 30px 12px;
+            @include respond-to('medium') {
+              padding: 24px 8px 12px;
+            }
+            @include respond-to('small') {
+              padding: 0 26px 12px;
+            }
+            a {
+              img {
                 @include transitinTime;
-                overflow: hidden;
-                visibility: visible;
                 opacity: 1;
-                padding-left: 24%;
-                height: 177px;
-                @include respond-to("ex_large_max") {
-                    height: 240px;
+                width: 36px;
+                margin-left: 16px;
+                @include respond-to('small') {
+                  margin: 0 16px 0 0;
                 }
-                @include respond-to("medium_lg") {
-                    height: 196px;
-                }
-                @include respond-to("medium") {
-                    padding-left: 23%;
-                }
-                @include respond-to("small") {
-                    @include transitinTime;
-                    padding-left: 43%;
-                }
-                .first-line {
-                    display: flex;
-                    @include respond-to("small") {
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                    }
-                    .title-set {
-                        padding: 24px 30px 12px;
-                        @include respond-to("medium") {
-                            padding: 24px 8px 12px;
-                        }
-                        @include respond-to("small") {
-                            padding: 12px 26px 4px;
-                        }
-                        .name {
-                            @include transitinTime;
-                            visibility: visible;
-                            color: #ffffff;
-                            letter-spacing: 0.86px;
-                            line-height: 1.5;
-                            font-size: 24px;
-                            font-weight: 600;
-                            opacity: 1;
-                            @include respond-to("small") {
-                                font-size: 14px;
-                                font-weight: 600;
-                            }
-                        }
-                        .title {
-                            @include transitinTime;
-                            visibility: visible;
-                            color: #ffffff;
-                            line-height: 2;
-                            letter-spacing: 0.65px;
-                            font-size: 18px;
-                            font-weight: normal;
-                            opacity: 1;
-                            @include respond-to("small") {
-                                font-size: 12px;
-                                line-height: 1.3;
-                                font-weight: normal;
-                            }
-                        }
-                    }
-                    .icon-set {
-                        padding: 24px 30px 12px;
-                        @include respond-to("medium") {
-                            padding: 24px 8px 12px;
-                        }
-                        @include respond-to("small") {
-                            padding: 0 26px 12px;
-                        }
-                        a {
-                            img {
-                                @include transitinTime;
-                                opacity: 1;
-                                width: 36px;
-                                margin-left: 16px;
-                                @include respond-to("small") {
-                                    margin: 0 16px 0 0;
-                                }
-                            }
-                        }
-                    }
-                }
-                .short-desc {
-                    padding: 0 30px 24px;
-                    height: 36px;
-                    @include transitinTime;
-                    opacity: 1;
-                    @include respond-to("medium") {
-                        display: none;
-                    }
-                    @include respond-to("small") {
-                        display: none;
-                    }
-
-                    p {
-                        @include transitinTime;
-                        transition-duration: 1.5s;
-                        color: #ffffff;
-                        line-height: 1.5;
-                        letter-spacing: 0.43px;
-                        font-size: 12px;
-                        font-weight: normal;
-                        opacity: 0.8;
-                    }
-                }
+              }
             }
-            .second-line {
-                @include transitinTime;
-                height: 0px;
-                overflow: hidden;
-                visibility: hidden;
-                opacity: 0;
-                .profile-largeCard {
-                    display: flex;
-                    align-items: flex-end;
-                    height: 170px;
-                    @include respond-to("small") {
-                        height: 0px;
-                    }
-                    .lg-profile-image {
-                        visibility: hidden;
-                    }
-                    .title-section {
-                        padding-left: 8%;
-                        @include respond-to("ex_large_max") {
-                            padding-left: 5%;
-                        }
-                        @include respond-to("medium") {
-                            padding-left: 0;
-                        }
-                        @include respond-to("small") {
-                            display: none;
-                        }
-                        .first-line {
-                            display: flex;
-                            .title-set {
-                                .name {
-                                    color: #000000;
-                                    letter-spacing: 0.86px;
-                                    line-height: 1.5;
-                                    font-size: 24px;
-                                    font-weight: 600;
-                                    @include respond-to("medium") {
-                                        font-size: 20px;
-                                    }
-                                }
-                                .title {
-                                    color: #000000;
-                                    line-height: 2;
-                                    letter-spacing: 0.65px;
-                                    font-size: 18px;
-                                    font-weight: normal;
-                                    @include respond-to("medium") {
-                                        font-size: 16px;
-                                    }
-                                }
-                            }
-                            .icon-set {
-                                padding: 0 30px 0;
-                                @include respond-to("ex_large_max") {
-                                    padding: 0 3px 0;
-                                }
-                                @include respond-to("medium_lg") {
-                                    padding: 0 10px 0;
-                                }
-                                @include respond-to("medium") {
-                                    padding: 0 0;
-                                }
-                                a {
-                                    img {
-                                        width: 36px;
-                                        margin-left: 16px;
-                                        @include respond-to("medium") {
-                                            width: 34px;
-                                            margin-left: 14px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .long-desc {
-                    padding: 30px 24px;
-                    @include respond-to("small") {
-                        padding: 14px 10px;
-                    }
-                    p {
-                        color: #000000;
-                        line-height: 1.5;
-                        letter-spacing: 0.58px;
-                        font-size: 18px;
-                        font-weight: normal;
-                        @include respond-to("ex_large_max") {
-                            font-size: 16px;
-                        }
-                        @include respond-to("small") {
-                            font-size: 14px;
-                            font-weight: 300;
-                            line-height: 1.5;
-                            letter-spacing: normal;
-                            color: #ffffff;
-                        }
-                    }
-                }
-            }
-            .seeMore {
-                @include transitinTime;
-                display: flex;
-                justify-content: flex-end;
-                padding: 0 17px;
-                @include respond-to("small") {
-                    position: absolute;
-                    top: -8px;
-                    right: -8px;
-                    padding: 0 0px;
-                    overflow: hidden;
-                }
+          }
+        }
+        .short-desc {
+          padding: 0 30px 24px;
+          height: 36px;
+          @include transitinTime;
+          opacity: 1;
+          @include respond-to('medium') {
+            display: none;
+          }
+          @include respond-to('small') {
+            display: none;
+          }
 
+          p {
+            @include transitinTime;
+            transition-duration: 1.5s;
+            color: #ffffff;
+            line-height: 1.5;
+            letter-spacing: 0.43px;
+            font-size: 12px;
+            font-weight: normal;
+            opacity: 0.8;
+          }
+        }
+      }
+      .second-line {
+        @include transitinTime;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        .profile-largeCard {
+          display: flex;
+          align-items: flex-end;
+          height: 170px;
+          @include respond-to('small') {
+            height: 0;
+          }
+          .lg-profile-image {
+            visibility: hidden;
+          }
+          .title-section {
+            padding-left: 8%;
+            @include respond-to('ex_large_max') {
+              padding-left: 5%;
+            }
+            @include respond-to('medium') {
+              padding-left: 0;
+            }
+            @include respond-to('small') {
+              display: none;
+            }
+            .first-line {
+              display: flex;
+              .title-set {
+                .name {
+                  color: #000000;
+                  letter-spacing: 0.86px;
+                  line-height: 1.5;
+                  font-size: 24px;
+                  font-weight: 600;
+                  @include respond-to('medium') {
+                    font-size: 20px;
+                  }
+                }
+                .title {
+                  color: #000000;
+                  line-height: 2;
+                  letter-spacing: 0.65px;
+                  font-size: 18px;
+                  font-weight: normal;
+                  @include respond-to('medium') {
+                    font-size: 16px;
+                  }
+                }
+              }
+              .icon-set {
+                padding: 0 30px 0;
+                @include respond-to('ex_large_max') {
+                  padding: 0 3px 0;
+                }
+                @include respond-to('medium_lg') {
+                  padding: 0 10px 0;
+                }
+                @include respond-to('medium') {
+                  padding: 0 0;
+                }
                 a {
-                    @include transitinTime;
-                    color: #ffffff;
-                    line-height: 1.5;
-                    letter-spacing: 0.43px;
-                    font-size: 12px;
-                    font-weight: 600;
-                    margin: auto 0;
-                    cursor: pointer;
-                    display: block;
-                    @include respond-to("small") {
-                        display: none;
+                  img {
+                    width: 36px;
+                    margin-left: 16px;
+                    @include respond-to('medium') {
+                      width: 34px;
+                      margin-left: 14px;
                     }
+                  }
                 }
-                img {
-                    @include transitinTime;
-                    width: 58px;
-                    cursor: pointer;
-                }
+              }
             }
+          }
         }
-        &.active {
-            .dataProfile_wrapper {
-                background-color: #ffffff;
-                height: 100%;
-                @include respond-to("small") {
-                    background-color: #223d57;
-                    // height: 710px;
-                    border-radius: 0px;
-                }
-                .profile-image {
-                    left: 76px;
-                    bottom: 356px;
+        .long-desc {
+          padding: 30px 24px;
+          @include respond-to('small') {
+            padding: 14px 10px;
+          }
+          p {
+            color: #000000;
+            line-height: 1.5;
+            letter-spacing: 0.58px;
+            font-size: 18px;
+            font-weight: normal;
+            @include respond-to('ex_large_max') {
+              font-size: 16px;
+            }
+            @include respond-to('small') {
+              font-size: 14px;
+              font-weight: 300;
+              line-height: 1.5;
+              letter-spacing: normal;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .seeMore {
+        @include transitinTime;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 17px;
+        @include respond-to('small') {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          padding: 0 0px;
+          overflow: hidden;
+        }
 
-                    @include respond-to("ex_large_max") {
-                        left: 43px;
-                        bottom: 392px;
-                    }
-                    @include respond-to("medium") {
-                        left: 34px;
-                        width: 45%;
-                        bottom: 472px;
-                    }
-                    @include respond-to("small") {
-                        left: 17px;
-                        top: 108px;
-                    }
-                }
-                .cover-image {
-                    object-fit: none;
-                    object-position: center;
-                    width: 100%;
-                    height: 250px;
-                    @include respond-to("small") {
-                        height: 148px;
-                        object-fit: cover;
-                    }
-                }
-                .profileCard {
-                    height: 0px;
-                    visibility: hidden;
-                    opacity: 1;
-                    @include respond-to("small") {
-                        height: 110px;
-                        visibility: visible;
-                        @include transitinTime;
-                        padding-left: 42%;
-                    }
-                    .first-line {
-                        @include respond-to("small") {
-                        }
-                        .title-set {
-                            .name {
-                                visibility: hidden;
-                                opacity: 0;
-                                font-size: 0px;
-                                @include respond-to("small") {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    font-size: 14px;
-                                }
-                            }
-                            .title {
-                                visibility: hidden;
-                                opacity: 0;
-                                font-size: 0px;
-                                @include respond-to("small") {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                    .icon-set {
-                        a {
-                            img {
-                                opacity: 0;
-                                width: 0px;
-                                @include respond-to("small") {
-                                    opacity: 1;
-                                    width: 36px;
-                                }
-                            }
-                        }
-                    }
-                    .short-desc {
-                        height: 300px;
-                        opacity: 0;
-                        p {
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                    }
-                }
-                .seeMore {
-                    transform: translateY(-483px) translateX(0px);
-                    @include respond-to("small") {
-                        transform: translateY(0) translateX(0);
-                        top: 150px;
-                        padding: 0;
-                    }
-                    a {
-                        color: #000000;
-                    }
-                    img {
-                        transform: rotate(180deg);
-                    }
-                    @include respond-to("ex_large_max") {
-                        transform: translateY(-520px) translateX(0px);
-                    }
-                    @include respond-to("medium") {
-                        transform: translateY(-601px) translateX(0px);
-                    }
-                    @include respond-to("small") {
-                        transform: translateY(0px) translateX(0px);
-                    }
-                }
-                .second-line {
-                    height: 500px;
-                    visibility: visible;
-                    opacity: 1;            
-                    transform: scale(0.85);
-                    @include respond-to("ex_large_max") {
-                        transform: scale(0.89);
-                        height: 535px;
-                    }
-                    @include respond-to("medium") {
-                        height: 616px;
-                    }
-                    @include respond-to("small") {
-                        // height: 463px;
-                    }
-                }
-            }
+        a {
+          @include transitinTime;
+          color: #ffffff;
+          line-height: 1.5;
+          letter-spacing: 0.43px;
+          font-size: 12px;
+          font-weight: 600;
+          margin: auto 0;
+          cursor: pointer;
+          display: block;
+          @include respond-to('small') {
+            display: none;
+          }
         }
-        &:hover {
-            border-radius: 12px;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        img {
+          @include transitinTime;
+          width: 58px;
+          cursor: pointer;
         }
-        &.none-active {
-            .profile-image {
-                @include respond-to("medium") {
-                    left: -80px;
-                }
-                @include respond-to("small") {
-                    left: 5px;
-                }
-            }
-            .profileCard {
-                @include respond-to("medium") {
-                    padding-left: 36%;
-                }
-                @include respond-to("small") {
-                    padding-left: 43%;
-                }
-            }
-
-            @include respond-to("small") {
-                transition-duration: 0.8s;
-                transition-delay: 0.15s;
-                margin: 0 auto;
-                width: 88%;
-                margin-top: 100px;
-            }
-        }
-        &.active {
-            transition-duration: 0s;
-            transition-delay: 0s;
-            width: 100%;
-            margin: 100px 0 0 0;
-            &.index2{
-                .dataProfile_wrapper{
-                    .cover-image{
-                        object-position: bottom;
-                    }
-                }
-            }
-        }
+      }
     }
     &.active {
-        @include respond-to("medium") {
-            margin: 0 13%;
-            width: 76%;
+      .dataProfile_wrapper {
+        background-color: #ffffff;
+        height: 100%;
+        @include respond-to('small') {
+          background-color: #223d57;
+          border-radius: 0;
         }
-        @include respond-to("small") {
-            margin: 0 auto;
-            width: 100%;
-        }
+        .profile-image {
+          left: 76px;
+          bottom: 356px;
 
-        .icon-set {
-            @include respond-to("medium") {
-                padding: 0 26px 0;
-            }
+          @include respond-to('ex_large_max') {
+            left: 43px;
+            bottom: 392px;
+          }
+          @include respond-to('medium') {
+            left: 34px;
+            width: 45%;
+            bottom: 472px;
+          }
+          @include respond-to('small') {
+            left: 17px;
+            top: 108px;
+          }
         }
+        .cover-image {
+          object-fit: none;
+          object-position: center;
+          width: 100%;
+          height: 250px;
+          @include respond-to('small') {
+            height: 148px;
+            object-fit: cover;
+          }
+        }
+        .profileCard {
+          height: 0;
+          visibility: hidden;
+          opacity: 1;
+          @include respond-to('small') {
+            height: 110px;
+            visibility: visible;
+            @include transitinTime;
+            padding-left: 42%;
+          }
+          .first-line {
+            @include respond-to('small') {
+            }
+            .title-set {
+              .name {
+                visibility: hidden;
+                opacity: 0;
+                font-size: 0;
+                @include respond-to('small') {
+                  visibility: visible;
+                  opacity: 1;
+                  font-size: 14px;
+                }
+              }
+              .title {
+                visibility: hidden;
+                opacity: 0;
+                font-size: 0;
+                @include respond-to('small') {
+                  visibility: visible;
+                  opacity: 1;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .icon-set {
+            a {
+              img {
+                opacity: 0;
+                width: 0;
+                @include respond-to('small') {
+                  opacity: 1;
+                  width: 36px;
+                }
+              }
+            }
+          }
+          .short-desc {
+            height: 300px;
+            opacity: 0;
+            p {
+              opacity: 0;
+              visibility: hidden;
+            }
+          }
+        }
+        .seeMore {
+          transform: translateY(-483px) translateX(0px);
+          @include respond-to('small') {
+            transform: translateY(0) translateX(0);
+            top: 150px;
+            padding: 0;
+          }
+          a {
+            color: #000000;
+          }
+          img {
+            transform: rotate(180deg);
+          }
+          @include respond-to('ex_large_max') {
+            transform: translateY(-520px) translateX(0px);
+          }
+          @include respond-to('medium') {
+            transform: translateY(-601px) translateX(0px);
+          }
+          @include respond-to('small') {
+            transform: translateY(0px) translateX(0px);
+          }
+        }
+        .second-line {
+          height: 500px;
+          visibility: visible;
+          opacity: 1;
+          transform: scale(0.85);
+          @include respond-to('ex_large_max') {
+            transform: scale(0.89);
+            height: 535px;
+          }
+          @include respond-to('medium') {
+            height: 616px;
+          }
+        }
+      }
     }
+    &:hover {
+      border-radius: 12px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    &.none-active {
+      .profile-image {
+        @include respond-to('medium') {
+          left: -80px;
+        }
+        @include respond-to('small') {
+          left: 5px;
+        }
+      }
+      .profileCard {
+        @include respond-to('medium') {
+          padding-left: 36%;
+        }
+        @include respond-to('small') {
+          padding-left: 43%;
+        }
+      }
+
+      @include respond-to('small') {
+        transition-duration: 0.8s;
+        transition-delay: 0.15s;
+        margin: 100px auto 0;
+        width: 88%;
+      }
+    }
+    &.active {
+      transition-duration: 0s;
+      transition-delay: 0s;
+      width: 100%;
+      margin: 100px 0 0 0;
+      &.index2 {
+        .dataProfile_wrapper {
+          .cover-image {
+            object-position: bottom;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    @include respond-to('medium') {
+      margin: 0 13%;
+      width: 76%;
+    }
+    @include respond-to('small') {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .icon-set {
+      @include respond-to('medium') {
+        padding: 0 26px 0;
+      }
+    }
+  }
 }
 .team-profile-wrapper {
-    .team-profile-container{
-        &.active{
-            &.index3{
-                .dataProfile_wrapper{
-                    .profile-image{
-                        bottom: 570px;
-                       
-                        @include respond-to("medium") {
-                            left: 34px;
-                            width: 45%;
-                        }
-                        @include respond-to("small") {
-                            left: 17px;
-                            top: 108px;
-                        }
-                    }
-                    .second-line{
-                        height: 700px;
-                        .profile-largeCard{
-                            height: 145px;
-
-                            @include respond-to("small"){
-                                height: 0px;
-                            }
-                        }
-                    }
-                    .seeMore {
-                        transform: translateY(-685px) translateX(0px);
-                    }
-                }
+  .team-profile-container {
+    &.active {
+      &.index3 {
+        .dataProfile_wrapper {
+          .profile-image {
+            bottom: 570px;
+            @include respond-to('medium') {
+              left: 34px;
+              width: 45%;
             }
+            @include respond-to('small') {
+              left: 17px;
+              top: 108px;
+            }
+          }
+          .second-line {
+            height: 700px;
+            .profile-largeCard {
+              height: 145px;
 
+              @include respond-to('small') {
+                height: 0;
+              }
+            }
+          }
+          .seeMore {
+            transform: translateY(-685px) translateX(0px);
+          }
         }
+      }
     }
+  }
 }
