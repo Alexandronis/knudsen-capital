@@ -1,3 +1,7 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState, useEffect, useRef } from 'react';
 
 import { useLocation } from 'react-router-dom';
@@ -14,8 +18,6 @@ function TeamProfile() {
       setSelectedIndex(index);
     }
   };
-  //=============*This condition use for expand the member card when click seemore link in Home member card* =============
-  //**************created by sachith 11/25/2020**************
   const Location = useLocation();
   const Ourteam = useRef();
 

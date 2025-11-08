@@ -27,7 +27,7 @@ function InvCriteria() {
                 <div className="leftside_text about_leftside_text">
                   <div className="card_list_items about-item">
                     <img className="image_icon" src={greenIcon} alt="KC/LLC Green Icon" />
-                    <p>Experiencing exceptional growth rates in today's climate</p>
+                    <p>Experiencing exceptional growth rates in today&apos;s climate</p>
                   </div>
                 </div>
               </div>

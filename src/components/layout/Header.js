@@ -29,7 +29,12 @@ function Header() {
   return (
     <div className={scroll ? 'App-header bg-black' : 'App-header bg-white'}>
       <header className="main-header">
-        <div className="logo" onClick={() => localStorage.setItem('activePage', '')}>
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+        <div
+          className="logo"
+          onClick={() => localStorage.setItem('activePage', '')}
+          onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && localStorage.setItem('activePage', '')}
+        >
           <a href="/">
             <img src={logoIcon} alt="KC/LLC Logo" />
           </a>

@@ -27,7 +27,16 @@ function FirstCategory() {
           {organization
             .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
             .map((data, index) => (
-              <div className="logo-box" key={index} onClick={() => handleClick(data)}>
+              <div
+                className="logo-box"
+                key={index}
+                role="button"
+                tabIndex={0}
+                onClick={() => handleClick(data)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') handleClick(data);
+                }}
+              >
                 <div className="logo-img-box">
                   <LazyLoadImage
                     effect="blur"

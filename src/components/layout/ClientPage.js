@@ -53,8 +53,13 @@ function ClientPage() {
       <link rel="canonical" href="https://kcinvestors.com/client-page" />
       <div className="content-wrapper">
         <div className="content-inner-box">
-          <img className="close-img" onClick={handleClick} src={closeIcon} alt="close Icon" />
-
+          {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+          <img
+            className="close-img"
+            onClick={handleClick}
+            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleClick(e)}
+            src={closeIcon}
+            alt="close Icon" />
           <div className="company-values">
             <div className="values-title">
               <span></span>
@@ -95,9 +100,9 @@ function ClientPage() {
                 <div className="mob-set-inner">
                   {data.description ? (
                     <div className="desc_section">
-                      <span>"</span>
+                      <span>&quot;</span>
                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.description}</p>
-                      <span>"</span>
+                      <span>&quot;</span>
                     </div>
                   ) : null}
 

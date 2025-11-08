@@ -20,7 +20,7 @@ function OurValues() {
             <div className="card_list_items about-item">
               <div className="item">
                 <p>
-                  Do we believe in the company's<b> purpose</b>?{' '}
+                  Do we believe in the company&apos;s<b> purpose</b>?{' '}
                 </p>
               </div>
             </div>

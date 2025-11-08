@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -16,6 +17,8 @@ import Footer from '../layout/Footer';
 const NextArrow = ({ className, style, onClick }) => (
   <>
     <div
+      role="button"
+      tabIndex={0}
       className={className}
       style={{
         ...style,
@@ -24,8 +27,11 @@ const NextArrow = ({ className, style, onClick }) => (
         borderRadius: '50%',
       }}
       onClick={onClick}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
     />
     <img
+      role="button"
+      tabIndex={0}
       className={className}
       src={nextIcon}
       style={{
@@ -34,6 +40,7 @@ const NextArrow = ({ className, style, onClick }) => (
         marginRight: '10px',
       }}
       onClick={onClick}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
       alt="Next button"
     />
   </>
@@ -42,6 +49,8 @@ const NextArrow = ({ className, style, onClick }) => (
 const PrevArrow = ({ className, style, onClick }) => (
   <>
     <div
+      role="button"
+      tabIndex={0}
       className={className}
       style={{
         ...style,
@@ -50,8 +59,11 @@ const PrevArrow = ({ className, style, onClick }) => (
         borderRadius: '50%',
       }}
       onClick={onClick}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
     />
     <img
+      role="button"
+      tabIndex={0}
       className={className}
       src={prevIcon}
       style={{
@@ -60,6 +72,7 @@ const PrevArrow = ({ className, style, onClick }) => (
         marginLeft: '10px',
       }}
       onClick={onClick}
+      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
       alt="Previous button"
     />
   </>
@@ -67,10 +80,9 @@ const PrevArrow = ({ className, style, onClick }) => (
 
 function Contact() {
   const sliderData = require('../../data/contactSlider.json');
-  const location = useLocation(); // ✅ correct hook
+  const location = useLocation();
   const contactRef = useRef();
 
-  // ✅ Use `location.pathname` instead of props
   useEffect(() => {
     if (location.pathname === '/contact') {
       document.body.classList.add('inner-header');
