@@ -1,7 +1,7 @@
 import React from 'react';
 import image404 from '../../assets/404-page/404-image.png';
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     <div>
       <div className="pagenotfound-wrapper">
@@ -12,6 +12,6 @@ function NotFoundPage() {
       </div>
     </div>
   );
-}
+};
 
 export default NotFoundPage;
