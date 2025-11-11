@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import OurMission from '../organisms/About/AboutSection/OurMission';
 import OurValues from '../organisms/About/AboutSection/OurValues';
 import OurPrinciples from '../organisms/About/AboutSection/OurPrinciples';
-import PdfCard from '../organisms/About/PagerDownloadSection/PagerCard';
+import PdfCard from '../organisms/About/PagerDownloadSection/PageCard';
 import TeamProfile from '../organisms/About/OurTeamSection/TeamProfile';
 import ScrollHandler from '../templates/ScrollHandler';
 import Footer from '../layout/Footer';
