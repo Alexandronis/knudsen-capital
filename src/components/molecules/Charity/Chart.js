@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const charityData = require('../../../data/charityData.json');
+import charityData from '../../../data/charityData.json';
 
 const Chart = () => {
   const [hoverIndex, setHoverIndex] = useState(0);

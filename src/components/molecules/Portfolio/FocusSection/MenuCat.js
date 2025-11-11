@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const focusData = require('../../../../data/focusData.json');
+import focusData from '../../../../data/focusData.json';
 
 const MenuCat = () => {
   const [onHover, setOnHover] = useState(8);
