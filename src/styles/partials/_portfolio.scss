@@ -80,6 +80,9 @@
           .logo-box {
             -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
             animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            background: none;
+            border: 0;
+            padding: 0;
 
             @-webkit-keyframes fade-in-bck {
               0% {
