@@ -617,12 +617,14 @@
           position: absolute;
           top: -8px;
           right: -8px;
-          padding: 0 0px;
+          padding: 0 0;
           overflow: hidden;
         }
 
-        a {
+        a, button {
           @include transitinTime;
+          background: none;
+          border: 0;
           color: #ffffff;
           line-height: 1.5;
           letter-spacing: 0.43px;
@@ -631,6 +633,7 @@
           margin: auto 0;
           cursor: pointer;
           display: block;
+          padding: 0;
           @include respond-to('small') {
             display: none;
           }
@@ -742,7 +745,7 @@
             top: 150px;
             padding: 0;
           }
-          a {
+          a, button {
             color: #000000;
           }
           img {
