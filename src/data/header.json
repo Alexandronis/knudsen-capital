@@ -1,0 +1,6 @@
+[
+  { "path": "bout", "label": "About" },
+  { "path": "/portfolio", "label": "Portfolio" },
+  { "path": "/charitable-contributions", "label": "Charitable Contributions" },
+  { "path": "/contact", "label": "Contact" }
+]
