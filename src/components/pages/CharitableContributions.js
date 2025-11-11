@@ -20,10 +20,7 @@ const CharitableContributions = () => {
             name="description"
             content="KC/LLC team giving back to local charities with matched donations and community support."
           />
-          <link
-            rel="canonical"
-            href="https://kcinvestors.com/charitable-contributions"
-          />
+          <link rel="canonical" href="https://kcinvestors.com/charitable-contributions" />
         </Helmet>
 
         <section id="charity-kcllc">

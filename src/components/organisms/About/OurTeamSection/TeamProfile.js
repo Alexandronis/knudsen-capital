@@ -30,7 +30,6 @@ const TeamProfile = () => {
     }
   }, [location]);
 
-
   return (
     <div
       className={

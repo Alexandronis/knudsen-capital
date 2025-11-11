@@ -5,7 +5,7 @@ import ourValues4 from '../assets/about-page/our-values-4.svg';
 
 export const ourValues = [
   { src: ourValues1, text: "Do we believe in the company's purpose?" },
-  { src: ourValues2, text: "What impact will the business have on the world?" },
-  { src: ourValues3, text: "Do we believe in the people behind the company?" },
-  { src: ourValues4, text: "Can the business drive a significant sustainable profit?" },
+  { src: ourValues2, text: 'What impact will the business have on the world?' },
+  { src: ourValues3, text: 'Do we believe in the people behind the company?' },
+  { src: ourValues4, text: 'Can the business drive a significant sustainable profit?' },
 ];

@@ -44,8 +44,8 @@ const OurPrinciples = () => {
             <div className="card_list_items about-item">
               <div className="item">
                 <p>
-                  We treat people with <b>respect</b>, operate with <b>integrity</b>, and only invest
-                  when we can add <b>real value</b>.
+                  We treat people with <b>respect</b>, operate with <b>integrity</b>, and only
+                  invest when we can add <b>real value</b>.
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import organization from '../../../../data/realizedInvestment.json'
+import organization from '../../../../data/realizedInvestment.json';
 
 const RealizedInvestment = () => {
   const navigate = useNavigate();
@@ -52,6 +52,6 @@ const RealizedInvestment = () => {
       </div>
     </div>
   );
-}
+};
 
 export default RealizedInvestment;

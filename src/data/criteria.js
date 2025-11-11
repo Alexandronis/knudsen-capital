@@ -1,6 +1,6 @@
-import peopleIcon from "../assets/criteria-section/people.svg";
-import purposeIcon from "../assets/criteria-section/purpose.svg";
-import profitIcon from "../assets/criteria-section/profit.svg";
+import peopleIcon from '../assets/criteria-section/people.svg';
+import purposeIcon from '../assets/criteria-section/purpose.svg';
+import profitIcon from '../assets/criteria-section/profit.svg';
 
 export const criteriaCards = [
   { icon: peopleIcon, title: 'PEOPLE' },

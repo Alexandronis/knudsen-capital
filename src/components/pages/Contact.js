@@ -90,7 +90,12 @@ const Contact = () => {
                   {contactInfo.map((info, index) => (
                     <div className="common_card_containar" key={index}>
                       <div className="image_containar">
-                        <img className="image_icon" src={info.icon} alt="Contact Icon" loading="lazy" />
+                        <img
+                          className="image_icon"
+                          src={info.icon}
+                          alt="Contact Icon"
+                          loading="lazy"
+                        />
                       </div>
                       <div className="leftside_text contact_leftside_text">
                         <div className="card_list_items contact-us-item">
@@ -111,6 +116,6 @@ const Contact = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default Contact;

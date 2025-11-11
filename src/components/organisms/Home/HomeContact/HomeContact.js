@@ -6,18 +6,8 @@ import mobileBackImage from '../../../../assets/home-contact/mobile-contact.svg'
 const HomeContact = () => {
   return (
     <div className="home-contact-wrapper">
-      <img
-        className="contact-img"
-        src={backgroundImage}
-        alt="KCLLC Logo"
-        loading="lazy"
-      />
-      <img
-        className="contact-img-mobile"
-        src={mobileBackImage}
-        alt="KCLLC Logo"
-        loading="lazy"
-      />
+      <img className="contact-img" src={backgroundImage} alt="KCLLC Logo" loading="lazy" />
+      <img className="contact-img-mobile" src={mobileBackImage} alt="KCLLC Logo" loading="lazy" />
       <div className="contact">
         <div className="content">
           <p>

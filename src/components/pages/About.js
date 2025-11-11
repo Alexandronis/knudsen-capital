@@ -107,12 +107,7 @@ const About = () => {
             </div>
             <div className="pdf-card-container">
               {pdfs.map((pdf, index) => (
-                <PdfCard
-                  key={index}
-                  link={pdf.link}
-                  name={pdf.name}
-                  alttext={pdf.alt}
-                />
+                <PdfCard key={index} link={pdf.link} name={pdf.name} alttext={pdf.alt} />
               ))}
             </div>
           </div>

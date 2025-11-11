@@ -621,7 +621,8 @@
           overflow: hidden;
         }
 
-        a, button {
+        a,
+        button {
           @include transitinTime;
           background: none;
           border: 0;
@@ -745,7 +746,8 @@
             top: 150px;
             padding: 0;
           }
-          a, button {
+          a,
+          button {
             color: #000000;
           }
           img {

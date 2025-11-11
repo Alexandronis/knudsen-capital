@@ -47,12 +47,7 @@ const MenuCat = () => {
                   onMouseEnter={() => handleMouseEnter(index)}
                   style={{ transform: `rotateZ(calc(79deg - (360deg / 10) * ${data.id + 1}))` }}
                 >
-                  <img
-                    className="icon-image"
-                    src={data.iconImage}
-                    alt={data.alt}
-                    loading="lazy"
-                  />
+                  <img className="icon-image" src={data.iconImage} alt={data.alt} loading="lazy" />
                   <p className={data.className}>{data.title}</p>
                 </span>
               </li>
