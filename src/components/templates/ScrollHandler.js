@@ -5,7 +5,8 @@ const ScrollHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const element = location.hash ? document.getElementById(location.hash.substring(1)) : null;
+    const elementId = location.hash ? location.hash.substring(1) : null;
+    const element = elementId ? document.getElementById(elementId) : null;
 
     setTimeout(() => {
       window.scrollTo({
