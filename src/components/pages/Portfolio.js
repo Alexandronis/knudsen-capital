@@ -3,11 +3,11 @@ import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import InvCriteria from '../organisms/Portfolio/InvCriteriaSection/InvCriteria';
-import CategoryWapper from '../organisms/Portfolio/CategorySection/CategoryWrapper';
+import CategoryWrapper from '../organisms/Portfolio/CategorySection/CategoryWrapper';
 import Focus from '../organisms/Portfolio/FocusSection/Focus';
 import Footer from '../layout/Footer';
 
-function Portfolio() {
+const Portfolio = () => {
   const location = useLocation();
   const portfolioRef = useRef();
 
@@ -41,6 +41,7 @@ function Portfolio() {
           />
         </Helmet>
         <link rel="canonical" href="https://kcinvestors.com/portfolio" />
+
         <section id="#portfolio-kcllc">
           <div className="content-wrapper">
             <div className="content-inner-box">
@@ -49,12 +50,14 @@ function Portfolio() {
                 <h1 className="main-title">KC/LLC Portfolio Companies</h1>
               </div>
             </div>
-            <CategoryWapper />
+            <CategoryWrapper />
           </div>
         </section>
+
         <section>
           <Focus />
         </section>
+
         <section>
           <InvCriteria />
         </section>
@@ -62,6 +65,6 @@ function Portfolio() {
       <Footer />
     </>
   );
-}
+};
 
 export default Portfolio;
