@@ -10,7 +10,7 @@ import ClientPage from './components/layout/ClientPage';
 import NotFoundPage from './components/templates/404';
 import CharitableContributions from './components/pages/CharitableContributions';
 
-import './style/main.scss';
+import './styles/main.scss';
 
 function App() {
   return (
