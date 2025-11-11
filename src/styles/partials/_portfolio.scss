@@ -497,7 +497,7 @@
 }
 
 //-------------focus vertical design for mobile----------------------
-.fosus-sec-wapper-mobile {
+.focus-sec-wrapper-mobile {
   display: none;
   background-color: #e5f5f3;
   @include respond-to('small') {
@@ -588,7 +588,7 @@
   }
 }
 //-------------focus circle design----------------------
-.fosus-sec-wapper {
+.focus-sec-wrapper {
   width: 16.5%;
   margin: 240px auto;
   padding: 127px 0;
