@@ -4,7 +4,7 @@ import PlaceholderAnime from '../common/Placeholder';
 import Footer from './Footer';
 import closeIcon from '../../assets/client-page/close-btn.svg';
 
-function ClientPage() {
+const ClientPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const clientPageRef = useRef();
@@ -12,10 +12,12 @@ function ClientPage() {
   const data = location.state?.data;
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  function handleClick() {
+  const handleClick = () => {
     navigate('/portfolio');
     document.body.classList.remove('popup-page');
-  }
+  };
+
+  const onLoadedData = () => setIsImageLoaded(true);
 
   // Add/remove body class when on this page
   useEffect(() => {
@@ -34,10 +36,6 @@ function ClientPage() {
     }
   }, [location]);
 
-  const onLoadedData = () => {
-    setIsImageLoaded(true);
-  };
-
   // Prevent render if no data (safety for direct visits)
   if (!data) {
     return (
@@ -51,18 +49,20 @@ function ClientPage() {
   return (
     <div className="inner-page-wrapper client-wrapper" ref={clientPageRef}>
       <link rel="canonical" href="https://kcinvestors.com/client-page" />
+
       <div className="content-wrapper">
         <div className="content-inner-box">
-          {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-          <img
-            className="close-img"
+          <button
             onClick={handleClick}
-            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleClick(e)}
-            src={closeIcon}
-            alt="close Icon" />
+            className="close-img"
+            aria-label="Close Client Page"
+          >
+            <img src={closeIcon} alt="Close Icon" />
+          </button>
+
           <div className="company-values">
             <div className="values-title">
-              <span></span>
+              <span />
               <h1>{data.companyName}</h1>
             </div>
           </div>
@@ -81,12 +81,18 @@ function ClientPage() {
               alt={data.alt}
               onLoad={onLoadedData}
               style={{ display: isImageLoaded ? 'block' : 'none' }}
+              loading="lazy"
             />
 
             <div className="card-content-col">
               <div className="image-cap">
                 <div className="logo-img-box">
-                  <img src={data.LargeLogoImage} alt={data.alt} className="profile-image" />
+                  <img
+                    src={data.LargeLogoImage}
+                    alt={data.alt}
+                    className="profile-image"
+                    loading="lazy"
+                  />
                   <a
                     href={data.url}
                     className="btn-btn-visit mobile"
@@ -98,13 +104,13 @@ function ClientPage() {
                 </div>
 
                 <div className="mob-set-inner">
-                  {data.description ? (
+                  {data.description && (
                     <div className="desc_section">
                       <span>&quot;</span>
                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.description}</p>
                       <span>&quot;</span>
                     </div>
-                  ) : null}
+                  )}
 
                   <div className="name_labels">
                     <h4>{data.quotedby}</h4>
@@ -130,7 +136,7 @@ function ClientPage() {
                 </div>
 
                 <p>{data.Longdescription}</p>
-                {data.Longdescription2 ? <p>{data.Longdescription2}</p> : null}
+                {data.Longdescription2 && <p>{data.Longdescription2}</p>}
 
                 <div className="list-items">
                   <ul>
@@ -143,12 +149,12 @@ function ClientPage() {
                 <div className="list-item-flex">
                   <div className="list-items-bottom">
                     <ul>
-                      {data.leadership ? (
+                      {data.leadership && (
                         <>
                           <li>Leadership</li>
                           <h5>{data.leadership}</h5>
                         </>
-                      ) : null}
+                      )}
                     </ul>
                   </div>
 
@@ -156,7 +162,11 @@ function ClientPage() {
                     <ul>
                       <li>Website</li>
                       <h5>
-                        <a href={data.url} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={data.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {data.website}
                         </a>
                       </h5>
@@ -171,6 +181,6 @@ function ClientPage() {
       <Footer />
     </div>
   );
-}
+};
 
 export default ClientPage;
