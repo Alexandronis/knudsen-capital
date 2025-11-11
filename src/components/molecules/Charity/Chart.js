@@ -1,60 +1,64 @@
 import React, { useState } from 'react';
 const charityData = require('../../../data/charityData.json');
 
-function Chart() {
-  const [onHover, setonHover] = useState(0);
+const Chart = () => {
+  const [hoverIndex, setHoverIndex] = useState(0);
+
+  const handleMouseEnter = (index) => {
+    setHoverIndex((prev) => (prev === index + 1 ? 0 : index + 1));
+  };
+
+  const handleMouseLeave = () => {
+    setHoverIndex(0);
+  };
 
   return (
     <div className="menu-section">
       <span className="middle-logo">
-        <img src="/logo512.png" alt="KC/LLC LOGO" />
+        <img src="/logo512.png" alt="KC/LLC LOGO" loading="lazy" />
       </span>
-      <span className="half-circle"></span>
+      <span className="half-circle" />
+
       <div className="circular-wrapper">
         <ul>
           <li
             className="item-circle"
-            style={{ transform: `rotateZ(calc((360deg / 8) * ${onHover})` }}
+            style={{ transform: `rotateZ(calc((360deg / 8) * ${hoverIndex}))` }}
           >
-            <span className="white-circle"></span>
+            <span className="white-circle" />
           </li>
         </ul>
       </div>
+
       <div className="item-wrapper">
         <ul>
           {charityData.map((data, index) => {
+            const isActive = hoverIndex === index + 1;
+            const isDefault = hoverIndex === 0;
+
             return (
               <li
                 className="icon-circle"
-                style={{
-                  transform: `rotateZ(calc((360deg / 7) * ${data.id + 1}))`,
-                }}
+                style={{ transform: `rotateZ(calc((360deg / 7) * ${data.id + 1}))` }}
                 key={data.id}
               >
                 <span
-                  className={
-                    onHover === index + 1
-                      ? `white-circle logo-circle${index} active`
-                      : onHover === 0
-                        ? `white-circle logo-circle${index}`
-                        : `white-circle logo-circle${index} none-active`
-                  }
-                  onMouseEnter={() => {
-                    onHover === index + 1 ? setonHover(0) : setonHover(index + 1);
-                  }}
-                  onMouseLeave={() => setonHover(0)}
+                  className={`white-circle logo-circle${index} ${
+                    isActive ? 'active' : !isDefault ? 'none-active' : ''
+                  }`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
                 >
                   <img
-                    className={onHover === data.id + 1 ? 'icon-none' : 'icon-image'}
+                    className={isActive ? 'icon-none' : 'icon-image'}
                     src={data.logoRound}
                     alt={data.title}
+                    loading="lazy"
                   />
-                  <div
-                    className={onHover === data.id + 1 ? `card-active back${index}` : 'card-hide'}
-                  >
+                  <div className={isActive ? `card-active back${index}` : 'card-hide'}>
                     <p>{data.description}</p>
                     <p className="right-align">
-                      <a href={data.webLink} target="_blank" rel="noreferrer">
+                      <a href={data.webLink} target="_blank" rel="noopener noreferrer">
                         See More &gt;
                       </a>
                     </p>
@@ -67,6 +71,6 @@ function Chart() {
       </div>
     </div>
   );
-}
+};
 
 export default Chart;
