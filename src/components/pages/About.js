@@ -58,7 +58,6 @@ const About = () => {
           <link rel="canonical" href="https://kcinvestors.com/about" />
         </Helmet>
 
-        {/* About KC/LLC Investors */}
         <section id="about-kcllc">
           <div className="content-wrapper">
             <div className="content-inner-box">
@@ -86,7 +85,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Our Team Section */}
         <section id="our-team">
           <div className="content-wrapper ourTeam">
             <div className="content-inner-box">
@@ -98,7 +96,6 @@ const About = () => {
             <TeamProfile />
           </div>
 
-          {/* PDF Downloads */}
           <div className="content-wrapper learn-more-about">
             <div className="content-inner-box">
               <div className="company-values">
