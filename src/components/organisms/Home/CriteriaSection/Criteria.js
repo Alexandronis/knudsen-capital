@@ -61,8 +61,8 @@ function Criteria() {
         <div className="card-containar">
           <div className="center-text">
             <p>
-              We treat people with respect, and only invest when we&apos;re confident that we can add
-              real value.
+              We treat people with respect, and only invest when we&apos;re confident that we can
+              add real value.
             </p>
           </div>
         </div>

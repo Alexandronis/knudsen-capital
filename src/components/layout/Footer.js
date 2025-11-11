@@ -52,16 +52,24 @@ const Footer = () => {
           <div className="menu">
             <ul>
               <li>
-                <a href="/" onClick={resetDropdown}>Home</a>
+                <a href="/" onClick={resetDropdown}>
+                  Home
+                </a>
               </li>
               <li>
-                <Link to="/about" onClick={resetDropdown}>About</Link>
+                <Link to="/about" onClick={resetDropdown}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/portfolio" onClick={resetDropdown}>Investments</Link>
+                <Link to="/portfolio" onClick={resetDropdown}>
+                  Investments
+                </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={resetDropdown}>Contact</Link>
+                <Link to="/contact" onClick={resetDropdown}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -69,22 +77,42 @@ const Footer = () => {
           <div className="icon">
             <ul>
               <li>
-                <a href="https://www.facebook.com/KnudsenCapital/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/KnudsenCapital/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <img src={fbIcon} alt="Facebook Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kc_investors/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a
+                  href="https://www.instagram.com/kc_investors/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <img src={instagramIcon} alt="Instagram Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/KnudsenCapital" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a
+                  href="https://twitter.com/KnudsenCapital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   <img src={twitterIcon} alt="Twitter Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/kcinvestors" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a
+                  href="https://www.linkedin.com/company/kcinvestors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <img src={linkedinIcon} alt="LinkedIn Icon" loading="lazy" />
                 </a>
               </li>
@@ -103,16 +131,24 @@ const Footer = () => {
           <div className="menu">
             <ul>
               <li>
-                <a href="/" onClick={resetDropdown}>Home</a>
+                <a href="/" onClick={resetDropdown}>
+                  Home
+                </a>
               </li>
               <li>
-                <Link to="/about" onClick={resetDropdown}>About</Link>
+                <Link to="/about" onClick={resetDropdown}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/portfolio" onClick={resetDropdown}>Investments</Link>
+                <Link to="/portfolio" onClick={resetDropdown}>
+                  Investments
+                </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={resetDropdown}>Contact</Link>
+                <Link to="/contact" onClick={resetDropdown}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -152,22 +188,42 @@ const Footer = () => {
           <div className="icon">
             <ul>
               <li>
-                <a href="https://www.facebook.com/KnudsenCapital/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/KnudsenCapital/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <img src={fbIcon} alt="Facebook Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kc_investors/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a
+                  href="https://www.instagram.com/kc_investors/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <img src={instagramIcon} alt="Instagram Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/KnudsenCapital" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a
+                  href="https://twitter.com/KnudsenCapital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   <img src={twitterIcon} alt="Twitter Icon" loading="lazy" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/kcinvestors" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a
+                  href="https://www.linkedin.com/company/kcinvestors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <img src={linkedinIcon} alt="LinkedIn Icon" loading="lazy" />
                 </a>
               </li>

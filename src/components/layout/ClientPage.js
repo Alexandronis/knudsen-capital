@@ -52,11 +52,7 @@ const ClientPage = () => {
 
       <div className="content-wrapper">
         <div className="content-inner-box">
-          <button
-            onClick={handleClick}
-            className="close-img"
-            aria-label="Close Client Page"
-          >
+          <button onClick={handleClick} className="close-img" aria-label="Close Client Page">
             <img src={closeIcon} alt="Close Icon" />
           </button>
 
@@ -162,11 +158,7 @@ const ClientPage = () => {
                     <ul>
                       <li>Website</li>
                       <h5>
-                        <a
-                          href={data.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <a href={data.url} target="_blank" rel="noopener noreferrer">
                           {data.website}
                         </a>
                       </h5>

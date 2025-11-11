@@ -11,8 +11,8 @@ function HomeContact() {
       <div className="contact">
         <div className="content">
           <p>
-            We&apos;d love to work with you! Please reach out if you&apos;re interested in an investment from
-            us, investing with us or partnering in other ways.
+            We&apos;d love to work with you! Please reach out if you&apos;re interested in an
+            investment from us, investing with us or partnering in other ways.
           </p>
           <Link to="/contact">
             <button>Contact Us</button>
