@@ -13,7 +13,7 @@ const ProfileCard = ({ name, title, longDescription, profileSrc, linkedin, email
             </div>
             <div className="icon-set">
               <a href={email}>
-                <img src="/Our-Team/Icon-set/email.svg" alt="Email Icon" />
+                <img loading="lazy" src="/Our-Team/Icon-set/email.svg" alt="Email Icon" />
               </a>
               {linkedin ? (
                 <a href={linkedin} target="_blank" rel="noopener noreferrer">
