@@ -4,6 +4,11 @@ A responsive React application for **KCLLC**, built with modern React (v18), SAS
 
 ---
 
+## 💻 Requirements
+
+- Node.js **v18+**
+- npm **v9+**
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
