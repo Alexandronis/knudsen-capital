@@ -10,27 +10,40 @@ import TeamProfile from '../organisms/About/OurTeamSection/TeamProfile';
 import ScrollHandler from '../templates/ScrollHandler';
 import Footer from '../layout/Footer';
 
-function About() {
+const About = () => {
   const location = useLocation();
   const aboutRef = useRef(null);
 
-  // --- Add "inner-header" class on load ---
+  // Add/remove "inner-header" class
   useEffect(() => {
-    if (location.pathname.startsWith('/About')) {
-      document.body.classList.add('inner-header');
-    }
-    return () => {
-      document.body.classList.remove('inner-header');
-    };
-  }, [location.pathname]);
+    document.body.classList.add('inner-header');
+    return () => document.body.classList.remove('inner-header');
+  }, []);
 
-  // --- Scroll into view if visiting /About ---
+  // Scroll to top on mount
   useEffect(() => {
-    if (location.pathname === '/About' && aboutRef.current) {
+    if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
       window.scrollBy(0, -100);
     }
-  }, [location.pathname]);
+  }, []);
+
+  // Smooth scroll if visiting #our-team hash
+  useEffect(() => {
+    if (location.hash === '#our-team') {
+      const teamEl = document.getElementById('our-team');
+      teamEl?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollBy(0, -100);
+    }
+  }, [location.hash]);
+
+  const pdfs = [
+    {
+      link: '/KCLLC_3_Pager/KC-LLC-One-pager.pdf',
+      name: 'KC/LLC One-pager',
+      alt: 'KC/LLC Icon',
+    },
+  ];
 
   return (
     <>
@@ -45,11 +58,12 @@ function About() {
           <link rel="canonical" href="https://kcinvestors.com/about" />
         </Helmet>
 
+        {/* About KC/LLC Investors */}
         <section id="about-kcllc">
           <div className="content-wrapper">
             <div className="content-inner-box">
               <div className="values-title">
-                <span></span>
+                <span />
                 <h1 className="main-title">About KC/LLC Investors</h1>
                 <h2 className="about-us-text-mobile">
                   We invest in early-stage, high-growth businesses that have the potential to
@@ -63,6 +77,7 @@ function About() {
                 </h2>
               </div>
             </div>
+
             <div className="values-cards">
               <OurMission />
               <OurValues />
@@ -71,32 +86,37 @@ function About() {
           </div>
         </section>
 
+        {/* Our Team Section */}
         <section id="our-team">
           <div className="content-wrapper ourTeam">
             <div className="content-inner-box">
               <div className="values-title">
-                <span></span>
+                <span />
                 <h2 className="main-title">Our Team</h2>
               </div>
             </div>
             <TeamProfile />
           </div>
 
+          {/* PDF Downloads */}
           <div className="content-wrapper learn-more-about">
             <div className="content-inner-box">
               <div className="company-values">
                 <div className="sub-heaading">
-                  <span></span>
+                  <span />
                   <h2>Know more about us</h2>
                 </div>
               </div>
             </div>
             <div className="pdf-card-container">
-              <PdfCard
-                link="/KCLLC_3_Pager/KC-LLC-One-pager.pdf"
-                name="KC/LLC One-pager"
-                alttext="KC/LLC Icon"
-              />
+              {pdfs.map((pdf, index) => (
+                <PdfCard
+                  key={index}
+                  link={pdf.link}
+                  name={pdf.name}
+                  alttext={pdf.alt}
+                />
+              ))}
             </div>
           </div>
         </section>
@@ -104,6 +124,6 @@ function About() {
       <Footer />
     </>
   );
-}
+};
 
 export default About;
