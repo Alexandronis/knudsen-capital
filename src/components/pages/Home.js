@@ -10,7 +10,7 @@ import OurTeam from '../organisms/Home/OurTeam/OurTeam';
 import HomeContact from '../organisms/Home/HomeContact/HomeContact';
 import Footer from '../layout/Footer';
 
-function Home() {
+const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -29,27 +29,34 @@ function Home() {
         />
       </Helmet>
       <link rel="canonical" href="https://kcinvestors.com/" />
+
       <div className="home-main-wrapper">
         <HomeBanner />
       </div>
+
       <div className="our-criteria-wrapper">
         <Criteria />
       </div>
+
       <div className="portfolio-wrapper">
         <PortfolioCompany />
       </div>
+
       <div className="value-box-wrapper">
         <Value />
       </div>
+
       <div className="our-team-wrapper">
         <OurTeam />
       </div>
+
       <div className="home-contact-wrapper">
         <HomeContact />
       </div>
+
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

@@ -1,87 +1,20 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import addressIcon from '../../assets/contact-page/pin.svg';
-import emailIcon from '../../assets/contact-page/email.svg';
-import phoneIcon from '../../assets/contact-page/phone-call.svg';
-import prevIcon from '../../assets/contact-page/prev.svg';
-import nextIcon from '../../assets/contact-page/next.svg';
-
 import PlaceholderAnime from '../common/Placeholder';
 import Footer from '../layout/Footer';
+import NextArrow from '../molecules/Contact/NextArrow';
+import PrevArrow from '../molecules/Contact/PrevArrow';
+import { contactInfo } from '../../data/contactInfo';
 
-const NextArrow = ({ className, style, onClick }) => (
-  <>
-    <div
-      role="button"
-      tabIndex={0}
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: '#55bbac',
-        borderRadius: '50%',
-      }}
-      onClick={onClick}
-      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
-    />
-    <img
-      role="button"
-      tabIndex={0}
-      className={className}
-      src={nextIcon}
-      style={{
-        ...style,
-        width: '10px',
-        marginRight: '10px',
-      }}
-      onClick={onClick}
-      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
-      alt="Next button"
-    />
-  </>
-);
-
-const PrevArrow = ({ className, style, onClick }) => (
-  <>
-    <div
-      role="button"
-      tabIndex={0}
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: '#55bbac',
-        borderRadius: '50%',
-      }}
-      onClick={onClick}
-      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
-    />
-    <img
-      role="button"
-      tabIndex={0}
-      className={className}
-      src={prevIcon}
-      style={{
-        ...style,
-        width: '10px',
-        marginLeft: '10px',
-      }}
-      onClick={onClick}
-      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick(e)}
-      alt="Previous button"
-    />
-  </>
-);
-
-function Contact() {
+const Contact = () => {
   const sliderData = require('../../data/contactSlider.json');
   const location = useLocation();
-  const contactRef = useRef();
+  const contactRef = useRef(null);
+
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     if (location.pathname === '/contact') {
@@ -98,10 +31,7 @@ function Contact() {
     }
   }, [location.pathname]);
 
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const onLoadedData = () => setIsImageLoaded(true);
-
-  const settings = {
+  const sliderSettings = {
     dots: false,
     infinite: true,
     speed: 1000,
@@ -126,21 +56,21 @@ function Contact() {
           <link rel="canonical" href="https://kcinvestors.com/contact" />
         </Helmet>
 
-        <Slider {...settings}>
-          {sliderData.map((slider) => (
-            <div key={slider.id}>
-              <div
-                className="placeholder-wrapper"
-                style={{ display: isImageLoaded ? 'none' : 'block' }}
-              >
-                <PlaceholderAnime />
-              </div>
+        <Slider {...sliderSettings}>
+          {sliderData.map((slide) => (
+            <div key={slide.id}>
+              {!isImageLoaded && (
+                <div className="placeholder-wrapper">
+                  <PlaceholderAnime />
+                </div>
+              )}
               <img
                 className="sliderImages"
-                src={slider.image}
-                alt={slider.alt}
-                onLoad={onLoadedData}
+                src={slide.image}
+                alt={slide.alt}
+                onLoad={() => setIsImageLoaded(true)}
                 style={{ display: isImageLoaded ? 'block' : 'none' }}
+                loading="lazy"
               />
             </div>
           ))}
@@ -154,59 +84,38 @@ function Contact() {
                 <h1 className="main-title">KC/LLC Contact Details</h1>
                 <h2 className="main-title mobile">Contact</h2>
               </div>
+
               <div className="value-wrapper">
                 <div className="common_card">
-                  <div className="common_card_containar">
-                    <div className="image_containar">
-                      <img className="image_icon" src={addressIcon} alt="Address Icon" />
-                    </div>
-                    <div className="leftside_text contact_leftside_text">
-                      <div className="card_list_items contact-us-item">
-                        <ul>
-                          <li>
-                            PO Box 7,
-                            <br /> Los Gatos,
-                            <br /> CA, 95031
-                          </li>
-                        </ul>
+                  {contactInfo.map((info, index) => (
+                    <div className="common_card_containar" key={index}>
+                      <div className="image_containar">
+                        <img
+                          className="image_icon"
+                          src={info.icon}
+                          alt="Contact Icon"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="leftside_text contact_leftside_text">
+                        <div className="card_list_items contact-us-item">
+                          <ul>
+                            <li>{info.content}</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="common_card_containar">
-                    <div className="image_containar">
-                      <img className="image_icon" src={phoneIcon} alt="Phone Icon" />
-                    </div>
-                    <div className="leftside_text contact_leftside_text">
-                      <div className="card_list_items contact-us-item">
-                        <ul>
-                          <li>408.483.5566</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="common_card_containar">
-                    <div className="image_containar">
-                      <img className="image_icon" src={emailIcon} alt="Email Icon" />
-                    </div>
-                    <div className="leftside_text contact_leftside_text">
-                      <div className="card_list_items contact-us-item">
-                        <ul>
-                          <li>webb@kcinvestors.com</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
-}
+};
 
 export default Contact;

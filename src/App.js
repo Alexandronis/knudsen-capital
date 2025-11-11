@@ -1,32 +1,34 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
 import Header from './components/layout/Header';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Portfolio from './components/pages/Portfolio';
-import Contact from './components/pages/Contact';
-import ClientPage from './components/layout/ClientPage';
-import NotFoundPage from './components/templates/404';
-import CharitableContributions from './components/pages/CharitableContributions';
-
+import PageLoader from './components/layout/PageLoader';
 import './styles/main.scss';
 
-function App() {
+const Home = lazy(() => import('./components/pages/Home'));
+const About = lazy(() => import('./components/pages/About'));
+const Portfolio = lazy(() => import('./components/pages/Portfolio'));
+const Contact = lazy(() => import('./components/pages/Contact'));
+const ClientPage = lazy(() => import('./components/layout/ClientPage'));
+const CharitableContributions = lazy(() => import('./components/pages/CharitableContributions'));
+const NotFoundPage = lazy(() => import('./components/templates/404'));
+
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/client-page" element={<ClientPage />} />
-        <Route path="/charitable-contributions" element={<CharitableContributions />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/client-page" element={<ClientPage />} />
+          <Route path="/charitable-contributions" element={<CharitableContributions />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
     </div>
   );
-}
+};
 
 export default App;

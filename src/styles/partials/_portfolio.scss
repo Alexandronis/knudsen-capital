@@ -80,6 +80,9 @@
           .logo-box {
             -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
             animation: fade-in-bck 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            background: none;
+            border: 0;
+            padding: 0;
 
             @-webkit-keyframes fade-in-bck {
               0% {
@@ -494,7 +497,7 @@
 }
 
 //-------------focus vertical design for mobile----------------------
-.fosus-sec-wapper-mobile {
+.focus-sec-wrapper-mobile {
   display: none;
   background-color: #e5f5f3;
   @include respond-to('small') {
@@ -585,7 +588,7 @@
   }
 }
 //-------------focus circle design----------------------
-.fosus-sec-wapper {
+.focus-sec-wrapper {
   width: 16.5%;
   margin: 240px auto;
   padding: 127px 0;

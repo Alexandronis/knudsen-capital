@@ -14,37 +14,40 @@ const TeamCard = ({
   email,
 }) => {
   return (
-    <>
+    <div className="team-card">
       <div className="first-line">
         <div className="img_box">
-          <img src={imgSrc} alt={alt} />
+          <img src={imgSrc} alt={alt} loading="lazy" />
         </div>
+
         <div className="card-titles">
           <div className="title-set">
             <p className="name">{name}</p>
             <p className="title">{title}</p>
           </div>
+
           <div className="icon-set">
             <a href={email}>
-              <img src={emailIcon} alt="Email icon"></img>
+              <img src={emailIcon} alt="Email Icon" loading="lazy" />
             </a>
-            {linkedin ? (
+            {linkedin && (
               <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                <img src={linkedinIcon} alt="linkedin icon"></img>
+                <img src={linkedinIcon} alt="LinkedIn Icon" loading="lazy" />
               </a>
-            ) : null}
+            )}
           </div>
         </div>
       </div>
+
       <div className="second-line">
         <p className="desc">
-          {description}
+          {description}{' '}
           <span>
             <Link to={`/about/#our-team${id}`}>See more</Link>
           </span>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

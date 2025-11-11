@@ -12,20 +12,24 @@ A responsive React application for **KCLLC**, built with modern React (v18), SAS
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/Charly-agency-account/knudsen-capital.git
 cd kcllc
 ```
 
 ### 2️⃣ Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3️⃣ Run the development server
+
 ```bash
 npm start
 ```
+
 This will start the app in development mode and open http://localhost:3000
 in your browser.
 
@@ -33,15 +37,15 @@ The page automatically reloads when changes are saved, and ESLint errors will ap
 
 ## ⚙️ Available Scripts
 
-| Command         | Description                                                |
-|-----------------|------------------------------------------------------------|
-| `npm start`     | Runs the app locally in development mode                   |
-| `npm test`      | Launches the interactive test runner                       |
-| `npm run build` | Builds the app for production (output in `/build`)         |
-| `npm run eject` | Copies CRA configuration for full customization (irreversible) |
-| `npm run lint`  | Checks code for linting and accessibility issues           |
-| `npm run lint:fix` | Automatically fixes lint issues where possible          |
-| `npm run format` | Formats all code using Prettier                           |
+| Command            | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| `npm start`        | Runs the app locally in development mode                       |
+| `npm test`         | Launches the interactive test runner                           |
+| `npm run build`    | Builds the app for production (output in `/build`)             |
+| `npm run eject`    | Copies CRA configuration for full customization (irreversible) |
+| `npm run lint`     | Checks code for linting and accessibility issues               |
+| `npm run lint:fix` | Automatically fixes lint issues where possible                 |
+| `npm run format`   | Formats all code using Prettier                                |
 
 ## 🧱 Development Notes
 
@@ -108,6 +112,3 @@ kcllc/
 This project is private and proprietary.
 
 Unauthorized use, distribution, or modification is prohibited.
-
-
-

@@ -11,12 +11,16 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 // Render your app
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+const renderApp = () => {
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+};
+
+renderApp();
 
 reportWebVitals();

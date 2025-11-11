@@ -1,121 +1,116 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import ProfileCard from '../../../molecules/About/OurTeamSection/ProfileCard';
+import memberDetails from '../../../../data/memberDetails.json';
 
-function TeamProfile() {
-  const memberDetails = require('../../../../data/memberDetails.json');
+const TeamProfile = () => {
   const [isShown, setIsShown] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(false);
-  const handleExpandClick = (index) => {
-    if (selectedIndex === index) {
-      setSelectedIndex('');
-    } else {
-      setSelectedIndex(index);
-    }
+  const location = useLocation();
+  const ourTeamRef = useRef();
+
+  const toggleMember = (index, id) => {
+    setIsShown(isShown === index ? 0 : index);
+    setSelectedIndex(selectedIndex === id ? '' : id);
   };
-  const Location = useLocation();
-  const Ourteam = useRef();
 
   useEffect(() => {
-    if (Location.hash.includes('our-team')) {
-      var index = Number.parseInt(Location.hash.replace('#our-team', ''));
-      setSelectedIndex(index + 1);
-      setIsShown(index + 1);
+    if (location.hash.includes('our-team')) {
+      const index = Number(location.hash.replace('#our-team', '')) + 1;
+      // defer state update to next tick
+      const timer = setTimeout(() => {
+        setSelectedIndex(index);
+        setIsShown(index);
+      }, 0);
+
+      return () => clearTimeout(timer);
     }
-  }, [Location]);
+  }, [location]);
 
   return (
-    <>
-      <div
-        className={
-          selectedIndex === ''
-            ? 'team-profile-wrapper '
-            : selectedIndex === false
-              ? 'team-profile-wrapper'
-              : 'team-profile-wrapper active'
-        }
-      >
-        {memberDetails.map((member, index) => {
-          return (
-            <section id={`our-team` + member.id} key={`our-team` + member.id}>
+    <div
+      className={
+        selectedIndex === ''
+          ? 'team-profile-wrapper'
+          : selectedIndex === false
+            ? 'team-profile-wrapper'
+            : 'team-profile-wrapper active'
+      }
+    >
+      {memberDetails.map((member, index) => {
+        const isActive = isShown === index + 1;
+        return (
+          <section id={`our-team${member.id}`} key={member.id}>
+            <div
+              className={`team-profile-container ${
+                isActive ? `active index${member.id}` : isShown === 0 ? '' : 'none-active'
+              }`}
+              ref={ourTeamRef}
+            >
               <div
-                className={
-                  isShown === index + 1
-                    ? 'team-profile-container active index' + member.id
-                    : isShown === 0
-                      ? 'team-profile-container'
-                      : 'team-profile-container none-active'
-                }
-                key={index}
-                ref={(el) => {
-                  Ourteam.current = el;
-                }}
+                className="dataProfile_wrapper"
+                onClick={() => toggleMember(index + 1, member.id)}
               >
-                <div
-                  className="dataProfile_wrapper"
-                  onClick={() => {
-                    isShown === index + 1 ? setIsShown(0) : setIsShown(index + 1);
-                    handleExpandClick(member.id);
-                  }}
-                >
-                  <img className="profile-image" src={member.profileSrc} alt={member.alt} />
-                  <img className="cover-image" src={member.coverImage} alt={member.alt} />
+                <img
+                  className="profile-image"
+                  src={member.profileSrc}
+                  alt={`${member.name} profile`}
+                  loading="lazy"
+                />
+                <img
+                  className="cover-image"
+                  src={member.coverImage}
+                  alt={`${member.name} cover`}
+                  loading="lazy"
+                />
 
-                  <div className="profileCard">
-                    <div className="first-line">
-                      <div className="title-set">
-                        <p className="name">{member.name}</p>
-                        <p className="title">{member.title}</p>
-                      </div>
-                      <div className="icon-set">
-                        <a href={member.email}>
-                          <img src="/Our-Team/Icon-set/email.svg" alt="Email Icon" />
+                <div className="profileCard">
+                  <div className="first-line">
+                    <div className="title-set">
+                      <p className="name">{member.name}</p>
+                      <p className="title">{member.title}</p>
+                    </div>
+                    <div className="icon-set">
+                      <a href={member.email}>
+                        <img src="/Our-Team/Icon-set/email.svg" alt="Email Icon" />
+                      </a>
+                      {member.linkedin && (
+                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                          <img src="/Our-Team/Icon-set/linkedin.svg" alt="Linkedin Icon" />
                         </a>
-                        {member.linkedin ? (
-                          <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                            <img src="/Our-Team/Icon-set/linkedin.svg" alt="Linkedin Icon" />
-                          </a>
-                        ) : null}
-                      </div>
-                    </div>
-                    <div className="short-desc">
-                      <p>{member.profiledesc}</p>
+                      )}
                     </div>
                   </div>
-                  <div className="second-line">
-                    <ProfileCard
-                      name={member.name}
-                      title={member.title}
-                      longDescription={member.longDescription}
-                      profileSrc={member.profileSrc}
-                      linkedin={member.linkedin}
-                      email={member.email}
-                    />
-                  </div>
-
-                  <div
-                    className="seeMore"
-                    onClick={() => {
-                      isShown === index + 1 ? setIsShown(0) : setIsShown(index + 1);
-                      handleExpandClick(member.id);
-                    }}
-                  >
-                    {isShown === index + 1 ? <a>See less</a> : <a>See more</a>}
-
-                    <img src="/Our-Team/Icon-set/Down_arrow.svg" alt="Down Arrow Icon" />
+                  <div className="short-desc">
+                    <p>{member.profiledesc}</p>
                   </div>
                 </div>
+
+                <div className="second-line">
+                  <ProfileCard
+                    name={member.name}
+                    title={member.title}
+                    longDescription={member.longDescription}
+                    profileSrc={member.profileSrc}
+                    linkedin={member.linkedin}
+                    email={member.email}
+                  />
+                </div>
+
+                <div className="seeMore" onClick={() => toggleMember(index + 1, member.id)}>
+                  <button>{isActive ? 'See less' : 'See more'}</button>
+                  <img src="/Our-Team/Icon-set/Down_arrow.svg" alt="Down Arrow Icon" />
+                </div>
               </div>
-            </section>
-          );
-        })}
-      </div>
-    </>
+            </div>
+          </section>
+        );
+      })}
+    </div>
   );
-}
+};
 
 export default TeamProfile;

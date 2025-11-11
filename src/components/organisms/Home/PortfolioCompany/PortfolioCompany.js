@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PortfolioItem from '../../../molecules/Home/PortfolioCompany/PortfolioItem';
+import companyData from '../../../../data/companiesData.json';
 
-function PortfolioCompany() {
-  const companyData = require('../../../../data/companiesData.json');
-  const [cardselect] = useState(0);
-  const [tooltipShow] = useState(0);
-
+const PortfolioCompany = () => {
   return (
     <div className="portfolio">
       <div className="section-title">
@@ -16,8 +13,8 @@ function PortfolioCompany() {
         <div className="prtfolio-container">
           {companyData
             .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
-            .map((company, index) => (
-              <div className="card" key={index + 1}>
+            .map((company) => (
+              <div className="card" key={company.id}>
                 <PortfolioItem
                   companyName={company.companyName}
                   url={company.url}
@@ -25,8 +22,6 @@ function PortfolioCompany() {
                   description={company.description}
                   alt={company.alt}
                   id={company.id}
-                  cardselected={cardselect}
-                  tooltipShow={tooltipShow}
                   type={company.type}
                 />
               </div>
@@ -35,6 +30,6 @@ function PortfolioCompany() {
       </div>
     </div>
   );
-}
+};
 
 export default PortfolioCompany;

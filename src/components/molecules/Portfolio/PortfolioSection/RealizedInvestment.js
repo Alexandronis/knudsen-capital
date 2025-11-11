@@ -2,9 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import organization from '../../../../data/realizedInvestment.json';
 
-function RealizedInvestment() {
-  const organization = require('../../../../data/realizedInvestment.json');
+const RealizedInvestment = () => {
   const navigate = useNavigate();
 
   const handleClick = (data) => {
@@ -25,7 +25,7 @@ function RealizedInvestment() {
       <div className="card-investments">
         <div className="card-wrapper">
           {organization
-            .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
+            .sort((a, b) => a.companyName.localeCompare(b.companyName))
             .map((data, index) => (
               <div
                 className="logo-box"
@@ -40,9 +40,10 @@ function RealizedInvestment() {
                 <div className="logo-img-box">
                   <LazyLoadImage
                     effect="blur"
-                    className="image_containar"
+                    loading="lazy"
+                    className="image_containar lazy"
                     src={data.logoImage}
-                    alt={data.alt}
+                    alt={data.alt || `${data.companyName} logo`}
                   />
                 </div>
               </div>
@@ -51,6 +52,6 @@ function RealizedInvestment() {
       </div>
     </div>
   );
-}
+};
 
 export default RealizedInvestment;

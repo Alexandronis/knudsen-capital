@@ -1,74 +1,42 @@
 import React from 'react';
-import purposeIcon from '../../../../assets/criteria-section/purpose.svg';
-import peopleIcon from '../../../../assets/criteria-section/people.svg';
-import profitIcon from '../../../../assets/criteria-section/profit.svg';
+import { criteriaCards, principles } from '../../../../data/criteria';
 
-function Criteria() {
+const Criteria = () => {
   return (
     <div className="our-criteria">
       <div className="criteria-title">
         <h2>Our Key Criteria</h2>
         <p>for investing in businesses</p>
       </div>
+
       <div className="criteria-card">
-        <div className="card">
-          <div className="card-icon">
-            <img src={peopleIcon} alt="cardIcon" />
+        {criteriaCards.map((card, index) => (
+          <div className="card" key={index}>
+            <div className="card-icon">
+              <img src={card.icon} alt={card.title + ' Icon'} loading="lazy" />
+            </div>
+            <div className="card-title">
+              <h2>{card.title}</h2>
+            </div>
           </div>
-          <div className="card-title">
-            <h2>PEOPLE</h2>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-icon">
-            <img src={purposeIcon} alt="cardIcon" />
-          </div>
-          <div className="card-title">
-            <h2>PURPOSE</h2>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card-icon">
-            <img src={profitIcon} alt="cardIcon" />
-          </div>
-          <div className="card-title">
-            <h2>PROFIT</h2>
-          </div>
-        </div>
+        ))}
       </div>
+
       <div className="section-title">
         <h1>Investment Principles</h1>
       </div>
 
       <div className="principles">
-        <div className="card-containar">
-          <div className="center-text">
-            <p>
-              We invest in early-stage, high-growth businesses that change their industries and
-              improve lives - individually and on a global scale.
-            </p>
+        {principles.map((text, index) => (
+          <div className="card-containar" key={index}>
+            <div className="center-text">
+              <p>{text}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="card-containar">
-          <div className="center-text">
-            <p>We believe profit and purpose are equally important.</p>
-          </div>
-        </div>
-
-        <div className="card-containar">
-          <div className="center-text">
-            <p>
-              We treat people with respect, and only invest when we&apos;re confident that we can add
-              real value.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Criteria;
