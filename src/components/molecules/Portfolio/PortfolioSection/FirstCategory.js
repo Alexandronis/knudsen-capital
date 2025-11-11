@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import unrealizedInvestmentData from '../../../../data/unrealizedInvestment.json';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-function FirstCategory() {
-  const organization = require('../../../../data/unrealizedInvestment.json');
+const FirstCategory = () => {
   const navigate = useNavigate();
+
+  const organization = useMemo(
+    () => [...unrealizedInvestmentData].sort((a, b) => a.companyName.localeCompare(b.companyName)),
+    []
+  );
 
   const handleClick = (data) => {
     navigate('/client-page', { state: { data } });
@@ -24,33 +29,31 @@ function FirstCategory() {
 
       <div className="card-investments">
         <div className="card-wrapper">
-          {organization
-            .sort((a, b) => (a.companyName > b.companyName ? 1 : -1))
-            .map((data, index) => (
-              <div
-                className="logo-box"
-                key={index}
-                role="button"
-                tabIndex={0}
-                onClick={() => handleClick(data)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') handleClick(data);
-                }}
-              >
-                <div className="logo-img-box">
-                  <LazyLoadImage
-                    effect="blur"
-                    className="image_containar"
-                    src={data.logoImage}
-                    alt={data.alt}
-                  />
-                </div>
+          {organization.map((data, index) => (
+            <button
+              key={data.id || index}
+              type="button"
+              className="logo-box"
+              onClick={() => handleClick(data)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') handleClick(data);
+              }}
+            >
+              <div className="logo-img-box">
+                <LazyLoadImage
+                  effect="blur"
+                  className="image_containar lazy"
+                  src={data.logoImage}
+                  alt={data.alt || `${data.companyName} logo`}
+                  loading="lazy"
+                />
               </div>
-            ))}
+            </button>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default FirstCategory;
